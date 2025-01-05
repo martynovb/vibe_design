@@ -1,0 +1,46 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "development",
+      "request": "launch",
+      "type": "dart",
+      "program": "lib/targets/development/main.dart",
+      "args": [
+        "--dart-define-from-file",
+        ".env/development.env",
+        "--web-port",
+        "8080"
+      ]
+    },
+    {
+      "name": "release",
+      "request": "launch",
+      "type": "dart",
+      "program": "lib/targets/release/main.dart",
+      "args": [
+        "--dart-define-from-file",
+        ".env/release.env",
+        "--web-port",
+        "8080"
+      ]
+    },
+    {
+      "name": "development_web_mobile",
+      "type": "dart",
+      "request": "launch",
+      "program": "lib/targets/development/main.dart",
+      "args": [
+        "-d",
+        "web-server",
+        "--web-port",
+        "8080",
+        "--web-hostname",
+        "0.0.0.0",
+        "--dart-define-from-file",
+        ".env/development.env"
+      ],
+      "toolArgs": ["fvm", "flutter", "run"]
+    }
+  ]
+}
