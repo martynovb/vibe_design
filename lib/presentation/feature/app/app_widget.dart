@@ -16,10 +16,10 @@ class VibeDesignApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return EasyLocalization(
       supportedLocales: const [
-        Locale('en', 'US'),
+        Locale('uk', 'UK'),
       ],
       path: AppConstants.translatesPath,
-      fallbackLocale: const Locale('en'),
+      fallbackLocale: const Locale('uk'),
       useOnlyLangCode: true,
       child: MultiBlocProvider(
         providers: [

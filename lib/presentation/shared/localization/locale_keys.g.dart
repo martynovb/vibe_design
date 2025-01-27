@@ -2,10 +2,12 @@
 
 abstract class  LocaleKeys {
   static const appName = 'appName';
+  static const main = 'main';
   static const about = 'about';
-  static const privacyPolicy = 'privacyPolicy';
-  static const termsOfService = 'termsOfService';
-  static const allRightsReserved = 'allRightsReserved';
-  static const test = 'test';
+  static const courses = 'courses';
+  static const pros = 'pros';
+  static const learnings = 'learnings';
+  static const prices = 'prices';
+  static const contacts = 'contacts';
 
 }

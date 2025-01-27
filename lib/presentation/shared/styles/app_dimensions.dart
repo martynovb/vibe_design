@@ -1,62 +1,56 @@
 import 'package:flutter/material.dart';
 
 class AppDimensions {
-
-  static const maxMobileWidth = 900.0;
-  static const minPageDialogWidth = 450.0;
-  static const double btnWidthDesk = 116.0;
-  static const double btnHDesk = 54;
-  static const double btnHMobile = 48;
-  static const double headerHMobile = 68;
-  static const double headerHDesktop = 80;
-  static const double inputFieldH = 54;
-  static const double btnOutlinedWithIconSidePaddings = 24;
-
-    static const double topPaddingRatioDesk = 0.15;
+  static const maxMobileWidth = 767.0;
 
 
-  static const double balanceWBtnMobile = 100;
-  static const double settingsWBtnMobile = 48;
+  static const insetsMobile = 16.0;
+  static const insetsDesktop = 16.0;
+}
 
-  static const double footerHeight = 80.0;
-  static const double deskSidePadding = 40.0;
-  static const double mobSidePadding = 16.0;
-  static const double horizontalDeskPadding = 88;
-  static const double maxDescWidth = 1000;
-  static const double productsHeight = 130;
-  static const double snackBarH = 52;
-  static const double borderRadius = 16;
-  static const double getStartedDesktopBtnWidth = 250;
-  static const double getStartedBtnH = 60;
-  static const double startVerificationDesktopBtnWidth = 250;
-  static const double viewReportDesktopBtnWidth = 250;
-  static const double buyPackagetDesktopBtnWidth = 250;
+class AppSpacing {
+  const AppSpacing();
 
-  static const SizedBox sBoxDeskHorizontalPadding =
-      SizedBox(width: deskSidePadding);
-  static const SizedBox sBoxDeskVerticalPadding =
-      SizedBox(height: deskSidePadding);
+  static SizedBox horizontal(double size) => SizedBox(width: size);
+  static SizedBox vertical(double size) => SizedBox(height: size);
 
-  static const SizedBox sBoxMobHorizontalPadding =
-      SizedBox(width: mobSidePadding);
-  static const SizedBox sBoxMobVerticalPadding =
-      SizedBox(height: mobSidePadding);
+  static SizedBox get h4 => horizontal(Spacing.xxs);
+  static SizedBox get h8 => horizontal(Spacing.xs);
+  static SizedBox get h16 => horizontal(Spacing.md);
 
-  static const SizedBox sBoxH4 = SizedBox(height: 4);
-  static const SizedBox sBoxH8 = SizedBox(height: 8);
-  static const SizedBox sBoxH12 = SizedBox(height: 12);
-  static const SizedBox sBoxW8 = SizedBox(width: 8);
-  static const SizedBox sBoxH16 = SizedBox(height: 16);
-  static const SizedBox sBoxW16 = SizedBox(width: 16);
-  static const SizedBox sBoxH24 = SizedBox(height: 24);
-  static const SizedBox sBoxW24 = SizedBox(width: 24);
-  static const SizedBox sBoxH32 = SizedBox(height: 32);
-  static const SizedBox sBoxW32 = SizedBox(width: 32);
-  static const SizedBox sBoxH40 = SizedBox(height: 40);
-  static const SizedBox sBoxW40 = SizedBox(width: 40);
-  static const SizedBox sBoxH48 = SizedBox(height: 48);
-  static const SizedBox sBoxW48 = SizedBox(width: 48);
-  static const SizedBox sBoxH56 = SizedBox(height: 56);
-  static const SizedBox sBoxH60 = SizedBox(height: 60);
-  static const SizedBox sBoxH100 = SizedBox(height: 100);
+  static SizedBox get v4 => vertical(Spacing.xxs);
+  static SizedBox get v8 => vertical(Spacing.xs);
+  static SizedBox get v16 => vertical(Spacing.md);
+}
+
+class Spacing {
+  const Spacing();
+
+  static const double xxs = 4;
+  static const double xs = 8;
+  static const double sm = 12;
+  static const double md = 16;
+  static const double lg = 24;
+  static const double xl = 32;
+  static const double xxl = 40;
+}
+
+class Insets {
+  const Insets();
+}
+
+class ButtonSizes {
+  const ButtonSizes();
+
+  final double desktopHeight = 54;
+  final double mobileHeight = 48;
+  final double desktopWidth = 116;
+  final double outlinedIconPadding = 24;
+}
+
+class AppBarSizes {
+  const AppBarSizes();
+
+  final double mobile = 68;
+  final double desktop = 80;
 }

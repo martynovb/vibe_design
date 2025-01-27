@@ -12,8 +12,9 @@ dependencies:
     sdk: flutter
 
   # ui
-  flutter_svg: ^2.0.10+1
+  flutter_svg: ^2.0.17
   google_fonts: ^6.2.1
+  flutter_gen: ^5.8.0
 
   # crashlytics
   sentry_flutter: ^8.0.0
@@ -40,6 +41,7 @@ dependencies:
 dev_dependencies:
   flutter_test:
     sdk: flutter
+  flutter_gen_runner:
 
   flutter_lints: ^5.0.0
   build_runner: ^2.4.7
@@ -53,8 +55,22 @@ dev_dependencies:
 #    image_path: "assets/icons/app_icon.png"
 
 
+flutter_gen:
+  output: lib/gen/
+  assets:
+    exclude:
+      - assets/translations/**
+
+  integrations:
+    flutter_svg: true
+  colors:
+      enabled: true
+      inputs:
+        - assets/color/colors.xml
+
 flutter:
   uses-material-design: true
 
   assets:
     - assets/translations/
+    - assets/images/

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 
-import '../../feature/home/home_page.dart';
+import '../../feature/home/home.dart';
 import '../widgets/error_page.dart';
 import 'route_constants.dart';
 

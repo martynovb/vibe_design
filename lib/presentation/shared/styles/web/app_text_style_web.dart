@@ -1,85 +1,58 @@
 import 'package:flutter/material.dart';
 
 class AppTextStyleWeb {
-
-  static const TextStyle _titleMedium = TextStyle(
-    fontSize: 22,
-    fontWeight: FontWeight.w600,
+  // H1 - Montserrat 96px (Bold)
+  static const TextStyle _h1 = TextStyle(
+    fontSize: 96,
+    fontWeight: FontWeight.w700,
   );
 
-  static const TextStyle _webH1 = TextStyle(
-    fontSize: 36,
-    fontWeight: FontWeight.w600,
+  // H2 - Montserrat 64px (Mixed: Bold and Regular)
+  static const TextStyle _h2 = TextStyle(
+    fontSize: 64,
+    fontWeight: FontWeight.w700,
   );
 
-  static const TextStyle _webH2 = TextStyle(
-    fontSize: 22,
-    fontWeight: FontWeight.w600,
+  // H3 - Montserrat 40px  ExtraBold
+  static const TextStyle _h3 = TextStyle(
+    fontSize: 40,
+    fontWeight: FontWeight.w800,
   );
 
-  static const TextStyle _webH3 = TextStyle(
-    fontSize: 18,
-    fontWeight: FontWeight.w600,
+  // H4 - Montserrat 32px Bold
+  static const TextStyle _h4 = TextStyle(
+    fontSize: 32,
+    fontWeight: FontWeight.w700,
   );
 
-  static const TextStyle _webH4 = TextStyle(
-    fontSize: 16,
-    fontWeight: FontWeight.w600,
+  // Text - Montserrat 24px
+  static const TextStyle _text = TextStyle(
+    fontSize: 24,
+    fontWeight: FontWeight.w400,
   );
 
-  static const TextStyle _webH5 = TextStyle(
-    fontSize: 16,
-    fontWeight: FontWeight.w600,
-  );
-
-  static const TextStyle _webBody1 = TextStyle(
+  // Additional Text - Montserrat 20px
+  static const TextStyle _subText = TextStyle(
     fontSize: 20,
-    fontWeight: FontWeight.normal,
-  );
-
-  static const TextStyle _webBody2 = TextStyle(
-    fontSize: 18,
-    fontWeight: FontWeight.normal,
-  );
-
-  static const TextStyle _webBody3 = TextStyle(
-    fontSize: 16,
-    fontWeight: FontWeight.normal,
-  );
-
-  static const TextStyle _webBody4 = TextStyle(
-    fontSize: 14,
-    fontWeight: FontWeight.normal,
-  );
-
-  // ignore: unused_field
-  static const TextStyle _webBody5 = TextStyle(
-    fontSize: 12,
-    fontWeight: FontWeight.normal,
-  );
-
-  static const TextStyle _webCaption = TextStyle(
-    fontSize: 12,
-    fontWeight: FontWeight.normal,
+    fontWeight: FontWeight.w400,
   );
 
   static TextTheme get textTheme => const TextTheme(
-        //H
-        displayLarge: _webH1,
-        displayMedium: _webH2,
-        displaySmall: _webH3,
-        headlineMedium: _webH4,
-        headlineSmall: _webH5,
-        // Body
-        bodyLarge: _webBody1,
-        bodyMedium: _webBody2,
-        bodySmall: _webBody3,
-
-        labelLarge: _webBody2,
-        labelMedium: _webBody3,
-        labelSmall: _webBody4,
-
-        titleSmall: _webCaption,
-        titleMedium: _titleMedium,
+        displayLarge: _h1,
+        displayMedium: _h2,
+        displaySmall: _h3,
+        
+        // Headline Styles
+        headlineLarge: _h3,
+        headlineMedium: _h4,
+        headlineSmall: _text,
+        
+        // Body Styles
+        bodyLarge: _text,
+        bodyMedium: _subText,
+        
+        // Label Styles
+        labelLarge: _text,
+        labelMedium: _subText,
       );
 }

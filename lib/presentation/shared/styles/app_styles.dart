@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:vibe_design/presentation/shared/styles/app_colors.dart';
+import 'package:vibe_design/gen/colors.gen.dart';
 import 'package:vibe_design/presentation/shared/styles/mobile/app_text_style_mobile.dart';
 import 'package:vibe_design/presentation/shared/styles/web/app_text_style_web.dart';
 import 'package:vibe_design/presentation/shared/utils/app_utils.dart';
@@ -8,63 +8,62 @@ import 'package:vibe_design/presentation/shared/utils/app_utils.dart';
 class AppTheme {
   static ThemeData lightThemeData = _themeData(
     _lightColorScheme,
-    AppColors.almostBlack,
   );
 
   static ThemeData darkThemeData = _themeData(
     _darkColorScheme,
-    AppColors.white,
   );
 
   static ThemeData _themeData(
     ColorScheme colorScheme,
-    Color focusColor,
   ) {
     return ThemeData(
-        fontFamily: GoogleFonts.poppins().fontFamily,
-        colorScheme: colorScheme,
-        canvasColor: colorScheme.surface,
-        scaffoldBackgroundColor: colorScheme.surface,
-        focusColor: focusColor,
-        useMaterial3: true,
-        textTheme: AppUtils.isMobile
-            ? AppTextStyleMobile.textTheme
-            : AppTextStyleWeb.textTheme,
-        textSelectionTheme: TextSelectionThemeData(
-          cursorColor: colorScheme.onPrimary,
-          selectionColor: AppColors.purple.withOpacity(0.5),
-        ));
+      fontFamily: GoogleFonts.montserrat().fontFamily,
+      colorScheme: colorScheme,
+      canvasColor: colorScheme.surface,
+      scaffoldBackgroundColor: colorScheme.surface,
+      useMaterial3: true,
+      textTheme: AppUtils.isMobile
+          ? AppTextStyleMobile.textTheme
+          : AppTextStyleWeb.textTheme,
+      textSelectionTheme: TextSelectionThemeData(
+        cursorColor: colorScheme.onPrimary,
+        selectionColor: ColorName.selection,
+      ),
+    );
   }
 
   static ColorScheme get _lightColorScheme {
     return const ColorScheme(
-      brightness: Brightness.light,
-      primary: AppColors.white,
-      onPrimary: AppColors.almostBlack,
-      secondary: AppColors.white,
-      onSecondary: AppColors.almostBlack,
-      error: AppColors.red,
-      onError: AppColors.white,
-      surface: AppColors.grey2,
-      onSurface: AppColors.grey4,
-      tertiary: AppColors.grey3,
-      onTertiary: AppColors.grey4,
+      brightness: Brightness.light, // Since background is black
+      primary: ColorName.accent, // EF53CD - Main brand color
+      onPrimary: Colors.black, // Should contrast with primary
+      secondary: ColorName.accent, // Could use accent or another variant
+      onSecondary: Colors.black,
+      error: ColorName.accent, // Consider adding dedicated error color
+      onError: Colors.black,
+      surface: ColorName.background, // 000000 - Scaffold background
+      onSurface: ColorName.titleText, // E7E7E7 - Text on background
+      surfaceContainerHighest:
+          ColorName.card, // E7E7E7 - Optional surface variant
+      outline: ColorName.stroke, // E7E7E7 - Borders/outlines
     );
   }
 
   static ColorScheme get _darkColorScheme {
     return const ColorScheme(
-      brightness: Brightness.dark,
-      primary: AppColors.almostBlack,
-      onPrimary: AppColors.white,
-      secondary: AppColors.almostBlack2,
-      onSecondary: AppColors.white,
-      error: AppColors.red,
-      onError: AppColors.white,
-      surface: AppColors.almostBlack2,
-      onSurface: AppColors.almostBlack2,
-      tertiary: AppColors.grey3,
-      onTertiary: AppColors.grey4,
+      brightness: Brightness.dark, // Since background is black
+      primary: ColorName.accent, // EF53CD - Main brand color
+      onPrimary: Colors.black, // Should contrast with primary
+      secondary: ColorName.accent, // Could use accent or another variant
+      onSecondary: Colors.black,
+      error: ColorName.accent, // Consider adding dedicated error color
+      onError: Colors.black,
+      surface: ColorName.background, // 000000 - Scaffold background
+      onSurface: ColorName.titleText, // E7E7E7 - Text on background
+      surfaceContainerHighest:
+          ColorName.card, // E7E7E7 - Optional surface variant
+      outline: ColorName.stroke, // E7E7E7 - Borders/outlines
     );
   }
 }
