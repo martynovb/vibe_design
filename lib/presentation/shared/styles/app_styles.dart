@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:vibe_design/gen/colors.gen.dart';
+import 'package:vibe_design/gen/fonts.gen.dart';
 import 'package:vibe_design/presentation/shared/styles/mobile/app_text_style_mobile.dart';
 import 'package:vibe_design/presentation/shared/styles/web/app_text_style_web.dart';
 import 'package:vibe_design/presentation/shared/utils/app_utils.dart';
@@ -18,7 +19,7 @@ class AppTheme {
     ColorScheme colorScheme,
   ) {
     return ThemeData(
-      fontFamily: GoogleFonts.montserrat().fontFamily,
+      fontFamily: AppFontsFamily.montserrat,
       colorScheme: colorScheme,
       canvasColor: colorScheme.surface,
       scaffoldBackgroundColor: colorScheme.surface,

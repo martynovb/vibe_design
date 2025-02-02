@@ -1,11 +1,13 @@
 import 'package:flutter/material.dart';
 
 class AppDimensions {
-  static const maxMobileWidth = 767.0;
+  static const double maxMobileWidth = 767;
 
+  static const double insetsMobile = 16;
+  static const double insetsDesktop = 100;
+  static const double insetsButton = 16;
 
-  static const insetsMobile = 16.0;
-  static const insetsDesktop = 16.0;
+  static const double menuDesktopHeight = 120;
 }
 
 class AppSpacing {
@@ -14,13 +16,19 @@ class AppSpacing {
   static SizedBox horizontal(double size) => SizedBox(width: size);
   static SizedBox vertical(double size) => SizedBox(height: size);
 
-  static SizedBox get h4 => horizontal(Spacing.xxs);
-  static SizedBox get h8 => horizontal(Spacing.xs);
-  static SizedBox get h16 => horizontal(Spacing.md);
+  static SizedBox get h_4 => horizontal(Spacing.xxs);
+  static SizedBox get h_8 => horizontal(Spacing.xs);
+  static SizedBox get h_16 => horizontal(Spacing.md);
+  static SizedBox get h_24 => horizontal(Spacing.lg);
+  static SizedBox get h_32 => horizontal(Spacing.xl);
+  static SizedBox get h_40 => horizontal(Spacing.xxl);
+  static SizedBox get h_48 => horizontal(Spacing.xxxl);
 
-  static SizedBox get v4 => vertical(Spacing.xxs);
-  static SizedBox get v8 => vertical(Spacing.xs);
-  static SizedBox get v16 => vertical(Spacing.md);
+  static SizedBox get v_4 => vertical(Spacing.xxs);
+  static SizedBox get v_8 => vertical(Spacing.xs);
+  static SizedBox get v_16 => vertical(Spacing.md);
+  static SizedBox get v_24 => vertical(Spacing.lg);
+  static SizedBox get v_32 => vertical(Spacing.xl);
 }
 
 class Spacing {
@@ -33,6 +41,7 @@ class Spacing {
   static const double lg = 24;
   static const double xl = 32;
   static const double xxl = 40;
+  static const double xxxl = 48;
 }
 
 class Insets {

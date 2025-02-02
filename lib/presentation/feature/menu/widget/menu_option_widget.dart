@@ -22,7 +22,7 @@ class MenuOptionWidget extends StatelessWidget {
       splashColor: Colors.transparent,
       highlightColor: Colors.transparent,
       child: Padding(
-        padding: const EdgeInsets.all(AppDimensions.insetsDesktop),
+        padding: const EdgeInsets.all(AppDimensions.insetsButton),
         child: Text(
           text,
           style: TextTheme.of(context).bodyMedium?.copyWith(

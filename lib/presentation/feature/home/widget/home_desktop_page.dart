@@ -6,9 +6,16 @@ class HomeDesktopPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Center(
-        child: Text('HomeDesktopPage'),
+      body: Column(
+        children: [
+          MenuWidget(
+            onMenuOptionSelected: onMenuOptionSelected,
+          ),
+          HeaderPage(),
+        ],
       ),
     );
   }
+
+  void onMenuOptionSelected(MenuOption menuOptionSelected) {}
 }
