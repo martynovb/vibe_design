@@ -6,12 +6,25 @@ class HomeDesktopPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Column(
-        children: [
-          MenuWidget(
-            onMenuOptionSelected: onMenuOptionSelected,
+      body: CustomScrollView(
+        slivers: [
+          SliverAppBar(
+            floating: true,
+            snap: true,
+            stretch: true,
+            toolbarHeight: AppDimensions.menuDesktopHeight,
+            backgroundColor: ColorName.card.withValues(alpha: 0.4),
+            title: MenuWidget(
+              onMenuOptionSelected: onMenuOptionSelected,
+            ),
           ),
-          HeaderPage(),
+          SliverList(
+            delegate: SliverChildListDelegate(
+              [
+                HeaderPage(),
+              ],
+            ),
+          ),
         ],
       ),
     );

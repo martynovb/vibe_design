@@ -2,12 +2,15 @@ import 'package:flutter/material.dart';
 
 class AppDimensions {
   static const double maxMobileWidth = 767;
+  static const double maxDesktopWidth = 1240;
 
   static const double insetsMobile = 16;
   static const double insetsDesktop = 100;
   static const double insetsButton = 16;
 
   static const double menuDesktopHeight = 120;
+
+  static const double headerCardDesktopWidth = 288;
 }
 
 class AppSpacing {

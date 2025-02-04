@@ -9,12 +9,133 @@ class HeaderDesktopPage extends StatelessWidget {
     return Stack(
       children: [
         _headerBackgroundImage(width: width),
-        _headerText(context),
+        Align(
+          alignment: Alignment.center,
+          child: Container(
+            constraints: BoxConstraints(
+              maxWidth: AppDimensions.maxDesktopWidth,
+            ),
+            child: _header(context),
+          ),
+        ),
       ],
     );
   }
 
-  Widget _headerText(BuildContext context) => Padding(
+  Widget _cards(BuildContext context) => Padding(
+        padding: const EdgeInsets.only(
+          top: 60,
+        ),
+        child: IntrinsicHeight(
+          child: Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            children: [
+              HeaderCardInfoWidget(
+                title: LocaleKeys.headerCardTitle1.tr(),
+                subtitle: Text.rich(
+                  TextSpan(
+                    text: LocaleKeys.headerCardSubTitle11.tr(),
+                    style: TextTheme.of(context).bodyMedium?.copyWith(
+                          color: ColorName.accent,
+                          height: 1.2,
+                          fontWeight: FontWeight.w600,
+                        ),
+                    children: [
+                      TextSpan(
+                        text: LocaleKeys.headerCardSubTitle12.tr(),
+                        style: TextTheme.of(context).bodyMedium?.copyWith(
+                              color: ColorName.descriptionText,
+                              fontWeight: FontWeight.normal,
+                              height: 1.2,
+                            ),
+                      ),
+                    ],
+                  ),
+                ),
+              ),
+              HeaderCardInfoWidget(
+                title: LocaleKeys.headerCardTitle2.tr(),
+                subtitle: Text.rich(
+                  TextSpan(
+                    text: LocaleKeys.headerCardSubTitle21.tr(),
+                    style: TextTheme.of(context).bodyMedium?.copyWith(
+                          color: ColorName.accent,
+                          height: 1.2,
+                          fontWeight: FontWeight.w600,
+                        ),
+                    children: [
+                      TextSpan(
+                        text: LocaleKeys.headerCardSubTitle22.tr(),
+                        style: TextTheme.of(context).bodyMedium?.copyWith(
+                              color: ColorName.descriptionText,
+                              fontWeight: FontWeight.normal,
+                              height: 1.2,
+                            ),
+                      ),
+                    ],
+                  ),
+                ),
+              ),
+              HeaderCardInfoWidget(
+                title: LocaleKeys.headerCardTitle3.tr(),
+                subtitle: Text.rich(
+                  TextSpan(
+                    text: LocaleKeys.headerCardSubTitle31.tr(),
+                    style: TextTheme.of(context).bodyMedium?.copyWith(
+                          color: ColorName.descriptionText,
+                          height: 1.2,
+                          fontWeight: FontWeight.normal,
+                        ),
+                    children: [
+                      TextSpan(
+                        text: LocaleKeys.headerCardSubTitle32.tr(),
+                        style: TextTheme.of(context).bodyMedium?.copyWith(
+                              color: ColorName.accent,
+                              fontWeight: FontWeight.w600,
+                              height: 1.2,
+                            ),
+                      ),
+                      TextSpan(
+                        text: LocaleKeys.headerCardSubTitle33.tr(),
+                        style: TextTheme.of(context).bodyMedium?.copyWith(
+                              color: ColorName.descriptionText,
+                              fontWeight: FontWeight.normal,
+                              height: 1.2,
+                            ),
+                      ),
+                    ],
+                  ),
+                ),
+              ),
+              HeaderCardInfoWidget(
+                title: LocaleKeys.headerCardTitle4.tr(),
+                subtitle: Text.rich(
+                  TextSpan(
+                    text: LocaleKeys.headerCardSubTitle41.tr(),
+                    style: TextTheme.of(context).bodyMedium?.copyWith(
+                          color: ColorName.accent,
+                          height: 1.2,
+                          fontWeight: FontWeight.w600,
+                        ),
+                    children: [
+                      TextSpan(
+                        text: LocaleKeys.headerCardSubTitle42.tr(),
+                        style: TextTheme.of(context).bodyMedium?.copyWith(
+                              color: ColorName.descriptionText,
+                              fontWeight: FontWeight.normal,
+                              height: 1.2,
+                            ),
+                      ),
+                    ],
+                  ),
+                ),
+              ),
+            ],
+          ),
+        ),
+      );
+
+  Widget _header(BuildContext context) => Padding(
       padding: const EdgeInsets.only(
         top: 100,
       ),
@@ -22,6 +143,7 @@ class HeaderDesktopPage extends StatelessWidget {
         children: [
           _headerTitle(context),
           _headerSubTitle(context),
+          _cards(context),
         ],
       ));
 
@@ -81,8 +203,6 @@ class HeaderDesktopPage extends StatelessWidget {
 
   Widget _headerSubTitle(BuildContext context) => Padding(
         padding: const EdgeInsets.only(
-          left: 100,
-          right: 100,
           top: 64,
         ),
         child: Text.rich(
@@ -245,14 +365,3 @@ class HeaderDesktopPage extends StatelessWidget {
         ),
       );
 }
-
-/* class GradientTransformMatrix extends GradientTransform {
-  @override
-  Matrix4? transform(Rect bounds, {TextDirection? textDirection}) {
-    double aspectRatio = 0.8;
-    return Matrix4.identity()
-      ..translate(bounds.width / 2, bounds.height / 2) // Move to center
-      ..scale(1.0, aspectRatio) // Stretch vertically
-      ..translate(-bounds.width / 2, -bounds.height / 2); // Move back
-  }
-} */

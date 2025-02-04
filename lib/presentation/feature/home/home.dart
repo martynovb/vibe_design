@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:vibe_design/gen/colors.gen.dart';
 import 'package:vibe_design/presentation/feature/header/header.dart';
+import 'package:vibe_design/presentation/shared/styles/app_dimensions.dart';
 
 import '../../shared/di/di.dart';
 import '../../shared/widgets/device_layout_builder.dart';

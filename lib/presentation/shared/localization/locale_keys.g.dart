@@ -25,5 +25,18 @@ abstract class  LocaleKeys {
   static const headerSubTitle9 = 'headerSubTitle9';
   static const headerSubTitle10 = 'headerSubTitle10';
   static const headerSubTitle11 = 'headerSubTitle11';
+  static const headerCardTitle1 = 'headerCardTitle1';
+  static const headerCardSubTitle11 = 'headerCardSubTitle11';
+  static const headerCardSubTitle12 = 'headerCardSubTitle12';
+  static const headerCardTitle2 = 'headerCardTitle2';
+  static const headerCardSubTitle21 = 'headerCardSubTitle21';
+  static const headerCardSubTitle22 = 'headerCardSubTitle22';
+  static const headerCardTitle3 = 'headerCardTitle3';
+  static const headerCardSubTitle31 = 'headerCardSubTitle31';
+  static const headerCardSubTitle32 = 'headerCardSubTitle32';
+  static const headerCardSubTitle33 = 'headerCardSubTitle33';
+  static const headerCardTitle4 = 'headerCardTitle4';
+  static const headerCardSubTitle41 = 'headerCardSubTitle41';
+  static const headerCardSubTitle42 = 'headerCardSubTitle42';
 
 }

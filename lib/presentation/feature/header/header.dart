@@ -13,3 +13,4 @@ import '../../shared/widgets/device_layout_builder.dart';
 part 'widget/header_desktop_page.dart';
 part 'widget/header_mobile_page.dart';
 part 'widget/header_page.dart';
+part 'widget/header_card_info.dart';
