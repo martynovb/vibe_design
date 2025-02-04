@@ -26,9 +26,9 @@ class MenuOptionWidget extends StatelessWidget {
         child: Text(
           text,
           style: TextTheme.of(context).bodyMedium?.copyWith(
-            color: isSelected ? ColorName.accent : ColorName.titleText,
-            fontWeight: isSelected ? FontWeight.bold : FontWeight.normal,
-          ),  
+                color: isSelected ? ColorName.accent : ColorName.title,
+                fontWeight: isSelected ? FontWeight.bold : FontWeight.normal,
+              ),
         ),
       ),
     );

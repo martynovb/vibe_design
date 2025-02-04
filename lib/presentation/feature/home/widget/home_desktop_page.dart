@@ -11,7 +11,6 @@ class HomeDesktopPage extends StatelessWidget {
           SliverAppBar(
             floating: true,
             snap: true,
-            stretch: true,
             toolbarHeight: AppDimensions.menuDesktopHeight,
             backgroundColor: ColorName.card.withValues(alpha: 0.4),
             title: MenuWidget(
@@ -22,6 +21,9 @@ class HomeDesktopPage extends StatelessWidget {
             delegate: SliverChildListDelegate(
               [
                 HeaderPage(),
+                SizedBox(height: 200),
+                GoalPage(),
+                SizedBox(height: 200),
               ],
             ),
           ),

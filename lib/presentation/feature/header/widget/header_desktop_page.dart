@@ -13,7 +13,7 @@ class HeaderDesktopPage extends StatelessWidget {
           alignment: Alignment.center,
           child: Container(
             constraints: BoxConstraints(
-              maxWidth: AppDimensions.maxDesktopWidth,
+              maxWidth: AppDimensions.minDesktopWidth,
             ),
             child: _header(context),
           ),
@@ -37,7 +37,6 @@ class HeaderDesktopPage extends StatelessWidget {
                     text: LocaleKeys.headerCardSubTitle11.tr(),
                     style: TextTheme.of(context).bodyMedium?.copyWith(
                           color: ColorName.accent,
-                          height: 1.2,
                           fontWeight: FontWeight.w600,
                         ),
                     children: [
@@ -46,7 +45,6 @@ class HeaderDesktopPage extends StatelessWidget {
                         style: TextTheme.of(context).bodyMedium?.copyWith(
                               color: ColorName.descriptionText,
                               fontWeight: FontWeight.normal,
-                              height: 1.2,
                             ),
                       ),
                     ],
@@ -60,7 +58,6 @@ class HeaderDesktopPage extends StatelessWidget {
                     text: LocaleKeys.headerCardSubTitle21.tr(),
                     style: TextTheme.of(context).bodyMedium?.copyWith(
                           color: ColorName.accent,
-                          height: 1.2,
                           fontWeight: FontWeight.w600,
                         ),
                     children: [
@@ -69,7 +66,6 @@ class HeaderDesktopPage extends StatelessWidget {
                         style: TextTheme.of(context).bodyMedium?.copyWith(
                               color: ColorName.descriptionText,
                               fontWeight: FontWeight.normal,
-                              height: 1.2,
                             ),
                       ),
                     ],
@@ -83,7 +79,6 @@ class HeaderDesktopPage extends StatelessWidget {
                     text: LocaleKeys.headerCardSubTitle31.tr(),
                     style: TextTheme.of(context).bodyMedium?.copyWith(
                           color: ColorName.descriptionText,
-                          height: 1.2,
                           fontWeight: FontWeight.normal,
                         ),
                     children: [
@@ -92,7 +87,6 @@ class HeaderDesktopPage extends StatelessWidget {
                         style: TextTheme.of(context).bodyMedium?.copyWith(
                               color: ColorName.accent,
                               fontWeight: FontWeight.w600,
-                              height: 1.2,
                             ),
                       ),
                       TextSpan(
@@ -100,7 +94,6 @@ class HeaderDesktopPage extends StatelessWidget {
                         style: TextTheme.of(context).bodyMedium?.copyWith(
                               color: ColorName.descriptionText,
                               fontWeight: FontWeight.normal,
-                              height: 1.2,
                             ),
                       ),
                     ],
@@ -114,7 +107,6 @@ class HeaderDesktopPage extends StatelessWidget {
                     text: LocaleKeys.headerCardSubTitle41.tr(),
                     style: TextTheme.of(context).bodyMedium?.copyWith(
                           color: ColorName.accent,
-                          height: 1.2,
                           fontWeight: FontWeight.w600,
                         ),
                     children: [
@@ -123,7 +115,6 @@ class HeaderDesktopPage extends StatelessWidget {
                         style: TextTheme.of(context).bodyMedium?.copyWith(
                               color: ColorName.descriptionText,
                               fontWeight: FontWeight.normal,
-                              height: 1.2,
                             ),
                       ),
                     ],
@@ -156,9 +147,7 @@ class HeaderDesktopPage extends StatelessWidget {
             children: [
               Text(
                 LocaleKeys.headerTitle1_yourPath.tr().toUpperCase(),
-                style: TextTheme.of(context).displayLarge?.copyWith(
-                      height: 1.2,
-                    ),
+                style: TextTheme.of(context).displayLarge,
               ),
               AppSpacing.v_16,
               Row(
@@ -171,16 +160,13 @@ class HeaderDesktopPage extends StatelessWidget {
                   Text.rich(
                     TextSpan(
                       text: LocaleKeys.headerTitle2_in.tr().toUpperCase(),
-                      style: TextTheme.of(context).displayLarge?.copyWith(
-                            height: 1.2,
-                          ),
+                      style: TextTheme.of(context).displayLarge,
                       children: [
                         TextSpan(
                           text:
                               LocaleKeys.headerTitle3_design.tr().toUpperCase(),
                           style: TextTheme.of(context).displayLarge?.copyWith(
                                 color: ColorName.accent,
-                                height: 1.2,
                               ),
                         ),
                       ],
@@ -191,9 +177,7 @@ class HeaderDesktopPage extends StatelessWidget {
               AppSpacing.v_16,
               Text(
                 LocaleKeys.headerTitle4_startsHere.tr().toUpperCase(),
-                style: TextTheme.of(context).displayLarge?.copyWith(
-                      height: 1.2,
-                    ),
+                style: TextTheme.of(context).displayLarge,
               ),
             ],
           ),
@@ -210,7 +194,6 @@ class HeaderDesktopPage extends StatelessWidget {
             text: LocaleKeys.headerSubTitle1.tr(),
             style: TextTheme.of(context).bodyLarge?.copyWith(
                   color: ColorName.descriptionText,
-                  height: 1.2,
                 ),
             children: [
               TextSpan(
@@ -218,14 +201,12 @@ class HeaderDesktopPage extends StatelessWidget {
                 style: TextTheme.of(context).bodyLarge?.copyWith(
                       color: ColorName.accent,
                       fontWeight: FontWeight.w600,
-                      height: 1.2,
                     ),
               ),
               TextSpan(
                 text: LocaleKeys.headerSubTitle3.tr(),
                 style: TextTheme.of(context).bodyLarge?.copyWith(
                       color: ColorName.descriptionText,
-                      height: 1.2,
                     ),
               ),
               TextSpan(
@@ -233,14 +214,12 @@ class HeaderDesktopPage extends StatelessWidget {
                 style: TextTheme.of(context).bodyLarge?.copyWith(
                       color: ColorName.accent,
                       fontWeight: FontWeight.w600,
-                      height: 1.2,
                     ),
               ),
               TextSpan(
                 text: LocaleKeys.headerSubTitle5.tr(),
                 style: TextTheme.of(context).bodyLarge?.copyWith(
                       color: ColorName.descriptionText,
-                      height: 1.2,
                     ),
               ),
               TextSpan(
@@ -248,14 +227,12 @@ class HeaderDesktopPage extends StatelessWidget {
                 style: TextTheme.of(context).bodyLarge?.copyWith(
                       color: ColorName.accent,
                       fontWeight: FontWeight.w600,
-                      height: 1.2,
                     ),
               ),
               TextSpan(
                 text: LocaleKeys.headerSubTitle7.tr(),
                 style: TextTheme.of(context).bodyLarge?.copyWith(
                       color: ColorName.descriptionText,
-                      height: 1.2,
                     ),
               ),
               TextSpan(
@@ -263,14 +240,12 @@ class HeaderDesktopPage extends StatelessWidget {
                 style: TextTheme.of(context).bodyLarge?.copyWith(
                       color: ColorName.accent,
                       fontWeight: FontWeight.w600,
-                      height: 1.2,
                     ),
               ),
               TextSpan(
                 text: LocaleKeys.headerSubTitle9.tr(),
                 style: TextTheme.of(context).bodyLarge?.copyWith(
                       color: ColorName.descriptionText,
-                      height: 1.2,
                     ),
               ),
               TextSpan(
@@ -278,14 +253,12 @@ class HeaderDesktopPage extends StatelessWidget {
                 style: TextTheme.of(context).bodyLarge?.copyWith(
                       color: ColorName.accent,
                       fontWeight: FontWeight.w600,
-                      height: 1.2,
                     ),
               ),
               TextSpan(
                 text: LocaleKeys.headerSubTitle11.tr(),
                 style: TextTheme.of(context).bodyLarge?.copyWith(
                       color: ColorName.descriptionText,
-                      height: 1.2,
                     ),
               ),
             ],

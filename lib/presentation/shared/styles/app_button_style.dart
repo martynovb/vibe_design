@@ -28,7 +28,7 @@ class AppButtonStyle {
         foregroundColor: WidgetStateProperty.resolveWith(
           (states) {
             if (states.contains(WidgetState.disabled)) {
-              return ColorName.titleText;
+              return ColorName.title;
             }
             return ColorName.background;
           },

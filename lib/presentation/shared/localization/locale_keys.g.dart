@@ -38,5 +38,20 @@ abstract class  LocaleKeys {
   static const headerCardTitle4 = 'headerCardTitle4';
   static const headerCardSubTitle41 = 'headerCardSubTitle41';
   static const headerCardSubTitle42 = 'headerCardSubTitle42';
+  static const goalTitle1 = 'goalTitle1';
+  static const goalTitle2 = 'goalTitle2';
+  static const goalTitle3 = 'goalTitle3';
+  static const goalTitle4 = 'goalTitle4';
+  static const goalTitle5 = 'goalTitle5';
+  static const goalSubTitle1 = 'goalSubTitle1';
+  static const goalSubTitle2 = 'goalSubTitle2';
+  static const goalCard1Title1 = 'goalCard1Title1';
+  static const goalCard1Title2 = 'goalCard1Title2';
+  static const goalCard1Description = 'goalCard1Description';
+  static const goalCard2Title1 = 'goalCard2Title1';
+  static const goalCard2Title2 = 'goalCard2Title2';
+  static const goalCard3Title1 = 'goalCard3Title1';
+  static const goalCard3Title2 = 'goalCard3Title2';
+  static const goalCard3Description = 'goalCard3Description';
 
 }

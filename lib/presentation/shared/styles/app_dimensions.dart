@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 
 class AppDimensions {
-  static const double maxMobileWidth = 767;
-  static const double maxDesktopWidth = 1240;
+  static const double maxMobileWidth = minDesktopWidth;
+  static const double minDesktopWidth = 1240;
 
   static const double insetsMobile = 16;
   static const double insetsDesktop = 100;
@@ -32,6 +32,7 @@ class AppSpacing {
   static SizedBox get v_16 => vertical(Spacing.md);
   static SizedBox get v_24 => vertical(Spacing.lg);
   static SizedBox get v_32 => vertical(Spacing.xl);
+  static SizedBox get v_64 => vertical(64);
 }
 
 class Spacing {

@@ -44,7 +44,7 @@ class AppTheme {
       error: ColorName.accent, // Consider adding dedicated error color
       onError: Colors.black,
       surface: ColorName.background, // 000000 - Scaffold background
-      onSurface: ColorName.titleText, // E7E7E7 - Text on background
+      onSurface: ColorName.title, // E7E7E7 - Text on background
       surfaceContainerHighest:
           ColorName.card, // E7E7E7 - Optional surface variant
       outline: ColorName.stroke, // E7E7E7 - Borders/outlines
@@ -61,7 +61,7 @@ class AppTheme {
       error: ColorName.accent, // Consider adding dedicated error color
       onError: Colors.black,
       surface: ColorName.background, // 000000 - Scaffold background
-      onSurface: ColorName.titleText, // E7E7E7 - Text on background
+      onSurface: ColorName.title, // E7E7E7 - Text on background
       surfaceContainerHighest:
           ColorName.card, // E7E7E7 - Optional surface variant
       outline: ColorName.stroke, // E7E7E7 - Borders/outlines

@@ -32,5 +32,5 @@ class ColorName {
   static const Color stroke = Color(0xFF6C6C6C);
 
   /// Color: #E7E7E7
-  static const Color titleText = Color(0xFFE7E7E7);
+  static const Color title = Color(0xFFE7E7E7);
 }
