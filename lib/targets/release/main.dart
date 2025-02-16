@@ -8,7 +8,7 @@ import 'package:flutter_web_plugins/url_strategy.dart';
 import 'package:vibe_design/presentation/feature/app/app_widget.dart';
 import 'package:vibe_design/targets/run_configurations.dart';
 
-import '../../presentation/shared/di/di.dart'; // TODO: Remove this import
+import '../../presentation/shared/di/di.dart';
 
 void main() async {
   await runZonedGuarded(

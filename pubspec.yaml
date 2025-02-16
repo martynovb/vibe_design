@@ -10,10 +10,11 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  flutter_web_plugins:
+    sdk: flutter
 
   # ui
   flutter_svg: ^2.0.17
-  google_fonts: ^6.2.1
   flutter_gen: ^5.8.0
 
   # crashlytics

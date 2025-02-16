@@ -146,7 +146,7 @@ class HeaderDesktopPage extends StatelessWidget {
             mainAxisSize: MainAxisSize.min,
             children: [
               Text(
-                LocaleKeys.headerTitle1_yourPath.tr().toUpperCase(),
+                LocaleKeys.headerTitle1YourPath.tr().toUpperCase(),
                 style: TextTheme.of(context).displayLarge,
               ),
               AppSpacing.v_16,
@@ -159,12 +159,12 @@ class HeaderDesktopPage extends StatelessWidget {
                   AppSpacing.h_32,
                   Text.rich(
                     TextSpan(
-                      text: LocaleKeys.headerTitle2_in.tr().toUpperCase(),
+                      text: LocaleKeys.headerTitle2In.tr().toUpperCase(),
                       style: TextTheme.of(context).displayLarge,
                       children: [
                         TextSpan(
                           text:
-                              LocaleKeys.headerTitle3_design.tr().toUpperCase(),
+                              LocaleKeys.headerTitle3Design.tr().toUpperCase(),
                           style: TextTheme.of(context).displayLarge?.copyWith(
                                 color: ColorName.accent,
                               ),
@@ -176,7 +176,7 @@ class HeaderDesktopPage extends StatelessWidget {
               ),
               AppSpacing.v_16,
               Text(
-                LocaleKeys.headerTitle4_startsHere.tr().toUpperCase(),
+                LocaleKeys.headerTitle4StartsHere.tr().toUpperCase(),
                 style: TextTheme.of(context).displayLarge,
               ),
             ],

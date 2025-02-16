@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:vibe_design/gen/colors.gen.dart';
 import 'package:vibe_design/gen/fonts.gen.dart';
 import 'package:vibe_design/presentation/shared/styles/mobile/app_text_style_mobile.dart';
