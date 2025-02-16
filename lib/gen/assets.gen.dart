@@ -24,8 +24,12 @@ class $AssetsImagesGen {
   /// File path: assets/images/logo.svg
   SvgGenImage get logo => const SvgGenImage('assets/images/logo.svg');
 
+  /// File path: assets/images/my_photo.png
+  AssetGenImage get myPhoto =>
+      const AssetGenImage('assets/images/my_photo.png');
+
   /// List of all assets
-  List<dynamic> get values => [hashtag, instagram, logo];
+  List<dynamic> get values => [hashtag, instagram, logo, myPhoto];
 }
 
 class Assets {

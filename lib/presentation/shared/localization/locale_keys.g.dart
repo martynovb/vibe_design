@@ -53,5 +53,30 @@ abstract class  LocaleKeys {
   static const goalCard3Title1 = 'goalCard3Title1';
   static const goalCard3Title2 = 'goalCard3Title2';
   static const goalCard3Description = 'goalCard3Description';
+  static const aboutMeTitle = 'aboutMeTitle';
+  static const aboutMeTitle1 = 'aboutMeTitle1';
+  static const aboutMeTitle2 = 'aboutMeTitle2';
+  static const aboutMeDescription1 = 'aboutMeDescription1';
+  static const aboutMeDescription2 = 'aboutMeDescription2';
+  static const aboutMeDescription3 = 'aboutMeDescription3';
+  static const myPhotoTitle = 'myPhotoTitle';
+  static const myPhotoSubTitle = 'myPhotoSubTitle';
+  static const myPhotoDescription = 'myPhotoDescription';
+  static const aboutMeBuletPoint1_1 = 'aboutMeBuletPoint1_1';
+  static const aboutMeBuletPoint1_2 = 'aboutMeBuletPoint1_2';
+  static const aboutMeBuletPoint2_1 = 'aboutMeBuletPoint2_1';
+  static const aboutMeBuletPoint2_2 = 'aboutMeBuletPoint2_2';
+  static const aboutMeBuletPoint3_1 = 'aboutMeBuletPoint3_1';
+  static const aboutMeBuletPoint3_2 = 'aboutMeBuletPoint3_2';
+  static const aboutMeBuletPoint4_1 = 'aboutMeBuletPoint4_1';
+  static const aboutMeBuletPoint4_2 = 'aboutMeBuletPoint4_2';
+  static const aboutMeBuletPoint5_1 = 'aboutMeBuletPoint5_1';
+  static const aboutMeBuletPoint5_2 = 'aboutMeBuletPoint5_2';
+  static const aboutMeBuletPoint6_1 = 'aboutMeBuletPoint6_1';
+  static const aboutMeBuletPoint6_2 = 'aboutMeBuletPoint6_2';
+  static const aboutMeBuletPoint7_1 = 'aboutMeBuletPoint7_1';
+  static const aboutMeBuletPoint7_2 = 'aboutMeBuletPoint7_2';
+  static const aboutMeBuletPoint8_1 = 'aboutMeBuletPoint8_1';
+  static const aboutMeBuletPoint8_2 = 'aboutMeBuletPoint8_2';
 
 }
