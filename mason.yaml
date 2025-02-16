@@ -1,0 +1,5 @@
+bricks:
+   simple_responsive_future:
+     git:
+       url: https://github.com/martynovb/my_mason_templates.git
+       path: bricks/simple_responsive_future

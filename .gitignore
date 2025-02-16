@@ -50,3 +50,4 @@ app.*.map.json
 .metadata
 .env/*
 .vscode/settings.json
+.mason/bricks.json
