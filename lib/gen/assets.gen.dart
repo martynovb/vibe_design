@@ -15,8 +15,18 @@ import 'package:vector_graphics/vector_graphics.dart' as _vg;
 class $AssetsImagesGen {
   const $AssetsImagesGen();
 
+  /// File path: assets/images/Design School - Vibe Design.zip
+  String get designSchoolVibeDesign =>
+      'assets/images/Design School - Vibe Design.zip';
+
+  /// File path: assets/images/cup.png
+  AssetGenImage get cup => const AssetGenImage('assets/images/cup.png');
+
   /// File path: assets/images/hashtag.png
   AssetGenImage get hashtag => const AssetGenImage('assets/images/hashtag.png');
+
+  /// File path: assets/images/heart.png
+  AssetGenImage get heart => const AssetGenImage('assets/images/heart.png');
 
   /// File path: assets/images/instagram.svg
   SvgGenImage get instagram => const SvgGenImage('assets/images/instagram.svg');
@@ -28,8 +38,25 @@ class $AssetsImagesGen {
   AssetGenImage get myPhoto =>
       const AssetGenImage('assets/images/my_photo.png');
 
+  /// File path: assets/images/rocket.png
+  AssetGenImage get rocket => const AssetGenImage('assets/images/rocket.png');
+
+  /// File path: assets/images/target_vertical.png
+  AssetGenImage get targetVertical =>
+      const AssetGenImage('assets/images/target_vertical.png');
+
   /// List of all assets
-  List<dynamic> get values => [hashtag, instagram, logo, myPhoto];
+  List<dynamic> get values => [
+        designSchoolVibeDesign,
+        cup,
+        hashtag,
+        heart,
+        instagram,
+        logo,
+        myPhoto,
+        rocket,
+        targetVertical
+      ];
 }
 
 class Assets {

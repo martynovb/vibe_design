@@ -28,6 +28,8 @@ class HomeDesktopPage extends StatelessWidget {
                 SizedBox(height: 200),
                 AboutMePage(),
                 SizedBox(height: 200),
+                MyApproachPage(),
+                SizedBox(height: 200),
               ],
             ),
           ),
