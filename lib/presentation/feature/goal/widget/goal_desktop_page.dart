@@ -44,7 +44,7 @@ class GoalDesktopPage extends StatelessWidget {
                   TextSpan(
                     text: '"',
                     style: TextTheme.of(context).headlineSmall?.copyWith(
-                          color: ColorName.descriptionText,
+                          color: ColorName.title,
                         ),
                     children: [
                       TextSpan(
@@ -57,14 +57,14 @@ class GoalDesktopPage extends StatelessWidget {
                       TextSpan(
                         text: LocaleKeys.goalSubTitle2.tr(),
                         style: TextTheme.of(context).headlineSmall?.copyWith(
-                              color: ColorName.descriptionText,
+                              color: ColorName.title,
                               fontWeight: FontWeight.normal,
                             ),
                       ),
                       TextSpan(
                         text: '"',
                         style: TextTheme.of(context).headlineSmall?.copyWith(
-                              color: ColorName.descriptionText,
+                              color: ColorName.title,
                             ),
                       ),
                     ],

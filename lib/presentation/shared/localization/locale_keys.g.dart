@@ -62,6 +62,7 @@ abstract class  LocaleKeys {
   static const myPhotoTitle = 'myPhotoTitle';
   static const myPhotoSubTitle = 'myPhotoSubTitle';
   static const myPhotoDescription = 'myPhotoDescription';
+  static const buletPoint = 'buletPoint';
   static const aboutMeBuletPoint11 = 'aboutMeBuletPoint11';
   static const aboutMeBuletPoint12 = 'aboutMeBuletPoint12';
   static const aboutMeBuletPoint21 = 'aboutMeBuletPoint21';

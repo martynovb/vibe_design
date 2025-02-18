@@ -9,12 +9,14 @@ class HomeDesktopPage extends StatelessWidget {
       body: CustomScrollView(
         slivers: [
           SliverAppBar(
-            floating: true,
-            snap: true,
+            pinned: true,
             toolbarHeight: AppDimensions.menuDesktopHeight,
             backgroundColor: ColorName.card.withValues(alpha: 0.4),
             title: MenuWidget(
-              onMenuOptionSelected: onMenuOptionSelected,
+              onMenuOptionSelected: (option) => onMenuOptionSelected(
+                option,
+                context,
+              ),
             ),
           ),
           SliverList(
@@ -24,6 +26,8 @@ class HomeDesktopPage extends StatelessWidget {
                 SizedBox(height: 200),
                 GoalPage(),
                 SizedBox(height: 200),
+                AboutMePage(),
+                SizedBox(height: 200),
               ],
             ),
           ),
@@ -32,5 +36,8 @@ class HomeDesktopPage extends StatelessWidget {
     );
   }
 
-  void onMenuOptionSelected(MenuOption menuOptionSelected) {}
+  void onMenuOptionSelected(
+    MenuOption menuOptionSelected,
+    BuildContext context,
+  ) {}
 }

@@ -1,7 +1,7 @@
 part of '../about_me.dart';
 
-class GoalPage extends StatelessWidget {
-  const GoalPage({super.key});
+class AboutMePage extends StatelessWidget {
+  const AboutMePage({super.key});
 
   @override
   Widget build(BuildContext context) {
