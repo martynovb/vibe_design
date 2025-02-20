@@ -32,6 +32,7 @@ class AppSpacing {
   static SizedBox get v_16 => vertical(Spacing.md);
   static SizedBox get v_24 => vertical(Spacing.lg);
   static SizedBox get v_32 => vertical(Spacing.xl);
+  static SizedBox get v_40 => vertical(Spacing.xxl);
   static SizedBox get v_64 => vertical(64);
 }
 

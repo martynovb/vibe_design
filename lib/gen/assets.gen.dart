@@ -15,12 +15,22 @@ import 'package:vector_graphics/vector_graphics.dart' as _vg;
 class $AssetsImagesGen {
   const $AssetsImagesGen();
 
-  /// File path: assets/images/Design School - Vibe Design.zip
-  String get designSchoolVibeDesign =>
-      'assets/images/Design School - Vibe Design.zip';
+  /// File path: assets/images/bills_and_coins.png
+  AssetGenImage get billsAndCoins =>
+      const AssetGenImage('assets/images/bills_and_coins.png');
+
+  /// File path: assets/images/coin.png
+  AssetGenImage get coin => const AssetGenImage('assets/images/coin.png');
 
   /// File path: assets/images/cup.png
   AssetGenImage get cup => const AssetGenImage('assets/images/cup.png');
+
+  /// File path: assets/images/dollar_bill.png
+  AssetGenImage get dollarBill =>
+      const AssetGenImage('assets/images/dollar_bill.png');
+
+  /// File path: assets/images/fire.png
+  AssetGenImage get fire => const AssetGenImage('assets/images/fire.png');
 
   /// File path: assets/images/hashtag.png
   AssetGenImage get hashtag => const AssetGenImage('assets/images/hashtag.png');
@@ -31,15 +41,41 @@ class $AssetsImagesGen {
   /// File path: assets/images/instagram.svg
   SvgGenImage get instagram => const SvgGenImage('assets/images/instagram.svg');
 
+  /// File path: assets/images/koza.png
+  AssetGenImage get koza => const AssetGenImage('assets/images/koza.png');
+
+  /// File path: assets/images/laptop_left.png
+  AssetGenImage get laptopLeft =>
+      const AssetGenImage('assets/images/laptop_left.png');
+
   /// File path: assets/images/logo.svg
   SvgGenImage get logo => const SvgGenImage('assets/images/logo.svg');
+
+  /// File path: assets/images/lovely_face.png
+  AssetGenImage get lovelyFace =>
+      const AssetGenImage('assets/images/lovely_face.png');
+
+  /// File path: assets/images/money_brick.png
+  AssetGenImage get moneyBrick =>
+      const AssetGenImage('assets/images/money_brick.png');
 
   /// File path: assets/images/my_photo.png
   AssetGenImage get myPhoto =>
       const AssetGenImage('assets/images/my_photo.png');
 
+  /// File path: assets/images/pen.png
+  AssetGenImage get pen => const AssetGenImage('assets/images/pen.png');
+
   /// File path: assets/images/rocket.png
   AssetGenImage get rocket => const AssetGenImage('assets/images/rocket.png');
+
+  /// File path: assets/images/speech_bubble_heart.png
+  AssetGenImage get speechBubbleHeart =>
+      const AssetGenImage('assets/images/speech_bubble_heart.png');
+
+  /// File path: assets/images/sticky_notes.png
+  AssetGenImage get stickyNotes =>
+      const AssetGenImage('assets/images/sticky_notes.png');
 
   /// File path: assets/images/target_vertical.png
   AssetGenImage get targetVertical =>
@@ -47,14 +83,24 @@ class $AssetsImagesGen {
 
   /// List of all assets
   List<dynamic> get values => [
-        designSchoolVibeDesign,
+        billsAndCoins,
+        coin,
         cup,
+        dollarBill,
+        fire,
         hashtag,
         heart,
         instagram,
+        koza,
+        laptopLeft,
         logo,
+        lovelyFace,
+        moneyBrick,
         myPhoto,
+        pen,
         rocket,
+        speechBubbleHeart,
+        stickyNotes,
         targetVertical
       ];
 }

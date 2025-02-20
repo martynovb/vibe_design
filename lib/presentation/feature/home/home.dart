@@ -11,6 +11,7 @@ import '../goal/goal.dart';
 import '../menu/menu.dart';
 import '../menu/menu_option.dart';
 import '../my_approach/my_approach.dart';
+import '../select_level/select_level.dart';
 import 'bloc/home_bloc.dart';
 
 part 'widget/home_desktop_page.dart';
