@@ -32,6 +32,8 @@ class HomeDesktopPage extends StatelessWidget {
                 SizedBox(height: 200),
                 SelectLevelPage(),
                 SizedBox(height: 200),
+                WhyMePage(),
+                SizedBox(height: 200),
               ],
             ),
           ),

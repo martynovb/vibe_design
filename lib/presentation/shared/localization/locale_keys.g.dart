@@ -147,5 +147,19 @@ abstract class  LocaleKeys {
   static const selectLevelCardTag41 = 'selectLevelCardTag41';
   static const selectLevelCardTag42 = 'selectLevelCardTag42';
   static const selectLevelCardTag43 = 'selectLevelCardTag43';
+  static const whyMeTitle1 = 'whyMeTitle1';
+  static const whyMeTitle2 = 'whyMeTitle2';
+  static const whyMeTitle3 = 'whyMeTitle3';
+  static const whyMeCardTitle1 = 'whyMeCardTitle1';
+  static const whyMeCardDescription1 = 'whyMeCardDescription1';
+  static const whyMeCardTitle2 = 'whyMeCardTitle2';
+  static const whyMeCardDescription2 = 'whyMeCardDescription2';
+  static const whyMeCardTitle3 = 'whyMeCardTitle3';
+  static const whyMeCardDescription3 = 'whyMeCardDescription3';
+  static const whyMeCardTitle4 = 'whyMeCardTitle4';
+  static const whyMeCardDescription4 = 'whyMeCardDescription4';
+  static const whyMeCardTitle5 = 'whyMeCardTitle5';
+  static const whyMeCardDescription5 = 'whyMeCardDescription5';
+  static const whyMeBottomDescription = 'whyMeBottomDescription';
 
 }
