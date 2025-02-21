@@ -13,7 +13,9 @@ class WhyMeDesktopPage extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             _title(context),
+            AppSpacing.v_64,
             _cards(context),
+            AppSpacing.v_8,
             SizedBox(
               width: 900,
               child: Text.rich(
@@ -70,236 +72,249 @@ class WhyMeDesktopPage extends StatelessWidget {
   }
 
   Widget _cards(BuildContext context) {
-    final innerCardsHeight = 710.0;
-    return SizedBox(
-      height: innerCardsHeight + 40,
-      child: Stack(
-        children: [
-          Align(
-            alignment: Alignment.bottomCenter,
-            child: SizedBox(
-              height: innerCardsHeight,
-              child: Column(
-                children: [
-                  IntrinsicHeight(
-                    child: Row(
-                      children: [
-                        Expanded(
-                          child: Card(
-                            color: ColorName.card,
-                            shape: RoundedRectangleBorder(
-                              borderRadius: BorderRadius.circular(30),
-                            ),
-                            child: Padding(
-                              padding: const EdgeInsets.all(Spacing.xl),
-                              child: Column(
-                                crossAxisAlignment: CrossAxisAlignment.start,
-                                children: [
-                                  Text(
-                                    LocaleKeys.whyMeCardTitle1.tr(),
-                                    style: TextTheme.of(context)
-                                        .headlineMedium
-                                        ?.copyWith(
-                                          color: ColorName.title,
-                                          fontWeight: FontWeight.bold,
-                                        ),
-                                  ),
-                                  AppSpacing.v_24,
-                                  Text(
-                                    LocaleKeys.whyMeCardDescription1.tr(),
-                                    style:
-                                        TextTheme.of(context).bodyMedium?.copyWith(
-                                              color: ColorName.descriptionText,
-                                              fontWeight: FontWeight.normal,
-                                            ),
-                                  ),
-                                ],
-                              ),
+    return Column(
+      children: [
+        IntrinsicHeight(
+          child: Row(
+            children: [
+              Expanded(
+                child: Stack(
+                  children: [
+                    Positioned.fill(
+                      child: Card(
+                        color: ColorName.card,
+                        shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(30),
+                        ),
+                        child: Padding(
+                          padding: const EdgeInsets.all(Spacing.xl),
+                          child: Positioned.fill(
+                            child: Column(
+                              crossAxisAlignment:
+                                  CrossAxisAlignment.start,
+                              children: [
+                                Text(
+                                  LocaleKeys.whyMeCardTitle1.tr(),
+                                  style: TextTheme.of(context)
+                                      .headlineMedium
+                                      ?.copyWith(
+                                        color: ColorName.title,
+                                        fontWeight: FontWeight.bold,
+                                      ),
+                                ),
+                                AppSpacing.v_24,
+                                Text(
+                                  LocaleKeys.whyMeCardDescription1.tr(),
+                                  style: TextTheme.of(context)
+                                      .bodyMedium
+                                      ?.copyWith(
+                                        color:
+                                            ColorName.descriptionText,
+                                        fontWeight: FontWeight.normal,
+                                      ),
+                                ),
+                              ],
                             ),
                           ),
                         ),
-                        AppSpacing.h_24,
-                        Expanded(
-                          child: Card(
-                            color: ColorName.card,
-                            shape: RoundedRectangleBorder(
-                              borderRadius: BorderRadius.circular(30),
-                            ),
-                            child: Padding(
-                              padding: const EdgeInsets.all(Spacing.xl),
-                              child: Column(
-                                crossAxisAlignment: CrossAxisAlignment.start,
-                                children: [
-                                  Text(
-                                    LocaleKeys.whyMeCardDescription2.tr(),
-                                    style:
-                                        TextTheme.of(context).bodyMedium?.copyWith(
-                                              color: ColorName.descriptionText,
-                                              fontWeight: FontWeight.normal,
-                                            ),
-                                  ),
-                                  AppSpacing.v_24,
-                                  Text(
-                                    LocaleKeys.whyMeCardTitle2.tr(),
-                                    style: TextTheme.of(context)
-                                        .headlineMedium
-                                        ?.copyWith(
-                                          color: ColorName.title,
-                                          fontWeight: FontWeight.bold,
-                                        ),
-                                  ),
-                                ],
+                      ),
+                    ),
+                    Positioned(
+                      right: -8,
+                      top: -8,
+                      child: Assets.images.lovelyFace.image(
+                        width: 130,
+                        height: 130,
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+              AppSpacing.h_24,
+              Expanded(
+                child: Card(
+                  color: ColorName.card,
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(30),
+                  ),
+                  child: Padding(
+                    padding: const EdgeInsets.all(Spacing.xl),
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Text(
+                          LocaleKeys.whyMeCardDescription2.tr(),
+                          style: TextTheme.of(context)
+                              .bodyMedium
+                              ?.copyWith(
+                                color: ColorName.descriptionText,
+                                fontWeight: FontWeight.normal,
                               ),
-                            ),
-                          ),
-                        )
+                        ),
+                        AppSpacing.v_24,
+                        Text(
+                          LocaleKeys.whyMeCardTitle2.tr(),
+                          style: TextTheme.of(context)
+                              .headlineMedium
+                              ?.copyWith(
+                                color: ColorName.title,
+                                fontWeight: FontWeight.bold,
+                              ),
+                        ),
                       ],
                     ),
                   ),
-                  AppSpacing.v_24,
-                  IntrinsicHeight(
-                    child: Row(
+                ),
+              )
+            ],
+          ),
+        ),
+        AppSpacing.v_24,
+        IntrinsicHeight(
+          child: Row(
+            children: [
+              Expanded(
+                flex: 3,
+                child: Stack(
+                  children: [
+                    Positioned.fill(
+                      child: Card(
+                        color: ColorName.card,
+                        shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(30),
+                        ),
+                        child: Padding(
+                          padding: const EdgeInsets.all(Spacing.xl),
+                          child: Column(
+                            crossAxisAlignment:
+                                CrossAxisAlignment.start,
+                            children: [
+                              Text(
+                                LocaleKeys.whyMeCardDescription3.tr(),
+                                style: TextTheme.of(context)
+                                    .bodyMedium
+                                    ?.copyWith(
+                                      color: ColorName.descriptionText,
+                                      fontWeight: FontWeight.normal,
+                                    ),
+                              ),
+                              AppSpacing.v_24,
+                              Text(
+                                LocaleKeys.whyMeCardTitle3.tr(),
+                                style: TextTheme.of(context)
+                                    .headlineMedium
+                                    ?.copyWith(
+                                      color: ColorName.title,
+                                      fontWeight: FontWeight.bold,
+                                    ),
+                              ),
+                            ],
+                          ),
+                        ),
+                      ),
+                    ),
+                    Positioned(
+                      right: -0,
+                      bottom: 0,
+                      child: Assets.images.fire.image(
+                        width: 130,
+                        height: 130,
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+              AppSpacing.h_24,
+              Expanded(
+                flex: 2,
+                child: Card(
+                  color: ColorName.card,
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(30),
+                  ),
+                  child: Padding(
+                    padding: const EdgeInsets.all(Spacing.xl),
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        Expanded(
-                          flex: 3,
-                          child: Card(
-                            color: ColorName.card,
-                            shape: RoundedRectangleBorder(
-                              borderRadius: BorderRadius.circular(30),
-                            ),
-                            child: Padding(
-                              padding: const EdgeInsets.all(Spacing.xl),
-                              child: Column(
-                                crossAxisAlignment: CrossAxisAlignment.start,
-                                children: [
-                                  Text(
-                                    LocaleKeys.whyMeCardDescription3.tr(),
-                                    style:
-                                        TextTheme.of(context).bodyMedium?.copyWith(
-                                              color: ColorName.descriptionText,
-                                              fontWeight: FontWeight.normal,
-                                            ),
-                                  ),
-                                  AppSpacing.v_24,
-                                  Text(
-                                    LocaleKeys.whyMeCardTitle3.tr(),
-                                    style: TextTheme.of(context)
-                                        .headlineMedium
-                                        ?.copyWith(
-                                          color: ColorName.title,
-                                          fontWeight: FontWeight.bold,
-                                        ),
-                                  ),
-                                ],
+                        Text(
+                          LocaleKeys.whyMeCardDescription4.tr(),
+                          style: TextTheme.of(context)
+                              .bodyMedium
+                              ?.copyWith(
+                                color: ColorName.descriptionText,
+                                fontWeight: FontWeight.normal,
                               ),
-                            ),
-                          ),
                         ),
-                        AppSpacing.h_24,
-                        Expanded(
-                          flex: 2,
-                          child: Card(
-                            color: ColorName.card,
-                            shape: RoundedRectangleBorder(
-                              borderRadius: BorderRadius.circular(30),
-                            ),
-                            child: Padding(
-                              padding: const EdgeInsets.all(Spacing.xl),
-                              child: Column(
-                                crossAxisAlignment: CrossAxisAlignment.start,
-                                children: [
-                                  Text(
-                                    LocaleKeys.whyMeCardDescription4.tr(),
-                                    style:
-                                        TextTheme.of(context).bodyMedium?.copyWith(
-                                              color: ColorName.descriptionText,
-                                              fontWeight: FontWeight.normal,
-                                            ),
-                                  ),
-                                  AppSpacing.v_24,
-                                  Text(
-                                    LocaleKeys.whyMeCardTitle4.tr(),
-                                    style: TextTheme.of(context)
-                                        .headlineMedium
-                                        ?.copyWith(
-                                          color: ColorName.title,
-                                          fontWeight: FontWeight.bold,
-                                        ),
-                                  ),
-                                ],
+                        AppSpacing.v_24,
+                        Text(
+                          LocaleKeys.whyMeCardTitle4.tr(),
+                          style: TextTheme.of(context)
+                              .headlineMedium
+                              ?.copyWith(
+                                color: ColorName.title,
+                                fontWeight: FontWeight.bold,
                               ),
-                            ),
-                          ),
-                        ),
-                        AppSpacing.h_24,
-                        Expanded(
-                          flex: 2,
-                          child: Card(
-                            color: ColorName.card,
-                            shape: RoundedRectangleBorder(
-                              borderRadius: BorderRadius.circular(30),
-                            ),
-                            child: Padding(
-                              padding: const EdgeInsets.all(Spacing.xl),
-                              child: Column(
-                                crossAxisAlignment: CrossAxisAlignment.start,
-                                children: [
-                                  Text(
-                                    LocaleKeys.whyMeCardTitle5.tr(),
-                                    style: TextTheme.of(context)
-                                        .headlineMedium
-                                        ?.copyWith(
-                                          color: ColorName.title,
-                                          fontWeight: FontWeight.bold,
-                                        ),
-                                  ),
-                                  AppSpacing.v_24,
-                                  Text(
-                                    LocaleKeys.whyMeCardDescription5.tr(),
-                                    style:
-                                        TextTheme.of(context).bodyMedium?.copyWith(
-                                              color: ColorName.descriptionText,
-                                              fontWeight: FontWeight.normal,
-                                            ),
-                                  ),
-                                ],
-                              ),
-                            ),
-                          ),
                         ),
                       ],
                     ),
-                  )
-                ],
+                  ),
+                ),
               ),
-            ),
+              AppSpacing.h_24,
+              Expanded(
+                flex: 2,
+                child: Stack(
+                  children: [
+                    Card(
+                      color: ColorName.card,
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(30),
+                      ),
+                      child: Padding(
+                        padding: const EdgeInsets.all(Spacing.xl),
+                        child: Column(
+                          crossAxisAlignment:
+                              CrossAxisAlignment.start,
+                          children: [
+                            Text(
+                              LocaleKeys.whyMeCardTitle5.tr(),
+                              style: TextTheme.of(context)
+                                  .headlineMedium
+                                  ?.copyWith(
+                                    color: ColorName.title,
+                                    fontWeight: FontWeight.bold,
+                                  ),
+                            ),
+                            AppSpacing.v_24,
+                            Text(
+                              LocaleKeys.whyMeCardDescription5.tr(),
+                              style: TextTheme.of(context)
+                                  .bodyMedium
+                                  ?.copyWith(
+                                    color: ColorName.descriptionText,
+                                    fontWeight: FontWeight.normal,
+                                  ),
+                            ),
+                          ],
+                        ),
+                      ),
+                    ),
+                    Positioned(
+                      right: -8,
+                      top: 0,
+                      child: Assets.images.koza.image(
+                        width: 100,
+                        height: 100,
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+            ],
           ),
-          Positioned(
-            left: 500,
-            top: 0,
-            child: Assets.images.lovelyFace.image(
-              width: 130,
-              height: 130,
-            ),
-          ),
-          Positioned(
-            left: 410,
-            bottom: 0,
-            child: Assets.images.fire.image(
-              width: 175,
-              height: 175,
-            ),
-          ),
-          Positioned(
-            right: -32,
-            top: innerCardsHeight/2-80,
-            child: Assets.images.koza.image(
-              width: 175,
-              height: 175,
-            ),
-          ),
-        ],
-      ),
+        )
+      ],
     );
   }
 }
