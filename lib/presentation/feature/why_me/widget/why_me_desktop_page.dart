@@ -88,33 +88,31 @@ class WhyMeDesktopPage extends StatelessWidget {
                         ),
                         child: Padding(
                           padding: const EdgeInsets.all(Spacing.xl),
-                          child: Positioned.fill(
-                            child: Column(
-                              crossAxisAlignment:
-                                  CrossAxisAlignment.start,
-                              children: [
-                                Text(
-                                  LocaleKeys.whyMeCardTitle1.tr(),
-                                  style: TextTheme.of(context)
-                                      .headlineMedium
-                                      ?.copyWith(
-                                        color: ColorName.title,
-                                        fontWeight: FontWeight.bold,
-                                      ),
-                                ),
-                                AppSpacing.v_24,
-                                Text(
-                                  LocaleKeys.whyMeCardDescription1.tr(),
-                                  style: TextTheme.of(context)
-                                      .bodyMedium
-                                      ?.copyWith(
-                                        color:
-                                            ColorName.descriptionText,
-                                        fontWeight: FontWeight.normal,
-                                      ),
-                                ),
-                              ],
-                            ),
+                          child: Column(
+                            crossAxisAlignment:
+                                CrossAxisAlignment.start,
+                            children: [
+                              Text(
+                                LocaleKeys.whyMeCardTitle1.tr(),
+                                style: TextTheme.of(context)
+                                    .headlineMedium
+                                    ?.copyWith(
+                                      color: ColorName.title,
+                                      fontWeight: FontWeight.bold,
+                                    ),
+                              ),
+                              AppSpacing.v_24,
+                              Text(
+                                LocaleKeys.whyMeCardDescription1.tr(),
+                                style: TextTheme.of(context)
+                                    .bodyMedium
+                                    ?.copyWith(
+                                      color:
+                                          ColorName.descriptionText,
+                                      fontWeight: FontWeight.normal,
+                                    ),
+                              ),
+                            ],
                           ),
                         ),
                       ),

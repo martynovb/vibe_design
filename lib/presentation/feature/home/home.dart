@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:vibe_design/gen/colors.gen.dart';
 import 'package:vibe_design/presentation/feature/header/header.dart';
+import 'package:vibe_design/presentation/feature/my_students/my_students.dart';
 import 'package:vibe_design/presentation/feature/why_me/why_me.dart';
 import 'package:vibe_design/presentation/shared/styles/app_dimensions.dart';
 

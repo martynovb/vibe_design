@@ -11,6 +11,8 @@ class AppDimensions {
   static const double menuDesktopHeight = 120;
 
   static const double headerCardDesktopWidth = 288;
+
+  static const double myStudentsCardDesktopHeight = 220;
 }
 
 class AppSpacing {

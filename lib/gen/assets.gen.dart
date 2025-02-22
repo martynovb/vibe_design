@@ -15,6 +15,10 @@ import 'package:vector_graphics/vector_graphics.dart' as _vg;
 class $AssetsImagesGen {
   const $AssetsImagesGen();
 
+  /// File path: assets/images/Design School - Vibe Design.zip
+  String get designSchoolVibeDesign =>
+      'assets/images/Design School - Vibe Design.zip';
+
   /// File path: assets/images/bills_and_coins.png
   AssetGenImage get billsAndCoins =>
       const AssetGenImage('assets/images/bills_and_coins.png');
@@ -77,12 +81,49 @@ class $AssetsImagesGen {
   AssetGenImage get stickyNotes =>
       const AssetGenImage('assets/images/sticky_notes.png');
 
+  /// File path: assets/images/student_work1.png
+  AssetGenImage get studentWork1 =>
+      const AssetGenImage('assets/images/student_work1.png');
+
+  /// File path: assets/images/student_work2.png
+  AssetGenImage get studentWork2 =>
+      const AssetGenImage('assets/images/student_work2.png');
+
+  /// File path: assets/images/student_work3.png
+  AssetGenImage get studentWork3 =>
+      const AssetGenImage('assets/images/student_work3.png');
+
+  /// File path: assets/images/student_work4.png
+  AssetGenImage get studentWork4 =>
+      const AssetGenImage('assets/images/student_work4.png');
+
+  /// File path: assets/images/student_work5.png
+  AssetGenImage get studentWork5 =>
+      const AssetGenImage('assets/images/student_work5.png');
+
+  /// File path: assets/images/student_work6.png
+  AssetGenImage get studentWork6 =>
+      const AssetGenImage('assets/images/student_work6.png');
+
+  /// File path: assets/images/student_work7.png
+  AssetGenImage get studentWork7 =>
+      const AssetGenImage('assets/images/student_work7.png');
+
+  /// File path: assets/images/student_work8.png
+  AssetGenImage get studentWork8 =>
+      const AssetGenImage('assets/images/student_work8.png');
+
+  /// File path: assets/images/student_work9.png
+  AssetGenImage get studentWork9 =>
+      const AssetGenImage('assets/images/student_work9.png');
+
   /// File path: assets/images/target_vertical.png
   AssetGenImage get targetVertical =>
       const AssetGenImage('assets/images/target_vertical.png');
 
   /// List of all assets
   List<dynamic> get values => [
+        designSchoolVibeDesign,
         billsAndCoins,
         coin,
         cup,
@@ -101,6 +142,15 @@ class $AssetsImagesGen {
         rocket,
         speechBubbleHeart,
         stickyNotes,
+        studentWork1,
+        studentWork2,
+        studentWork3,
+        studentWork4,
+        studentWork5,
+        studentWork6,
+        studentWork7,
+        studentWork8,
+        studentWork9,
         targetVertical
       ];
 }
