@@ -16,6 +16,7 @@ dependencies:
   # ui
   flutter_svg: ^2.0.17
   flutter_gen: ^5.8.0
+  smooth_page_indicator: ^1.2.1
 
   # crashlytics
   sentry_flutter: ^8.0.0

@@ -163,14 +163,15 @@ abstract class  LocaleKeys {
   static const whyMeBottomDescription = 'whyMeBottomDescription';
   static const myStudentsTitle1 = 'myStudentsTitle1';
   static const myStudentsTitle2 = 'myStudentsTitle2';
-  static const myStudentsStudentName1 = 'myStudentsStudentName1';
-  static const myStudentsStudentName2 = 'myStudentsStudentName2';
-  static const myStudentsStudentName3 = 'myStudentsStudentName3';
-  static const myStudentsStudentName4 = 'myStudentsStudentName4';
-  static const myStudentsStudentName5 = 'myStudentsStudentName5';
-  static const myStudentsStudentName6 = 'myStudentsStudentName6';
-  static const myStudentsStudentName7 = 'myStudentsStudentName7';
-  static const myStudentsStudentName8 = 'myStudentsStudentName8';
-  static const myStudentsStudentName9 = 'myStudentsStudentName9';
+  static const reviewsTitle1 = 'reviewsTitle1';
+  static const reviewsTitle2 = 'reviewsTitle2';
+  static const reviewsTitle3 = 'reviewsTitle3';
+  static const reviewsTitle4 = 'reviewsTitle4';
+  static const reviewCardTitle1 = 'reviewCardTitle1';
+  static const reviewCardDescription1 = 'reviewCardDescription1';
+  static const reviewCardTitle2 = 'reviewCardTitle2';
+  static const reviewCardDescription2 = 'reviewCardDescription2';
+  static const reviewCardTitle3 = 'reviewCardTitle3';
+  static const reviewCardDescription3 = 'reviewCardDescription3';
 
 }

@@ -15,9 +15,9 @@ import 'package:vector_graphics/vector_graphics.dart' as _vg;
 class $AssetsImagesGen {
   const $AssetsImagesGen();
 
-  /// File path: assets/images/Design School - Vibe Design.zip
-  String get designSchoolVibeDesign =>
-      'assets/images/Design School - Vibe Design.zip';
+  /// File path: assets/images/arrow-right.svg
+  SvgGenImage get arrowRight =>
+      const SvgGenImage('assets/images/arrow-right.svg');
 
   /// File path: assets/images/bills_and_coins.png
   AssetGenImage get billsAndCoins =>
@@ -69,6 +69,22 @@ class $AssetsImagesGen {
 
   /// File path: assets/images/pen.png
   AssetGenImage get pen => const AssetGenImage('assets/images/pen.png');
+
+  /// File path: assets/images/quote_symbol.png
+  AssetGenImage get quoteSymbol =>
+      const AssetGenImage('assets/images/quote_symbol.png');
+
+  /// File path: assets/images/review_1.png
+  AssetGenImage get review1 =>
+      const AssetGenImage('assets/images/review_1.png');
+
+  /// File path: assets/images/review_2.png
+  AssetGenImage get review2 =>
+      const AssetGenImage('assets/images/review_2.png');
+
+  /// File path: assets/images/review_3.png
+  AssetGenImage get review3 =>
+      const AssetGenImage('assets/images/review_3.png');
 
   /// File path: assets/images/rocket.png
   AssetGenImage get rocket => const AssetGenImage('assets/images/rocket.png');
@@ -123,7 +139,7 @@ class $AssetsImagesGen {
 
   /// List of all assets
   List<dynamic> get values => [
-        designSchoolVibeDesign,
+        arrowRight,
         billsAndCoins,
         coin,
         cup,
@@ -139,6 +155,10 @@ class $AssetsImagesGen {
         moneyBrick,
         myPhoto,
         pen,
+        quoteSymbol,
+        review1,
+        review2,
+        review3,
         rocket,
         speechBubbleHeart,
         stickyNotes,

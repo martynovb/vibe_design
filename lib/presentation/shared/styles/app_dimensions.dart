@@ -19,23 +19,40 @@ class AppSpacing {
   const AppSpacing();
 
   static SizedBox horizontal(double size) => SizedBox(width: size);
+
   static SizedBox vertical(double size) => SizedBox(height: size);
 
   static SizedBox get h_4 => horizontal(Spacing.xxs);
+
   static SizedBox get h_8 => horizontal(Spacing.xs);
+
   static SizedBox get h_16 => horizontal(Spacing.md);
+
   static SizedBox get h_24 => horizontal(Spacing.lg);
+
   static SizedBox get h_32 => horizontal(Spacing.xl);
+
   static SizedBox get h_40 => horizontal(Spacing.xxl);
+
   static SizedBox get h_48 => horizontal(Spacing.xxxl);
 
+  static SizedBox get h_100 => horizontal(100);
+
   static SizedBox get v_4 => vertical(Spacing.xxs);
+
   static SizedBox get v_8 => vertical(Spacing.xs);
+
   static SizedBox get v_16 => vertical(Spacing.md);
+
   static SizedBox get v_24 => vertical(Spacing.lg);
+
   static SizedBox get v_32 => vertical(Spacing.xl);
+
   static SizedBox get v_40 => vertical(Spacing.xxl);
+
   static SizedBox get v_64 => vertical(64);
+
+  static SizedBox get v_100 => vertical(100);
 }
 
 class Spacing {

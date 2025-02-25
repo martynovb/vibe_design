@@ -7,6 +7,7 @@ class HomeDesktopPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       body: CustomScrollView(
+
         slivers: [
           SliverAppBar(
             pinned: true,
@@ -20,6 +21,7 @@ class HomeDesktopPage extends StatelessWidget {
             ),
           ),
           SliverList(
+
             delegate: SliverChildListDelegate(
               [
                 HeaderPage(),
@@ -35,6 +37,8 @@ class HomeDesktopPage extends StatelessWidget {
                 WhyMePage(),
                 SizedBox(height: 200),
                 MyStudentsPage(),
+                SizedBox(height: 200),
+                ReviewsPage(),
                 SizedBox(height: 200),
               ],
             ),
