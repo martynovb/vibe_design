@@ -173,5 +173,19 @@ abstract class  LocaleKeys {
   static const reviewCardDescription2 = 'reviewCardDescription2';
   static const reviewCardTitle3 = 'reviewCardTitle3';
   static const reviewCardDescription3 = 'reviewCardDescription3';
+  static const learningProcessTitle1 = 'learningProcessTitle1';
+  static const learningProcessTitle2 = 'learningProcessTitle2';
+  static const learningProcessTitle3 = 'learningProcessTitle3';
+  static const learningProcessSubTitle1 = 'learningProcessSubTitle1';
+  static const learningProcessSubTitle2 = 'learningProcessSubTitle2';
+  static const learningProcessSubTitle3 = 'learningProcessSubTitle3';
+  static const learningProcessCardTitle1 = 'learningProcessCardTitle1';
+  static const learningProcessCardDescription1 = 'learningProcessCardDescription1';
+  static const learningProcessCardTitle2 = 'learningProcessCardTitle2';
+  static const learningProcessCardDescription2 = 'learningProcessCardDescription2';
+  static const learningProcessCardTitle3 = 'learningProcessCardTitle3';
+  static const learningProcessCardDescription3 = 'learningProcessCardDescription3';
+  static const learningProcessCardTitle4 = 'learningProcessCardTitle4';
+  static const learningProcessCardDescription4 = 'learningProcessCardDescription4';
 
 }

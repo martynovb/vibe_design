@@ -67,6 +67,18 @@ class $AssetsImagesGen {
   AssetGenImage get myPhoto =>
       const AssetGenImage('assets/images/my_photo.png');
 
+  /// File path: assets/images/number1.svg
+  SvgGenImage get number1 => const SvgGenImage('assets/images/number1.svg');
+
+  /// File path: assets/images/number2.svg
+  SvgGenImage get number2 => const SvgGenImage('assets/images/number2.svg');
+
+  /// File path: assets/images/number3.svg
+  SvgGenImage get number3 => const SvgGenImage('assets/images/number3.svg');
+
+  /// File path: assets/images/number4.svg
+  SvgGenImage get number4 => const SvgGenImage('assets/images/number4.svg');
+
   /// File path: assets/images/pen.png
   AssetGenImage get pen => const AssetGenImage('assets/images/pen.png');
 
@@ -154,6 +166,10 @@ class $AssetsImagesGen {
         lovelyFace,
         moneyBrick,
         myPhoto,
+        number1,
+        number2,
+        number3,
+        number4,
         pen,
         quoteSymbol,
         review1,
