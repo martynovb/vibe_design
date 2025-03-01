@@ -270,7 +270,7 @@ class SelectLevelDesktopPage extends StatelessWidget {
           ],
         ),
         Transform.translate(
-          offset: const Offset(0, -48), // Зсув вгору на 16 пікселів
+          offset: const Offset(0, -48),
           child: Row(
             crossAxisAlignment: CrossAxisAlignment.end,
             mainAxisAlignment: MainAxisAlignment.end,

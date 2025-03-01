@@ -187,5 +187,26 @@ abstract class  LocaleKeys {
   static const learningProcessCardDescription3 = 'learningProcessCardDescription3';
   static const learningProcessCardTitle4 = 'learningProcessCardTitle4';
   static const learningProcessCardDescription4 = 'learningProcessCardDescription4';
+  static const learningDetailsTitle1 = 'learningDetailsTitle1';
+  static const learningDetailsTitle2 = 'learningDetailsTitle2';
+  static const learningDetailsTitle3 = 'learningDetailsTitle3';
+  static const learningDetailsSubTitle1 = 'learningDetailsSubTitle1';
+  static const learningDetailsSubTitle2 = 'learningDetailsSubTitle2';
+  static const learningDetailsSubTitle3 = 'learningDetailsSubTitle3';
+  static const learningDetailsSubTitle4 = 'learningDetailsSubTitle4';
+  static const learningDetailsSubTitle5 = 'learningDetailsSubTitle5';
+  static const learningDetailsCardTitle1 = 'learningDetailsCardTitle1';
+  static const learningDetailsCardDescription1 = 'learningDetailsCardDescription1';
+  static const learningDetailsCardTitle2 = 'learningDetailsCardTitle2';
+  static const learningDetailsCardDescription2 = 'learningDetailsCardDescription2';
+  static const learningDetailsCardTitle3 = 'learningDetailsCardTitle3';
+  static const learningDetailsCardDescription3 = 'learningDetailsCardDescription3';
+  static const learningDetailsCardTitle4 = 'learningDetailsCardTitle4';
+  static const learningDetailsCardDescription4 = 'learningDetailsCardDescription4';
+  static const learningDetailsBottomDescription1 = 'learningDetailsBottomDescription1';
+  static const learningDetailsBottomDescription2 = 'learningDetailsBottomDescription2';
+  static const learningDetailsBottomDescription3 = 'learningDetailsBottomDescription3';
+  static const learningDetailsBottomDescription4 = 'learningDetailsBottomDescription4';
+  static const learningDetailsBottomDescription5 = 'learningDetailsBottomDescription5';
 
 }

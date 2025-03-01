@@ -40,6 +40,8 @@ class HomeDesktopPage extends StatelessWidget {
                 SizedBox(height: 200),
                 LearningProcessPage(),
                 SizedBox(height: 200),
+                LearningDetailsPage(),
+                SizedBox(height: 200),
               ],
             ),
           ),

@@ -50,6 +50,10 @@ class AppSpacing {
 
   static SizedBox get v_40 => vertical(Spacing.xxl);
 
+  static SizedBox get v_48 => vertical(Spacing.xxxl);
+
+  static SizedBox get v_56 => vertical(Spacing.s56);
+
   static SizedBox get v_64 => vertical(64);
 
   static SizedBox get v_100 => vertical(100);
@@ -66,6 +70,8 @@ class Spacing {
   static const double xl = 32;
   static const double xxl = 40;
   static const double xxxl = 48;
+
+  static const double s56 = 48;
 }
 
 class Insets {
