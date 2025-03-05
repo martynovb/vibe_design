@@ -7,7 +7,9 @@ class MyApproachPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return DeviceLayoutBuilder(
       layoutBuilder: (isMobile) {
-        return isMobile ? const MyApproachMobilePage() : const MyApproachDesktopPage();
+        return isMobile
+            ? const MyApproachMobilePage()
+            : const MyApproachDesktopPage();
       },
     );
   }

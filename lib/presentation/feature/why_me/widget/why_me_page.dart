@@ -7,9 +7,7 @@ class WhyMePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return DeviceLayoutBuilder(
       layoutBuilder: (isMobile) {
-        return isMobile
-            ? const WhyMeMobilePage()
-            : const WhyMeDesktopPage();
+        return isMobile ? const WhyMeMobilePage() : const WhyMeDesktopPage();
       },
     );
   }

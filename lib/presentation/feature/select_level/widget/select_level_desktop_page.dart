@@ -257,7 +257,7 @@ class SelectLevelDesktopPage extends StatelessWidget {
         Row(
           crossAxisAlignment: CrossAxisAlignment.start,
           mainAxisAlignment: MainAxisAlignment.start,
-            children: [
+          children: [
             Flexible(
               flex: 7,
               child: cards[0],

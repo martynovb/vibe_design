@@ -47,16 +47,16 @@ class AppTextStyleWeb {
         displayLarge: _h1,
         displayMedium: _h2,
         displaySmall: _h3,
-        
+
         // Headline Styles
         headlineLarge: _h3,
         headlineMedium: _h4,
         headlineSmall: _text,
-        
+
         // Body Styles
         bodyLarge: _text,
         bodyMedium: _subText,
-        
+
         // Label Styles
         labelLarge: _text,
         labelMedium: _subText,

@@ -166,7 +166,8 @@ class LearningDetailsDesktopPage extends StatelessWidget {
                             ),
                         children: [
                           TextSpan(
-                            text: LocaleKeys.learningDetailsBottomDescription2.tr(),
+                            text: LocaleKeys.learningDetailsBottomDescription2
+                                .tr(),
                             style:
                                 TextTheme.of(context).headlineSmall?.copyWith(
                                       color: ColorName.accent,
@@ -174,7 +175,8 @@ class LearningDetailsDesktopPage extends StatelessWidget {
                                     ),
                           ),
                           TextSpan(
-                            text: LocaleKeys.learningDetailsBottomDescription3.tr(),
+                            text: LocaleKeys.learningDetailsBottomDescription3
+                                .tr(),
                             style:
                                 TextTheme.of(context).headlineSmall?.copyWith(
                                       color: ColorName.title,
@@ -182,7 +184,8 @@ class LearningDetailsDesktopPage extends StatelessWidget {
                                     ),
                           ),
                           TextSpan(
-                            text: LocaleKeys.learningDetailsBottomDescription4.tr(),
+                            text: LocaleKeys.learningDetailsBottomDescription4
+                                .tr(),
                             style:
                                 TextTheme.of(context).headlineSmall?.copyWith(
                                       color: ColorName.accent,
@@ -190,7 +193,8 @@ class LearningDetailsDesktopPage extends StatelessWidget {
                                     ),
                           ),
                           TextSpan(
-                            text: LocaleKeys.learningDetailsBottomDescription5.tr(),
+                            text: LocaleKeys.learningDetailsBottomDescription5
+                                .tr(),
                             style:
                                 TextTheme.of(context).headlineSmall?.copyWith(
                                       color: ColorName.title,

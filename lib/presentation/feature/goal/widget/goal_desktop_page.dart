@@ -158,7 +158,6 @@ class GoalDesktopPage extends StatelessWidget {
   Widget _card2(BuildContext context) => Container(
         constraints: const BoxConstraints(
           maxWidth: 288,
-          
           minHeight: double.infinity,
         ),
         child: Card(

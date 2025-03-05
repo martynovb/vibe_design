@@ -13,7 +13,8 @@ class HeaderCardInfoWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      constraints: const BoxConstraints(maxWidth: AppDimensions.headerCardDesktopWidth),
+      constraints:
+          const BoxConstraints(maxWidth: AppDimensions.headerCardDesktopWidth),
       child: Card(
         color: ColorName.card,
         shape: RoundedRectangleBorder(

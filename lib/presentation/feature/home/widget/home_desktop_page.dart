@@ -22,7 +22,7 @@ class HomeDesktopPage extends StatelessWidget {
           SliverList(
             delegate: SliverChildListDelegate(
               [
-                HeaderPage(),
+                /*HeaderPage(),
                 SizedBox(height: 200),
                 GoalPage(),
                 SizedBox(height: 200),
@@ -41,6 +41,8 @@ class HomeDesktopPage extends StatelessWidget {
                 LearningProcessPage(),
                 SizedBox(height: 200),
                 LearningDetailsPage(),
+                SizedBox(height: 200),*/
+                ChooseYourPathPage(),
                 SizedBox(height: 200),
               ],
             ),

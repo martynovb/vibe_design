@@ -143,7 +143,7 @@ class MyStudentsDesktopPage extends StatelessWidget {
                               color: ColorName.title,
                               fontWeight: FontWeight.w600,
                               fontSize: 16,
-                          decoration: TextDecoration.underline,
+                              decoration: TextDecoration.underline,
                             ),
                       ),
                     ),

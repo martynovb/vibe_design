@@ -6,7 +6,6 @@ class RouteItem {
 }
 
 class RouteConstants {
-
   static const RouteItem home = RouteItem(
     path: '/',
     name: 'Home',

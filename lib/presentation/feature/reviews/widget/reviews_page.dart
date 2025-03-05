@@ -7,9 +7,7 @@ class ReviewsPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return DeviceLayoutBuilder(
       layoutBuilder: (isMobile) {
-        return isMobile
-            ? const ReviewsMobilePage()
-            : ReviewsDesktopPage();
+        return isMobile ? const ReviewsMobilePage() : ReviewsDesktopPage();
       },
     );
   }

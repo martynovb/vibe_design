@@ -7,7 +7,9 @@ class AboutMePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return DeviceLayoutBuilder(
       layoutBuilder: (isMobile) {
-        return isMobile ? const AboutMeMobilePage() : const AboutMeDesktopPage();
+        return isMobile
+            ? const AboutMeMobilePage()
+            : const AboutMeDesktopPage();
       },
     );
   }

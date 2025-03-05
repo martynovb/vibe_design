@@ -10,13 +10,11 @@ class HomePage extends StatelessWidget {
       child: BlocBuilder<HomeBloc, HomeState>(
         builder: (context, state) {
           return DeviceLayoutBuilder(
-            layoutBuilder: (isMobile) => isMobile
-                ? const HomeMobilePage()
-                : const HomeDesktopPage(),
+            layoutBuilder: (isMobile) =>
+                isMobile ? const HomeMobilePage() : const HomeDesktopPage(),
           );
         },
       ),
     );
   }
 }
-

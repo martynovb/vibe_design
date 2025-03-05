@@ -259,7 +259,6 @@ class ReviewsDesktopState extends State<ReviewsDesktopPage> {
                 activeDotColor: ColorName.accent,
                 dotColor: ColorName.stroke,
                 expansionFactor: 2,
-
               ),
             ),
             AppSpacing.h_100,
@@ -282,5 +281,11 @@ class ReviewsDesktopState extends State<ReviewsDesktopPage> {
         ),
       ],
     );
+  }
+
+  @override
+  void dispose() {
+    _controller.dispose();
+    super.dispose();
   }
 }

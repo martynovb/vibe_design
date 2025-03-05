@@ -1,6 +1,5 @@
 part of '../header.dart';
 
-
 class HeaderPage extends StatelessWidget {
   const HeaderPage({super.key});
 

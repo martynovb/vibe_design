@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:vibe_design/gen/colors.gen.dart';
+import 'package:vibe_design/presentation/feature/choose_your_path/choose_your_path_level.dart';
 import 'package:vibe_design/presentation/feature/header/header.dart';
 import 'package:vibe_design/presentation/feature/learning_details/learning_details.dart';
 import 'package:vibe_design/presentation/feature/learning_process/learningProcess.dart';

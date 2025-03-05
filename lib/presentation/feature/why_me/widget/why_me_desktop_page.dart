@@ -89,8 +89,7 @@ class WhyMeDesktopPage extends StatelessWidget {
                         child: Padding(
                           padding: const EdgeInsets.all(Spacing.xl),
                           child: Column(
-                            crossAxisAlignment:
-                                CrossAxisAlignment.start,
+                            crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
                               Text(
                                 LocaleKeys.whyMeCardTitle1.tr(),
@@ -104,13 +103,11 @@ class WhyMeDesktopPage extends StatelessWidget {
                               AppSpacing.v_24,
                               Text(
                                 LocaleKeys.whyMeCardDescription1.tr(),
-                                style: TextTheme.of(context)
-                                    .bodyMedium
-                                    ?.copyWith(
-                                      color:
-                                          ColorName.descriptionText,
-                                      fontWeight: FontWeight.normal,
-                                    ),
+                                style:
+                                    TextTheme.of(context).bodyMedium?.copyWith(
+                                          color: ColorName.descriptionText,
+                                          fontWeight: FontWeight.normal,
+                                        ),
                               ),
                             ],
                           ),
@@ -142,9 +139,7 @@ class WhyMeDesktopPage extends StatelessWidget {
                       children: [
                         Text(
                           LocaleKeys.whyMeCardDescription2.tr(),
-                          style: TextTheme.of(context)
-                              .bodyMedium
-                              ?.copyWith(
+                          style: TextTheme.of(context).bodyMedium?.copyWith(
                                 color: ColorName.descriptionText,
                                 fontWeight: FontWeight.normal,
                               ),
@@ -152,9 +147,7 @@ class WhyMeDesktopPage extends StatelessWidget {
                         AppSpacing.v_24,
                         Text(
                           LocaleKeys.whyMeCardTitle2.tr(),
-                          style: TextTheme.of(context)
-                              .headlineMedium
-                              ?.copyWith(
+                          style: TextTheme.of(context).headlineMedium?.copyWith(
                                 color: ColorName.title,
                                 fontWeight: FontWeight.bold,
                               ),
@@ -184,17 +177,15 @@ class WhyMeDesktopPage extends StatelessWidget {
                         child: Padding(
                           padding: const EdgeInsets.all(Spacing.xl),
                           child: Column(
-                            crossAxisAlignment:
-                                CrossAxisAlignment.start,
+                            crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
                               Text(
                                 LocaleKeys.whyMeCardDescription3.tr(),
-                                style: TextTheme.of(context)
-                                    .bodyMedium
-                                    ?.copyWith(
-                                      color: ColorName.descriptionText,
-                                      fontWeight: FontWeight.normal,
-                                    ),
+                                style:
+                                    TextTheme.of(context).bodyMedium?.copyWith(
+                                          color: ColorName.descriptionText,
+                                          fontWeight: FontWeight.normal,
+                                        ),
                               ),
                               AppSpacing.v_24,
                               Text(
@@ -237,9 +228,7 @@ class WhyMeDesktopPage extends StatelessWidget {
                       children: [
                         Text(
                           LocaleKeys.whyMeCardDescription4.tr(),
-                          style: TextTheme.of(context)
-                              .bodyMedium
-                              ?.copyWith(
+                          style: TextTheme.of(context).bodyMedium?.copyWith(
                                 color: ColorName.descriptionText,
                                 fontWeight: FontWeight.normal,
                               ),
@@ -247,9 +236,7 @@ class WhyMeDesktopPage extends StatelessWidget {
                         AppSpacing.v_24,
                         Text(
                           LocaleKeys.whyMeCardTitle4.tr(),
-                          style: TextTheme.of(context)
-                              .headlineMedium
-                              ?.copyWith(
+                          style: TextTheme.of(context).headlineMedium?.copyWith(
                                 color: ColorName.title,
                                 fontWeight: FontWeight.bold,
                               ),
@@ -272,8 +259,7 @@ class WhyMeDesktopPage extends StatelessWidget {
                       child: Padding(
                         padding: const EdgeInsets.all(Spacing.xl),
                         child: Column(
-                          crossAxisAlignment:
-                              CrossAxisAlignment.start,
+                          crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
                             Text(
                               LocaleKeys.whyMeCardTitle5.tr(),
@@ -287,9 +273,7 @@ class WhyMeDesktopPage extends StatelessWidget {
                             AppSpacing.v_24,
                             Text(
                               LocaleKeys.whyMeCardDescription5.tr(),
-                              style: TextTheme.of(context)
-                                  .bodyMedium
-                                  ?.copyWith(
+                              style: TextTheme.of(context).bodyMedium?.copyWith(
                                     color: ColorName.descriptionText,
                                     fontWeight: FontWeight.normal,
                                   ),
