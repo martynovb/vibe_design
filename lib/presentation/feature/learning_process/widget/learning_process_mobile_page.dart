@@ -1,4 +1,4 @@
-part of '../learningProcess.dart';
+part of '../learning_process.dart';
 
 class LearningProcessMobilePage extends StatelessWidget {
   const LearningProcessMobilePage({super.key});
