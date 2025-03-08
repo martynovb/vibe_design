@@ -73,7 +73,7 @@ class ChooseYourPathCard extends StatelessWidget {
           ),
           IntrinsicWidth(
             child: Container(
-              constraints: BoxConstraints(maxWidth: 520),
+              constraints: BoxConstraints(maxWidth: 508),
               decoration: BoxDecoration(
                 borderRadius: const BorderRadius.all(Radius.circular(30)),
                 color: ColorName.card,
@@ -216,27 +216,32 @@ class ChooseYourPathCard extends StatelessWidget {
   }
 
   Widget _moreButton(BuildContext context) {
-    return InkWell(
-      hoverColor: Colors.transparent,
-      splashColor: Colors.transparent,
-      highlightColor: Colors.transparent,
-      onTap: onDetailsPressed,
-      child: Container(
-        padding: const EdgeInsets.symmetric(
-          vertical: Spacing.sm,
-        ),
-        decoration: BoxDecoration(
-          borderRadius: BorderRadius.circular(30),
-          color: ColorName.accent,
-        ),
-        child: Center(
-          child: Text(
-            LocaleKeys.chooseYourPathSection_CardMore.tr(),
-            style: TextTheme.of(context).bodyMedium?.copyWith(
-                  color: ColorName.card,
-                  fontWeight: FontWeight.bold,
-                ),
-          ).tr(),
+    return Center(
+      child: InkWell(
+        hoverColor: Colors.transparent,
+        splashColor: Colors.transparent,
+        highlightColor: Colors.transparent,
+        onTap: onDetailsPressed,
+        child: IntrinsicWidth(
+          child: Container(
+            padding: const EdgeInsets.symmetric(
+              vertical: Spacing.sm,
+              horizontal: Spacing.xl,
+            ),
+            decoration: BoxDecoration(
+              borderRadius: BorderRadius.circular(30),
+              color: ColorName.accent,
+            ),
+            child: Center(
+              child: Text(
+                LocaleKeys.chooseYourPathSection_CardMore.tr(),
+                style: TextTheme.of(context).bodyMedium?.copyWith(
+                      color: ColorName.card,
+                      fontWeight: FontWeight.bold,
+                    ),
+              ).tr(),
+            ),
+          ),
         ),
       ),
     );
