@@ -44,6 +44,8 @@ class HomeDesktopPage extends StatelessWidget {
                 SizedBox(height: 200),
                 ChooseYourPathPage(),
                 SizedBox(height: 200),
+                ApplyForCoursePage(),
+                SizedBox(height: 200),
               ],
             ),
           ),

@@ -79,6 +79,10 @@ class $AssetsImagesGen {
   /// File path: assets/images/number4.svg
   SvgGenImage get number4 => const SvgGenImage('assets/images/number4.svg');
 
+  /// File path: assets/images/online_class_laptop.png
+  AssetGenImage get onlineClassLaptop =>
+      const AssetGenImage('assets/images/online_class_laptop.png');
+
   /// File path: assets/images/pen.png
   AssetGenImage get pen => const AssetGenImage('assets/images/pen.png');
 
@@ -170,6 +174,7 @@ class $AssetsImagesGen {
         number2,
         number3,
         number4,
+        onlineClassLaptop,
         pen,
         quoteSymbol,
         review1,

@@ -256,5 +256,13 @@ abstract class  LocaleKeys {
   static const chooseYourPathSection_Card4Description5 = 'chooseYourPathSection.Card4Description5';
   static const chooseYourPathSection_CardMore = 'chooseYourPathSection.CardMore';
   static const chooseYourPathSection = 'chooseYourPathSection';
+  static const applyForCourse_title11 = 'applyForCourse.title11';
+  static const applyForCourse_title12 = 'applyForCourse.title12';
+  static const applyForCourse_title2 = 'applyForCourse.title2';
+  static const applyForCourse_subtitle1 = 'applyForCourse.subtitle1';
+  static const applyForCourse_subtitle2 = 'applyForCourse.subtitle2';
+  static const applyForCourse_subtitle3 = 'applyForCourse.subtitle3';
+  static const applyForCourse_description = 'applyForCourse.description';
+  static const applyForCourse = 'applyForCourse';
 
 }
