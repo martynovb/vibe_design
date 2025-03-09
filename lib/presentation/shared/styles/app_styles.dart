@@ -28,7 +28,7 @@ class AppTheme {
           : AppTextStyleWeb.textTheme,
       textSelectionTheme: TextSelectionThemeData(
         cursorColor: colorScheme.onPrimary,
-        selectionColor: ColorName.selection,
+        selectionColor: ColorName.accent.withValues(alpha: 0.3),
       ),
     );
   }

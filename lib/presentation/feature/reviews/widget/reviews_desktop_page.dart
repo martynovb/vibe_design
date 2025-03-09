@@ -9,22 +9,22 @@ class ReviewsDesktopPage extends StatefulWidget {
 
 class ReviewsDesktopState extends State<ReviewsDesktopPage> {
   final _controller = PageController(
-    viewportFraction: 0.35,
+    viewportFraction: 0.39,
     keepPage: true,
     initialPage: 1,
   );
   final List<Widget> _pages = [
     Assets.images.review1.image(
-      width: 410,
-      height: 840,
+      width: 310,
+      height: 640,
     ),
     Assets.images.review2.image(
-      width: 410,
-      height: 840,
+      width: 310,
+      height: 640,
     ),
     Assets.images.review3.image(
-      width: 410,
-      height: 840,
+      width: 310,
+      height: 640,
     ),
   ];
 
@@ -197,7 +197,7 @@ class ReviewsDesktopState extends State<ReviewsDesktopPage> {
             maxWidth: AppDimensions.minDesktopWidth,
             minWidth: AppDimensions.minDesktopWidth,
           ),
-          height: 1000,
+          height: 700,
           child: Transform.scale(
             scale: 1.15,
             child: PageView.builder(
@@ -226,7 +226,7 @@ class ReviewsDesktopState extends State<ReviewsDesktopPage> {
             ),
           ),
         ),
-        AppSpacing.v_32,
+        AppSpacing.v_64,
         Row(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [

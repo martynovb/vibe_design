@@ -7,4 +7,5 @@ enum MenuOption {
   pricing,
   contact,
   instagram,
+  none,
 }

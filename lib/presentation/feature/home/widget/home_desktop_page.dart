@@ -1,52 +1,170 @@
 part of '../home.dart';
 
-class HomeDesktopPage extends StatelessWidget {
+class HomeDesktopPage extends StatefulWidget {
   const HomeDesktopPage({super.key});
+
+  @override
+  State<StatefulWidget> createState() => HomeDesktopState();
+}
+
+class HomeDesktopState extends State<HomeDesktopPage> {
+  MenuOption _selectedMenuOption = MenuOption.home;
+  final _scrollController = ScrollController();
+  late List<SectionViewModel> _sections;
+  final Map<GlobalKey, double> _sectionOffsets = {};
+  final _columnKey = GlobalKey();
+  late VoidCallback _onScrollListener;
+
+  @override
+  void didChangeDependencies() {
+    final homeKey = GlobalKey();
+    final aboutKey = GlobalKey();
+    final coursesKey = GlobalKey();
+    final prosKey = GlobalKey();
+    final learnKey = GlobalKey();
+    final pricingKey = GlobalKey();
+    final contactKey = GlobalKey();
+
+    _sections = [
+      SectionViewModel(
+        key: homeKey,
+        menuOption: MenuOption.home,
+        section: HeaderPage(
+          key: homeKey,
+        ),
+      ),
+      SectionViewModel(section: GoalPage()),
+      SectionViewModel(
+        key: aboutKey,
+        menuOption: MenuOption.about,
+        section: AboutMePage(
+          key: aboutKey,
+        ),
+      ),
+      SectionViewModel(section: MyApproachPage()),
+      SectionViewModel(
+        key: coursesKey,
+        menuOption: MenuOption.courses,
+        section: SelectLevelPage(
+          key: coursesKey,
+        ),
+      ),
+      SectionViewModel(
+        key: prosKey,
+        menuOption: MenuOption.pros,
+        section: WhyMePage(
+          key: prosKey,
+        ),
+      ),
+      SectionViewModel(section: MyStudentsPage()),
+      SectionViewModel(section: ReviewsPage()),
+      SectionViewModel(
+        key: learnKey,
+        menuOption: MenuOption.learn,
+        section: LearningProcessPage(
+          key: learnKey,
+        ),
+      ),
+      SectionViewModel(section: LearningDetailsPage()),
+      SectionViewModel(
+        key: pricingKey,
+        menuOption: MenuOption.pricing,
+        section: ChooseYourPathPage(
+          key: pricingKey,
+        ),
+      ),
+      SectionViewModel(section: ApplyForCoursePage()),
+      SectionViewModel(
+        key: contactKey,
+        menuOption: MenuOption.contact,
+        section: FooterPage(
+          key: contactKey,
+          onMenuOptionPressed: onMenuOptionSelected,
+        ),
+      ),
+    ];
+
+    _onScrollListener = _onScroll;
+
+    WidgetsBinding.instance.addPostFrameCallback((_) {
+      _calculateSectionOffsets();
+    });
+
+    _scrollController.addListener(_onScrollListener);
+
+    super.didChangeDependencies();
+  }
+
+  void _calculateSectionOffsets() {
+    final columnContext = _columnKey.currentContext;
+    if (columnContext == null) return;
+
+    final columnBox = columnContext.findRenderObject() as RenderBox;
+
+    for (var section in _sections) {
+      final key = section.key;
+      if (key == null) continue;
+
+      final keyContext = key.currentContext;
+      if (keyContext == null) continue;
+
+      final sectionBox = keyContext.findRenderObject() as RenderBox;
+      final offset =
+          sectionBox.localToGlobal(Offset.zero, ancestor: columnBox).dy;
+      _sectionOffsets[key] = offset;
+    }
+  }
+
+  void _onScroll() {
+    final scrollOffset = _scrollController.offset;
+    MenuOption? currentOption;
+
+    // Find the last section whose offset is <= scrollOffset
+    for (var section in _sections) {
+      if (section.key == null || !_sectionOffsets.containsKey(section.key)) {
+        continue;
+      }
+
+      final sectionOffset = _sectionOffsets[section.key]!;
+      if (scrollOffset >= sectionOffset) {
+        currentOption = section.menuOption;
+      }
+    }
+
+    if (currentOption != null && currentOption != _selectedMenuOption) {
+      setState(() => _selectedMenuOption = currentOption!);
+    }
+  }
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: CustomScrollView(
-        slivers: [
-          SliverAppBar(
-            pinned: true,
-            toolbarHeight: AppDimensions.menuDesktopHeight,
-            backgroundColor: ColorName.card.withValues(alpha: 0.4),
-            title: MenuWidget(
-              onMenuOptionSelected: (option) => onMenuOptionSelected(
-                option,
-                context,
-              ),
+      body: Column(
+        children: [
+          Container(
+            color: ColorName.card.withValues(alpha: 0.4),
+            child: MenuWidget(
+              selectedMenuOption: _selectedMenuOption,
+              onMenuOptionSelected: onMenuOptionSelected,
             ),
           ),
-          SliverList(
-            delegate: SliverChildListDelegate(
-              [
-                HeaderPage(),
-                SizedBox(height: 200),
-                GoalPage(),
-                SizedBox(height: 200),
-                AboutMePage(),
-                SizedBox(height: 200),
-                MyApproachPage(),
-                SizedBox(height: 200),
-                SelectLevelPage(),
-                SizedBox(height: 200),
-                WhyMePage(),
-                SizedBox(height: 200),
-                MyStudentsPage(),
-                SizedBox(height: 200),
-                ReviewsPage(),
-                SizedBox(height: 200),
-                LearningProcessPage(),
-                SizedBox(height: 200),
-                LearningDetailsPage(),
-                SizedBox(height: 200),
-                ChooseYourPathPage(),
-                SizedBox(height: 200),
-                ApplyForCoursePage(),
-                SizedBox(height: 200),
-              ],
+          Expanded(
+            child: SingleChildScrollView(
+              controller: _scrollController,
+              child: Column(
+                key: _columnKey,
+                children: List.generate(
+                  _sections.length,
+                  (index) {
+                    return Column(
+                      children: [
+                        _sections[index].section,
+                        if (index < _sections.length - 1) SizedBox(height: 200),
+                      ],
+                    );
+                  },
+                ),
+              ),
             ),
           ),
         ],
@@ -54,8 +172,23 @@ class HomeDesktopPage extends StatelessWidget {
     );
   }
 
-  void onMenuOptionSelected(
+  Future<void> onMenuOptionSelected(
     MenuOption menuOptionSelected,
-    BuildContext context,
-  ) {}
+  ) async {
+    setState(() {
+      _selectedMenuOption = menuOptionSelected;
+    });
+    _scrollController.removeListener(_onScrollListener);
+
+    await Scrollable.ensureVisible(
+        _sections
+                .firstWhereOrNull((vm) => vm.menuOption == menuOptionSelected)
+                ?.key
+                ?.currentContext ??
+            context,
+        duration: Duration(
+          milliseconds: 500,
+        ));
+    _scrollController.addListener(_onScrollListener);
+  }
 }

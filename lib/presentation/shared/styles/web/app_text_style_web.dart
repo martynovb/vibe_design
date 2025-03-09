@@ -41,6 +41,13 @@ class AppTextStyleWeb {
     fontSize: 20,
     fontWeight: FontWeight.w400,
     height: 1.2,
+  );  
+  
+  
+  static const TextStyle _hintText = TextStyle(
+    fontSize: 16,
+    fontWeight: FontWeight.normal,
+    height: 1.2,
   );
 
   static TextTheme get textTheme => const TextTheme(
@@ -56,9 +63,11 @@ class AppTextStyleWeb {
         // Body Styles
         bodyLarge: _text,
         bodyMedium: _subText,
+        bodySmall: _hintText,
 
         // Label Styles
         labelLarge: _text,
         labelMedium: _subText,
+        labelSmall: _hintText,
       );
 }

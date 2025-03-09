@@ -11,7 +11,7 @@ class HomePage extends StatelessWidget {
         builder: (context, state) {
           return DeviceLayoutBuilder(
             layoutBuilder: (isMobile) =>
-                isMobile ? const HomeMobilePage() : const HomeDesktopPage(),
+                isMobile ? const HomeMobilePage() : HomeDesktopPage(),
           );
         },
       ),

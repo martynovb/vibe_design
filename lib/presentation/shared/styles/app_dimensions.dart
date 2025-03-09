@@ -56,7 +56,11 @@ class AppSpacing {
 
   static SizedBox get v_64 => vertical(64);
 
+  static SizedBox get v_90 => vertical(90);
+
   static SizedBox get v_100 => vertical(100);
+
+  static SizedBox get v_128 => vertical(128);
 }
 
 class Spacing {

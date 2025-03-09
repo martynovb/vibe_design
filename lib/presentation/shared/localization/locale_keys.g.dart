@@ -264,5 +264,8 @@ abstract class  LocaleKeys {
   static const applyForCourse_subtitle3 = 'applyForCourse.subtitle3';
   static const applyForCourse_description = 'applyForCourse.description';
   static const applyForCourse = 'applyForCourse';
+  static const footerSection_title = 'footerSection.title';
+  static const footerSection_email_hint = 'footerSection.email_hint';
+  static const footerSection = 'footerSection';
 
 }

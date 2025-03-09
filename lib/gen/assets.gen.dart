@@ -19,6 +19,10 @@ class $AssetsImagesGen {
   SvgGenImage get arrowRight =>
       const SvgGenImage('assets/images/arrow-right.svg');
 
+  /// File path: assets/images/arrow_input_email.svg
+  SvgGenImage get arrowInputEmail =>
+      const SvgGenImage('assets/images/arrow_input_email.svg');
+
   /// File path: assets/images/bills_and_coins.png
   AssetGenImage get billsAndCoins =>
       const AssetGenImage('assets/images/bills_and_coins.png');
@@ -36,6 +40,9 @@ class $AssetsImagesGen {
   /// File path: assets/images/fire.png
   AssetGenImage get fire => const AssetGenImage('assets/images/fire.png');
 
+  /// File path: assets/images/google.svg
+  SvgGenImage get google => const SvgGenImage('assets/images/google.svg');
+
   /// File path: assets/images/hashtag.png
   AssetGenImage get hashtag => const AssetGenImage('assets/images/hashtag.png');
 
@@ -51,6 +58,9 @@ class $AssetsImagesGen {
   /// File path: assets/images/laptop_left.png
   AssetGenImage get laptopLeft =>
       const AssetGenImage('assets/images/laptop_left.png');
+
+  /// File path: assets/images/linkedin.svg
+  SvgGenImage get linkedin => const SvgGenImage('assets/images/linkedin.svg');
 
   /// File path: assets/images/logo.svg
   SvgGenImage get logo => const SvgGenImage('assets/images/logo.svg');
@@ -153,19 +163,25 @@ class $AssetsImagesGen {
   AssetGenImage get targetVertical =>
       const AssetGenImage('assets/images/target_vertical.png');
 
+  /// File path: assets/images/telegram.svg
+  SvgGenImage get telegram => const SvgGenImage('assets/images/telegram.svg');
+
   /// List of all assets
   List<dynamic> get values => [
         arrowRight,
+        arrowInputEmail,
         billsAndCoins,
         coin,
         cup,
         dollarBill,
         fire,
+        google,
         hashtag,
         heart,
         instagram,
         koza,
         laptopLeft,
+        linkedin,
         logo,
         lovelyFace,
         moneyBrick,
@@ -192,7 +208,8 @@ class $AssetsImagesGen {
         studentWork7,
         studentWork8,
         studentWork9,
-        targetVertical
+        targetVertical,
+        telegram
       ];
 }
 

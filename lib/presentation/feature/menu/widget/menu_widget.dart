@@ -1,10 +1,13 @@
 part of '../menu.dart';
 
 class MenuWidget extends StatefulWidget {
+  final MenuOption selectedMenuOption;
+
   final Function(MenuOption) onMenuOptionSelected;
 
   const MenuWidget({
     super.key,
+    this.selectedMenuOption = MenuOption.home,
     required this.onMenuOptionSelected,
   });
 
@@ -13,27 +16,18 @@ class MenuWidget extends StatefulWidget {
 }
 
 class MenuWidgetState extends State<MenuWidget> {
-  MenuOption _selectedMenuOption = MenuOption.home;
-
   @override
   Widget build(BuildContext context) {
     return DeviceLayoutBuilder(layoutBuilder: (isMobile) {
       return isMobile
           ? MenuMobileWidget(
-              selectedMenuOption: _selectedMenuOption,
-              onMenuOptionSelected: setSelectedMenuOption,
+              selectedMenuOption: widget.selectedMenuOption,
+              onMenuOptionSelected: widget.onMenuOptionSelected,
             )
           : MenuDesktopWidget(
-              selectedMenuOption: _selectedMenuOption,
-              onMenuOptionSelected: setSelectedMenuOption,
+              selectedMenuOption: widget.selectedMenuOption,
+              onMenuOptionSelected: widget.onMenuOptionSelected,
             );
-    });
-  }
-
-  void setSelectedMenuOption(MenuOption option) {
-    widget.onMenuOptionSelected(option);
-    setState(() {
-      _selectedMenuOption = option;
     });
   }
 }
