@@ -23,14 +23,38 @@ class MenuOptionWidget extends StatelessWidget {
       highlightColor: Colors.transparent,
       child: Padding(
         padding: const EdgeInsets.all(AppDimensions.insetsButton),
-        child: Text(
-          text,
-          style: TextTheme.of(context).bodyMedium?.copyWith(
-                color: isSelected ? ColorName.accent : ColorName.title,
-                fontWeight: isSelected ? FontWeight.bold : FontWeight.normal,
+        child: Stack(
+          alignment: Alignment.center,
+          children: [
+            // Always render bold version for consistent layout
+            Opacity(
+              opacity: 0,
+              child: _buildText(
+                fontWeight: FontWeight.bold,
+                context: context,
               ),
+            ),
+            // Visible text
+            _buildText(
+              fontWeight: isSelected ? FontWeight.bold : FontWeight.normal,
+              context: context,
+            )
+          ],
         ),
       ),
+    );
+  }
+
+  Widget _buildText({
+    required FontWeight fontWeight,
+    required BuildContext context,
+  }) {
+    return Text(
+      text,
+      style: TextTheme.of(context).bodyMedium?.copyWith(
+            color: isSelected ? ColorName.accent : ColorName.title,
+            fontWeight: fontWeight,
+          ),
     );
   }
 }

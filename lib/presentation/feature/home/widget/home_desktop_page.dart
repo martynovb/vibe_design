@@ -14,7 +14,7 @@ class HomeDesktopState extends State<HomeDesktopPage> {
   final Map<GlobalKey, double> _sectionOffsets = {};
   final _columnKey = GlobalKey();
   late VoidCallback _onScrollListener;
-
+  var _isScrolling = false;
   @override
   void didChangeDependencies() {
     final homeKey = GlobalKey();
@@ -116,6 +116,9 @@ class HomeDesktopState extends State<HomeDesktopPage> {
   }
 
   void _onScroll() {
+    if (_scrollController.position.outOfRange) return;
+    if (!_scrollController.position.isScrollingNotifier.value) return;
+
     final scrollOffset = _scrollController.offset;
     MenuOption? currentOption;
     final double bottomThreshold = 100;
@@ -147,6 +150,14 @@ class HomeDesktopState extends State<HomeDesktopPage> {
     if (currentOption != null && currentOption != _selectedMenuOption) {
       setState(() => _selectedMenuOption = currentOption!);
     }
+  }
+
+  @override
+  void didUpdateWidget(HomeDesktopPage oldWidget) {
+    super.didUpdateWidget(oldWidget);
+    WidgetsBinding.instance.addPostFrameCallback((_) {
+      _calculateSectionOffsets();
+    });
   }
 
   @override
@@ -188,9 +199,13 @@ class HomeDesktopState extends State<HomeDesktopPage> {
   Future<void> onMenuOptionSelected(
     MenuOption menuOptionSelected,
   ) async {
+    if (_isScrolling) return;
+
+    _isScrolling = true;
     setState(() {
       _selectedMenuOption = menuOptionSelected;
     });
+
     _scrollController.removeListener(_onScrollListener);
 
     await Scrollable.ensureVisible(
@@ -203,5 +218,6 @@ class HomeDesktopState extends State<HomeDesktopPage> {
           milliseconds: 500,
         ));
     _scrollController.addListener(_onScrollListener);
+    _isScrolling = false;
   }
 }

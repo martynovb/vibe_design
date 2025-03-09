@@ -14,7 +14,6 @@ class MenuDesktopWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return Center(
       child: SizedBox(
-        width: AppDimensions.minDesktopWidth,
         height: AppDimensions.menuDesktopHeight,
         child: Row(
           mainAxisAlignment: MainAxisAlignment.center,
@@ -77,16 +76,52 @@ class MenuDesktopWidget extends StatelessWidget {
               onMenuOptionSelected: onMenuOptionSelected,
             ),
             AppSpacing.h_48,
-            InkWell(
-              hoverColor: Colors.transparent,
-              splashColor: Colors.transparent,
-              highlightColor: Colors.transparent,
-              child: Assets.images.instagram.svg(),
-              onTap: () => launchUrl(Uri.parse(AppConstants.instagramProfile)),
+            _socialNetworkIcon(
+              callback: () => launchUrl(
+                Uri.parse(AppConstants.instagramProfile),
+              ),
+              iconPath: Assets.images.instagram.path,
+              hoveredIconPath: Assets.images.instagramHovered.path,
+              size: 32,
             ),
           ],
         ),
       ),
+    );
+  }
+
+  Widget _socialNetworkIcon({
+    required String iconPath,
+    required String hoveredIconPath,
+    required VoidCallback callback,
+    double size = 24,
+  }) {
+    var isHovered = false;
+    return StatefulBuilder(
+      builder: (context, setState) {
+        return InkWell(
+          hoverColor: Colors.transparent,
+          splashColor: Colors.transparent,
+          highlightColor: Colors.transparent,
+          onHover: (isHovering) {
+            setState(() {
+              isHovered = isHovering;
+            });
+          },
+          onTap: callback,
+          child: isHovered
+              ? SvgPicture.asset(
+                  hoveredIconPath,
+                  width: size,
+                  height: size,
+                )
+              : SvgPicture.asset(
+                  iconPath,
+                  width: size,
+                  height: size,
+                ),
+        );
+      },
     );
   }
 }
