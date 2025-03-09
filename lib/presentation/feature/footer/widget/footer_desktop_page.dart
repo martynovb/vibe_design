@@ -135,64 +135,28 @@ class FooterDesktopPage extends StatelessWidget {
                           ),
                     ),
                     Spacer(),
-                    InkWell(
-                      hoverColor: Colors.transparent,
-                      splashColor: Colors.transparent,
-                      highlightColor: Colors.transparent,
-                      onTap: () {},
-                      child: Assets.images.telegram.svg(
-                        colorFilter: ColorFilter.mode(
-                          ColorName.descriptionText,
-                          BlendMode.srcIn,
-                        ),
-                        width: 24,
-                        height: 24,
-                      ),
+                    _socialNetworkIcon(
+                      iconPath: Assets.images.telegram.path,
+                      hoveredIconPath: Assets.images.telegramHovered.path,
+                      callback: () {},
                     ),
                     AppSpacing.h_48,
-                    InkWell(
-                      hoverColor: Colors.transparent,
-                      splashColor: Colors.transparent,
-                      highlightColor: Colors.transparent,
-                      onTap: () {},
-                      child: Assets.images.google.svg(
-                        colorFilter: ColorFilter.mode(
-                          ColorName.descriptionText,
-                          BlendMode.srcIn,
-                        ),
-                        width: 24,
-                        height: 24,
-                      ),
+                    _socialNetworkIcon(
+                      iconPath: Assets.images.google.path,
+                      hoveredIconPath: Assets.images.googleHovered.path,
+                      callback: () {},
                     ),
                     AppSpacing.h_48,
-                    InkWell(
-                      hoverColor: Colors.transparent,
-                      splashColor: Colors.transparent,
-                      highlightColor: Colors.transparent,
-                      onTap: () {},
-                      child: Assets.images.instagram.svg(
-                        colorFilter: ColorFilter.mode(
-                          ColorName.descriptionText,
-                          BlendMode.srcIn,
-                        ),
-                        width: 30,
-                        height: 30,
-                      ),
+                    _socialNetworkIcon(
+                      iconPath: Assets.images.instagram.path,
+                      hoveredIconPath: Assets.images.instagramHovered.path,
+                      callback: () {},
                     ),
                     AppSpacing.h_48,
-                    InkWell(
-                      hoverColor: Colors.transparent,
-                      splashColor: Colors.transparent,
-                      highlightColor: Colors.transparent,
-                      onTap: () {},
-                      child: Assets.images.linkedin.svg(
-                        colorFilter: ColorFilter.mode(
-                          ColorName.descriptionText,
-                          BlendMode.srcIn,
-                        ),
-                        width: 24,
-                        height: 24,
-                      ),
+                    _socialNetworkIcon(
+                      iconPath: Assets.images.linkedin.path,
+                      hoveredIconPath: Assets.images.linkedinHovered.path,
+                      callback: () {},
                     ),
                     AppSpacing.h_48,
                   ],
@@ -261,6 +225,40 @@ class FooterDesktopPage extends StatelessWidget {
           ],
         ),
       ),
+    );
+  }
+
+  Widget _socialNetworkIcon({
+    required String iconPath,
+    required String hoveredIconPath,
+    required VoidCallback callback,
+  }) {
+    var isHovered = false;
+    return StatefulBuilder(
+      builder: (context, setState) {
+        return InkWell(
+          hoverColor: Colors.transparent,
+          splashColor: Colors.transparent,
+          highlightColor: Colors.transparent,
+          onHover: (isHovering) {
+            setState(() {
+              isHovered = isHovering;
+            });
+          },
+          onTap: callback,
+          child: isHovered
+              ? SvgPicture.asset(
+                  hoveredIconPath,
+                  width: 24,
+                  height: 24,
+                )
+              : SvgPicture.asset(
+                  iconPath,
+                  width: 24,
+                  height: 24,
+                ),
+        );
+      },
     );
   }
 

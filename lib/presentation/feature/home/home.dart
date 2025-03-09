@@ -6,7 +6,6 @@ import 'package:vibe_design/presentation/feature/apply_for_course/apply_for_cour
 import 'package:vibe_design/presentation/feature/choose_your_path/choose_your_path_level.dart';
 import 'package:vibe_design/presentation/feature/footer/footer.dart';
 import 'package:vibe_design/presentation/feature/home/bloc/model/section_view_model.dart';
-import 'package:vibe_design/presentation/shared/styles/app_dimensions.dart';
 
 import '../../shared/di/di.dart';
 import '../../shared/widgets/device_layout_builder.dart';

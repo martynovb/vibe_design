@@ -43,6 +43,10 @@ class $AssetsImagesGen {
   /// File path: assets/images/google.svg
   SvgGenImage get google => const SvgGenImage('assets/images/google.svg');
 
+  /// File path: assets/images/google_hovered.svg
+  SvgGenImage get googleHovered =>
+      const SvgGenImage('assets/images/google_hovered.svg');
+
   /// File path: assets/images/hashtag.png
   AssetGenImage get hashtag => const AssetGenImage('assets/images/hashtag.png');
 
@@ -51,6 +55,10 @@ class $AssetsImagesGen {
 
   /// File path: assets/images/instagram.svg
   SvgGenImage get instagram => const SvgGenImage('assets/images/instagram.svg');
+
+  /// File path: assets/images/instagram_hovered.svg
+  SvgGenImage get instagramHovered =>
+      const SvgGenImage('assets/images/instagram_hovered.svg');
 
   /// File path: assets/images/koza.png
   AssetGenImage get koza => const AssetGenImage('assets/images/koza.png');
@@ -61,6 +69,10 @@ class $AssetsImagesGen {
 
   /// File path: assets/images/linkedin.svg
   SvgGenImage get linkedin => const SvgGenImage('assets/images/linkedin.svg');
+
+  /// File path: assets/images/linkedin_hovered.svg
+  SvgGenImage get linkedinHovered =>
+      const SvgGenImage('assets/images/linkedin_hovered.svg');
 
   /// File path: assets/images/logo.svg
   SvgGenImage get logo => const SvgGenImage('assets/images/logo.svg');
@@ -166,6 +178,10 @@ class $AssetsImagesGen {
   /// File path: assets/images/telegram.svg
   SvgGenImage get telegram => const SvgGenImage('assets/images/telegram.svg');
 
+  /// File path: assets/images/telegram_hovered.svg
+  SvgGenImage get telegramHovered =>
+      const SvgGenImage('assets/images/telegram_hovered.svg');
+
   /// List of all assets
   List<dynamic> get values => [
         arrowRight,
@@ -176,12 +192,15 @@ class $AssetsImagesGen {
         dollarBill,
         fire,
         google,
+        googleHovered,
         hashtag,
         heart,
         instagram,
+        instagramHovered,
         koza,
         laptopLeft,
         linkedin,
+        linkedinHovered,
         logo,
         lovelyFace,
         moneyBrick,
@@ -209,7 +228,8 @@ class $AssetsImagesGen {
         studentWork8,
         studentWork9,
         targetVertical,
-        telegram
+        telegram,
+        telegramHovered
       ];
 }
 

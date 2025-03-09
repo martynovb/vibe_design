@@ -118,8 +118,9 @@ class HomeDesktopState extends State<HomeDesktopPage> {
   void _onScroll() {
     final scrollOffset = _scrollController.offset;
     MenuOption? currentOption;
+    final double bottomThreshold = 100;
 
-    // Find the last section whose offset is <= scrollOffset
+    // 1. Find the currently visible section using scroll position
     for (var section in _sections) {
       if (section.key == null || !_sectionOffsets.containsKey(section.key)) {
         continue;
@@ -131,6 +132,18 @@ class HomeDesktopState extends State<HomeDesktopPage> {
       }
     }
 
+    // 2. Check if we're at the bottom of the scroll
+    final maxScroll = _scrollController.position.maxScrollExtent;
+    final currentScroll = _scrollController.position.pixels;
+    final isAtBottom = currentScroll >= maxScroll - bottomThreshold;
+
+    if (isAtBottom) {
+      // 3. Find the last available menu option
+      final lastMenuSection = _sections.last;
+      currentOption = lastMenuSection.menuOption;
+    }
+
+    // 4. Update state only if needed
     if (currentOption != null && currentOption != _selectedMenuOption) {
       setState(() => _selectedMenuOption = currentOption!);
     }
