@@ -1,11 +1,12 @@
 part of '../footer.dart';
 
 class FooterDesktopPage extends StatelessWidget {
-  const FooterDesktopPage({
+  FooterDesktopPage({
     super.key,
     required this.onMenuOptionPressed,
   });
 
+  final TextEditingController _emailController = TextEditingController();
   final Function(MenuOption option) onMenuOptionPressed;
 
   @override
@@ -182,6 +183,7 @@ class FooterDesktopPage extends StatelessWidget {
           children: [
             Expanded(
               child: TextField(
+                controller: _emailController,
                 decoration: InputDecoration(
                   border: InputBorder.none,
                   hintText: LocaleKeys.footerSection_email_hint.tr(),
@@ -201,7 +203,12 @@ class FooterDesktopPage extends StatelessWidget {
             Padding(
               padding: const EdgeInsets.all(1),
               child: InkWell(
-                onTap: () {},
+                onTap: () {
+                  context.read<FooterBloc>().add(
+                        FooterEvent.applyForCourse(_emailController.text),
+                      );
+                  _emailController.text = '';
+                },
                 hoverColor: Colors.transparent,
                 splashColor: Colors.transparent,
                 highlightColor: Colors.transparent,

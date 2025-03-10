@@ -7,6 +7,7 @@ import 'package:vibe_design/presentation/shared/app_constants.dart';
 import '../../shared/navigation/go_router.dart';
 import '../../shared/navigation/route_constants.dart';
 import '../../shared/styles/app_styles.dart';
+import '../footer/bloc/footer_bloc.dart';
 import 'bloc/app_bloc.dart';
 
 class VibeDesignApp extends StatelessWidget {
@@ -28,6 +29,9 @@ class VibeDesignApp extends StatelessWidget {
               ..add(
                 const AppEvent.appStarted(),
               ),
+          ),
+          BlocProvider(
+            create: (context) => GetIt.I.get<FooterBloc>(),
           ),
         ],
         child: const VibeDesignAppWidget(),
