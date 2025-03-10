@@ -28,6 +28,10 @@ class FooterBloc extends Bloc<FooterEvent, FooterState> {
   }
 
   Future<void> _onApplyForCourse(_ApplyForCourse event, emit) async {
+    final text = event.email.trim();
+    if (text.isEmpty) {
+      return;
+    }
     await telegramRepo.applyForCourse(email: event.email);
     emit(FooterState(status: FormzSubmissionStatus.initial));
   }

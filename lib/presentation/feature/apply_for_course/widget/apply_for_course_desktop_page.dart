@@ -114,7 +114,7 @@ class ApplyForCourseDesktopPage extends StatelessWidget {
                 Spacer(),
                 ElevatedButtonType1(
                   text: LocaleKeys.freeTrialLesson.tr(),
-                  onPressed: () {},
+                  onPressed: () => context.read<AppBloc>().add(AppEvent.freeLesson()),
                 ),
                 AppSpacing.v_24,
               ],

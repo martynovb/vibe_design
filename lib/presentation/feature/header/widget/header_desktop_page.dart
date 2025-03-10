@@ -154,7 +154,8 @@ class HeaderDesktopPage extends StatelessWidget {
                 children: [
                   ElevatedButtonType1(
                     text: LocaleKeys.freeTrialLesson.tr(),
-                    onPressed: () {},
+                    onPressed: () =>
+                        context.read<AppBloc>().add(AppEvent.freeLesson()),
                   ),
                   AppSpacing.h_32,
                   Text.rich(

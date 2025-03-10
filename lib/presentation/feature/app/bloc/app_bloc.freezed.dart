@@ -19,50 +19,62 @@ mixin _$AppEvent {
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function() appStarted,
-    required TResult Function() contactSupport,
-    required TResult Function() openTermsOfService,
-    required TResult Function() openPrivacyPolicy,
+    required TResult Function() freeLesson,
+    required TResult Function() openLinkedIn,
+    required TResult Function() openInstagram,
+    required TResult Function() openTelegram,
+    required TResult Function() sendEmail,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function()? appStarted,
-    TResult? Function()? contactSupport,
-    TResult? Function()? openTermsOfService,
-    TResult? Function()? openPrivacyPolicy,
+    TResult? Function()? freeLesson,
+    TResult? Function()? openLinkedIn,
+    TResult? Function()? openInstagram,
+    TResult? Function()? openTelegram,
+    TResult? Function()? sendEmail,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? appStarted,
-    TResult Function()? contactSupport,
-    TResult Function()? openTermsOfService,
-    TResult Function()? openPrivacyPolicy,
+    TResult Function()? freeLesson,
+    TResult Function()? openLinkedIn,
+    TResult Function()? openInstagram,
+    TResult Function()? openTelegram,
+    TResult Function()? sendEmail,
     required TResult orElse(),
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
     required TResult Function(_AppStarted value) appStarted,
-    required TResult Function(_ContactSupport value) contactSupport,
-    required TResult Function(_OpenTermsOfService value) openTermsOfService,
-    required TResult Function(_OpenPrivacyPolicy value) openPrivacyPolicy,
+    required TResult Function(_FreeLesson value) freeLesson,
+    required TResult Function(_OpenLinkedIn value) openLinkedIn,
+    required TResult Function(_OpenInstagram value) openInstagram,
+    required TResult Function(_OpenTelegram value) openTelegram,
+    required TResult Function(_SendEmail value) sendEmail,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
     TResult? Function(_AppStarted value)? appStarted,
-    TResult? Function(_ContactSupport value)? contactSupport,
-    TResult? Function(_OpenTermsOfService value)? openTermsOfService,
-    TResult? Function(_OpenPrivacyPolicy value)? openPrivacyPolicy,
+    TResult? Function(_FreeLesson value)? freeLesson,
+    TResult? Function(_OpenLinkedIn value)? openLinkedIn,
+    TResult? Function(_OpenInstagram value)? openInstagram,
+    TResult? Function(_OpenTelegram value)? openTelegram,
+    TResult? Function(_SendEmail value)? sendEmail,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(_AppStarted value)? appStarted,
-    TResult Function(_ContactSupport value)? contactSupport,
-    TResult Function(_OpenTermsOfService value)? openTermsOfService,
-    TResult Function(_OpenPrivacyPolicy value)? openPrivacyPolicy,
+    TResult Function(_FreeLesson value)? freeLesson,
+    TResult Function(_OpenLinkedIn value)? openLinkedIn,
+    TResult Function(_OpenInstagram value)? openInstagram,
+    TResult Function(_OpenTelegram value)? openTelegram,
+    TResult Function(_SendEmail value)? sendEmail,
     required TResult orElse(),
   }) =>
       throw _privateConstructorUsedError;
@@ -130,9 +142,11 @@ class _$AppStartedImpl implements _AppStarted {
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function() appStarted,
-    required TResult Function() contactSupport,
-    required TResult Function() openTermsOfService,
-    required TResult Function() openPrivacyPolicy,
+    required TResult Function() freeLesson,
+    required TResult Function() openLinkedIn,
+    required TResult Function() openInstagram,
+    required TResult Function() openTelegram,
+    required TResult Function() sendEmail,
   }) {
     return appStarted();
   }
@@ -141,9 +155,11 @@ class _$AppStartedImpl implements _AppStarted {
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function()? appStarted,
-    TResult? Function()? contactSupport,
-    TResult? Function()? openTermsOfService,
-    TResult? Function()? openPrivacyPolicy,
+    TResult? Function()? freeLesson,
+    TResult? Function()? openLinkedIn,
+    TResult? Function()? openInstagram,
+    TResult? Function()? openTelegram,
+    TResult? Function()? sendEmail,
   }) {
     return appStarted?.call();
   }
@@ -152,9 +168,11 @@ class _$AppStartedImpl implements _AppStarted {
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? appStarted,
-    TResult Function()? contactSupport,
-    TResult Function()? openTermsOfService,
-    TResult Function()? openPrivacyPolicy,
+    TResult Function()? freeLesson,
+    TResult Function()? openLinkedIn,
+    TResult Function()? openInstagram,
+    TResult Function()? openTelegram,
+    TResult Function()? sendEmail,
     required TResult orElse(),
   }) {
     if (appStarted != null) {
@@ -167,9 +185,11 @@ class _$AppStartedImpl implements _AppStarted {
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
     required TResult Function(_AppStarted value) appStarted,
-    required TResult Function(_ContactSupport value) contactSupport,
-    required TResult Function(_OpenTermsOfService value) openTermsOfService,
-    required TResult Function(_OpenPrivacyPolicy value) openPrivacyPolicy,
+    required TResult Function(_FreeLesson value) freeLesson,
+    required TResult Function(_OpenLinkedIn value) openLinkedIn,
+    required TResult Function(_OpenInstagram value) openInstagram,
+    required TResult Function(_OpenTelegram value) openTelegram,
+    required TResult Function(_SendEmail value) sendEmail,
   }) {
     return appStarted(this);
   }
@@ -178,9 +198,11 @@ class _$AppStartedImpl implements _AppStarted {
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
     TResult? Function(_AppStarted value)? appStarted,
-    TResult? Function(_ContactSupport value)? contactSupport,
-    TResult? Function(_OpenTermsOfService value)? openTermsOfService,
-    TResult? Function(_OpenPrivacyPolicy value)? openPrivacyPolicy,
+    TResult? Function(_FreeLesson value)? freeLesson,
+    TResult? Function(_OpenLinkedIn value)? openLinkedIn,
+    TResult? Function(_OpenInstagram value)? openInstagram,
+    TResult? Function(_OpenTelegram value)? openTelegram,
+    TResult? Function(_SendEmail value)? sendEmail,
   }) {
     return appStarted?.call(this);
   }
@@ -189,9 +211,11 @@ class _$AppStartedImpl implements _AppStarted {
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(_AppStarted value)? appStarted,
-    TResult Function(_ContactSupport value)? contactSupport,
-    TResult Function(_OpenTermsOfService value)? openTermsOfService,
-    TResult Function(_OpenPrivacyPolicy value)? openPrivacyPolicy,
+    TResult Function(_FreeLesson value)? freeLesson,
+    TResult Function(_OpenLinkedIn value)? openLinkedIn,
+    TResult Function(_OpenInstagram value)? openInstagram,
+    TResult Function(_OpenTelegram value)? openTelegram,
+    TResult Function(_SendEmail value)? sendEmail,
     required TResult orElse(),
   }) {
     if (appStarted != null) {
@@ -206,18 +230,18 @@ abstract class _AppStarted implements AppEvent {
 }
 
 /// @nodoc
-abstract class _$$ContactSupportImplCopyWith<$Res> {
-  factory _$$ContactSupportImplCopyWith(_$ContactSupportImpl value,
-          $Res Function(_$ContactSupportImpl) then) =
-      __$$ContactSupportImplCopyWithImpl<$Res>;
+abstract class _$$FreeLessonImplCopyWith<$Res> {
+  factory _$$FreeLessonImplCopyWith(
+          _$FreeLessonImpl value, $Res Function(_$FreeLessonImpl) then) =
+      __$$FreeLessonImplCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class __$$ContactSupportImplCopyWithImpl<$Res>
-    extends _$AppEventCopyWithImpl<$Res, _$ContactSupportImpl>
-    implements _$$ContactSupportImplCopyWith<$Res> {
-  __$$ContactSupportImplCopyWithImpl(
-      _$ContactSupportImpl _value, $Res Function(_$ContactSupportImpl) _then)
+class __$$FreeLessonImplCopyWithImpl<$Res>
+    extends _$AppEventCopyWithImpl<$Res, _$FreeLessonImpl>
+    implements _$$FreeLessonImplCopyWith<$Res> {
+  __$$FreeLessonImplCopyWithImpl(
+      _$FreeLessonImpl _value, $Res Function(_$FreeLessonImpl) _then)
       : super(_value, _then);
 
   /// Create a copy of AppEvent
@@ -226,18 +250,18 @@ class __$$ContactSupportImplCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$ContactSupportImpl implements _ContactSupport {
-  const _$ContactSupportImpl();
+class _$FreeLessonImpl implements _FreeLesson {
+  const _$FreeLessonImpl();
 
   @override
   String toString() {
-    return 'AppEvent.contactSupport()';
+    return 'AppEvent.freeLesson()';
   }
 
   @override
   bool operator ==(Object other) {
     return identical(this, other) ||
-        (other.runtimeType == runtimeType && other is _$ContactSupportImpl);
+        (other.runtimeType == runtimeType && other is _$FreeLessonImpl);
   }
 
   @override
@@ -247,35 +271,41 @@ class _$ContactSupportImpl implements _ContactSupport {
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function() appStarted,
-    required TResult Function() contactSupport,
-    required TResult Function() openTermsOfService,
-    required TResult Function() openPrivacyPolicy,
+    required TResult Function() freeLesson,
+    required TResult Function() openLinkedIn,
+    required TResult Function() openInstagram,
+    required TResult Function() openTelegram,
+    required TResult Function() sendEmail,
   }) {
-    return contactSupport();
+    return freeLesson();
   }
 
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function()? appStarted,
-    TResult? Function()? contactSupport,
-    TResult? Function()? openTermsOfService,
-    TResult? Function()? openPrivacyPolicy,
+    TResult? Function()? freeLesson,
+    TResult? Function()? openLinkedIn,
+    TResult? Function()? openInstagram,
+    TResult? Function()? openTelegram,
+    TResult? Function()? sendEmail,
   }) {
-    return contactSupport?.call();
+    return freeLesson?.call();
   }
 
   @override
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? appStarted,
-    TResult Function()? contactSupport,
-    TResult Function()? openTermsOfService,
-    TResult Function()? openPrivacyPolicy,
+    TResult Function()? freeLesson,
+    TResult Function()? openLinkedIn,
+    TResult Function()? openInstagram,
+    TResult Function()? openTelegram,
+    TResult Function()? sendEmail,
     required TResult orElse(),
   }) {
-    if (contactSupport != null) {
-      return contactSupport();
+    if (freeLesson != null) {
+      return freeLesson();
     }
     return orElse();
   }
@@ -284,57 +314,63 @@ class _$ContactSupportImpl implements _ContactSupport {
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
     required TResult Function(_AppStarted value) appStarted,
-    required TResult Function(_ContactSupport value) contactSupport,
-    required TResult Function(_OpenTermsOfService value) openTermsOfService,
-    required TResult Function(_OpenPrivacyPolicy value) openPrivacyPolicy,
+    required TResult Function(_FreeLesson value) freeLesson,
+    required TResult Function(_OpenLinkedIn value) openLinkedIn,
+    required TResult Function(_OpenInstagram value) openInstagram,
+    required TResult Function(_OpenTelegram value) openTelegram,
+    required TResult Function(_SendEmail value) sendEmail,
   }) {
-    return contactSupport(this);
+    return freeLesson(this);
   }
 
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
     TResult? Function(_AppStarted value)? appStarted,
-    TResult? Function(_ContactSupport value)? contactSupport,
-    TResult? Function(_OpenTermsOfService value)? openTermsOfService,
-    TResult? Function(_OpenPrivacyPolicy value)? openPrivacyPolicy,
+    TResult? Function(_FreeLesson value)? freeLesson,
+    TResult? Function(_OpenLinkedIn value)? openLinkedIn,
+    TResult? Function(_OpenInstagram value)? openInstagram,
+    TResult? Function(_OpenTelegram value)? openTelegram,
+    TResult? Function(_SendEmail value)? sendEmail,
   }) {
-    return contactSupport?.call(this);
+    return freeLesson?.call(this);
   }
 
   @override
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(_AppStarted value)? appStarted,
-    TResult Function(_ContactSupport value)? contactSupport,
-    TResult Function(_OpenTermsOfService value)? openTermsOfService,
-    TResult Function(_OpenPrivacyPolicy value)? openPrivacyPolicy,
+    TResult Function(_FreeLesson value)? freeLesson,
+    TResult Function(_OpenLinkedIn value)? openLinkedIn,
+    TResult Function(_OpenInstagram value)? openInstagram,
+    TResult Function(_OpenTelegram value)? openTelegram,
+    TResult Function(_SendEmail value)? sendEmail,
     required TResult orElse(),
   }) {
-    if (contactSupport != null) {
-      return contactSupport(this);
+    if (freeLesson != null) {
+      return freeLesson(this);
     }
     return orElse();
   }
 }
 
-abstract class _ContactSupport implements AppEvent {
-  const factory _ContactSupport() = _$ContactSupportImpl;
+abstract class _FreeLesson implements AppEvent {
+  const factory _FreeLesson() = _$FreeLessonImpl;
 }
 
 /// @nodoc
-abstract class _$$OpenTermsOfServiceImplCopyWith<$Res> {
-  factory _$$OpenTermsOfServiceImplCopyWith(_$OpenTermsOfServiceImpl value,
-          $Res Function(_$OpenTermsOfServiceImpl) then) =
-      __$$OpenTermsOfServiceImplCopyWithImpl<$Res>;
+abstract class _$$OpenLinkedInImplCopyWith<$Res> {
+  factory _$$OpenLinkedInImplCopyWith(
+          _$OpenLinkedInImpl value, $Res Function(_$OpenLinkedInImpl) then) =
+      __$$OpenLinkedInImplCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class __$$OpenTermsOfServiceImplCopyWithImpl<$Res>
-    extends _$AppEventCopyWithImpl<$Res, _$OpenTermsOfServiceImpl>
-    implements _$$OpenTermsOfServiceImplCopyWith<$Res> {
-  __$$OpenTermsOfServiceImplCopyWithImpl(_$OpenTermsOfServiceImpl _value,
-      $Res Function(_$OpenTermsOfServiceImpl) _then)
+class __$$OpenLinkedInImplCopyWithImpl<$Res>
+    extends _$AppEventCopyWithImpl<$Res, _$OpenLinkedInImpl>
+    implements _$$OpenLinkedInImplCopyWith<$Res> {
+  __$$OpenLinkedInImplCopyWithImpl(
+      _$OpenLinkedInImpl _value, $Res Function(_$OpenLinkedInImpl) _then)
       : super(_value, _then);
 
   /// Create a copy of AppEvent
@@ -343,18 +379,18 @@ class __$$OpenTermsOfServiceImplCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$OpenTermsOfServiceImpl implements _OpenTermsOfService {
-  const _$OpenTermsOfServiceImpl();
+class _$OpenLinkedInImpl implements _OpenLinkedIn {
+  const _$OpenLinkedInImpl();
 
   @override
   String toString() {
-    return 'AppEvent.openTermsOfService()';
+    return 'AppEvent.openLinkedIn()';
   }
 
   @override
   bool operator ==(Object other) {
     return identical(this, other) ||
-        (other.runtimeType == runtimeType && other is _$OpenTermsOfServiceImpl);
+        (other.runtimeType == runtimeType && other is _$OpenLinkedInImpl);
   }
 
   @override
@@ -364,35 +400,41 @@ class _$OpenTermsOfServiceImpl implements _OpenTermsOfService {
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function() appStarted,
-    required TResult Function() contactSupport,
-    required TResult Function() openTermsOfService,
-    required TResult Function() openPrivacyPolicy,
+    required TResult Function() freeLesson,
+    required TResult Function() openLinkedIn,
+    required TResult Function() openInstagram,
+    required TResult Function() openTelegram,
+    required TResult Function() sendEmail,
   }) {
-    return openTermsOfService();
+    return openLinkedIn();
   }
 
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function()? appStarted,
-    TResult? Function()? contactSupport,
-    TResult? Function()? openTermsOfService,
-    TResult? Function()? openPrivacyPolicy,
+    TResult? Function()? freeLesson,
+    TResult? Function()? openLinkedIn,
+    TResult? Function()? openInstagram,
+    TResult? Function()? openTelegram,
+    TResult? Function()? sendEmail,
   }) {
-    return openTermsOfService?.call();
+    return openLinkedIn?.call();
   }
 
   @override
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? appStarted,
-    TResult Function()? contactSupport,
-    TResult Function()? openTermsOfService,
-    TResult Function()? openPrivacyPolicy,
+    TResult Function()? freeLesson,
+    TResult Function()? openLinkedIn,
+    TResult Function()? openInstagram,
+    TResult Function()? openTelegram,
+    TResult Function()? sendEmail,
     required TResult orElse(),
   }) {
-    if (openTermsOfService != null) {
-      return openTermsOfService();
+    if (openLinkedIn != null) {
+      return openLinkedIn();
     }
     return orElse();
   }
@@ -401,57 +443,63 @@ class _$OpenTermsOfServiceImpl implements _OpenTermsOfService {
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
     required TResult Function(_AppStarted value) appStarted,
-    required TResult Function(_ContactSupport value) contactSupport,
-    required TResult Function(_OpenTermsOfService value) openTermsOfService,
-    required TResult Function(_OpenPrivacyPolicy value) openPrivacyPolicy,
+    required TResult Function(_FreeLesson value) freeLesson,
+    required TResult Function(_OpenLinkedIn value) openLinkedIn,
+    required TResult Function(_OpenInstagram value) openInstagram,
+    required TResult Function(_OpenTelegram value) openTelegram,
+    required TResult Function(_SendEmail value) sendEmail,
   }) {
-    return openTermsOfService(this);
+    return openLinkedIn(this);
   }
 
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
     TResult? Function(_AppStarted value)? appStarted,
-    TResult? Function(_ContactSupport value)? contactSupport,
-    TResult? Function(_OpenTermsOfService value)? openTermsOfService,
-    TResult? Function(_OpenPrivacyPolicy value)? openPrivacyPolicy,
+    TResult? Function(_FreeLesson value)? freeLesson,
+    TResult? Function(_OpenLinkedIn value)? openLinkedIn,
+    TResult? Function(_OpenInstagram value)? openInstagram,
+    TResult? Function(_OpenTelegram value)? openTelegram,
+    TResult? Function(_SendEmail value)? sendEmail,
   }) {
-    return openTermsOfService?.call(this);
+    return openLinkedIn?.call(this);
   }
 
   @override
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(_AppStarted value)? appStarted,
-    TResult Function(_ContactSupport value)? contactSupport,
-    TResult Function(_OpenTermsOfService value)? openTermsOfService,
-    TResult Function(_OpenPrivacyPolicy value)? openPrivacyPolicy,
+    TResult Function(_FreeLesson value)? freeLesson,
+    TResult Function(_OpenLinkedIn value)? openLinkedIn,
+    TResult Function(_OpenInstagram value)? openInstagram,
+    TResult Function(_OpenTelegram value)? openTelegram,
+    TResult Function(_SendEmail value)? sendEmail,
     required TResult orElse(),
   }) {
-    if (openTermsOfService != null) {
-      return openTermsOfService(this);
+    if (openLinkedIn != null) {
+      return openLinkedIn(this);
     }
     return orElse();
   }
 }
 
-abstract class _OpenTermsOfService implements AppEvent {
-  const factory _OpenTermsOfService() = _$OpenTermsOfServiceImpl;
+abstract class _OpenLinkedIn implements AppEvent {
+  const factory _OpenLinkedIn() = _$OpenLinkedInImpl;
 }
 
 /// @nodoc
-abstract class _$$OpenPrivacyPolicyImplCopyWith<$Res> {
-  factory _$$OpenPrivacyPolicyImplCopyWith(_$OpenPrivacyPolicyImpl value,
-          $Res Function(_$OpenPrivacyPolicyImpl) then) =
-      __$$OpenPrivacyPolicyImplCopyWithImpl<$Res>;
+abstract class _$$OpenInstagramImplCopyWith<$Res> {
+  factory _$$OpenInstagramImplCopyWith(
+          _$OpenInstagramImpl value, $Res Function(_$OpenInstagramImpl) then) =
+      __$$OpenInstagramImplCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class __$$OpenPrivacyPolicyImplCopyWithImpl<$Res>
-    extends _$AppEventCopyWithImpl<$Res, _$OpenPrivacyPolicyImpl>
-    implements _$$OpenPrivacyPolicyImplCopyWith<$Res> {
-  __$$OpenPrivacyPolicyImplCopyWithImpl(_$OpenPrivacyPolicyImpl _value,
-      $Res Function(_$OpenPrivacyPolicyImpl) _then)
+class __$$OpenInstagramImplCopyWithImpl<$Res>
+    extends _$AppEventCopyWithImpl<$Res, _$OpenInstagramImpl>
+    implements _$$OpenInstagramImplCopyWith<$Res> {
+  __$$OpenInstagramImplCopyWithImpl(
+      _$OpenInstagramImpl _value, $Res Function(_$OpenInstagramImpl) _then)
       : super(_value, _then);
 
   /// Create a copy of AppEvent
@@ -460,18 +508,18 @@ class __$$OpenPrivacyPolicyImplCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$OpenPrivacyPolicyImpl implements _OpenPrivacyPolicy {
-  const _$OpenPrivacyPolicyImpl();
+class _$OpenInstagramImpl implements _OpenInstagram {
+  const _$OpenInstagramImpl();
 
   @override
   String toString() {
-    return 'AppEvent.openPrivacyPolicy()';
+    return 'AppEvent.openInstagram()';
   }
 
   @override
   bool operator ==(Object other) {
     return identical(this, other) ||
-        (other.runtimeType == runtimeType && other is _$OpenPrivacyPolicyImpl);
+        (other.runtimeType == runtimeType && other is _$OpenInstagramImpl);
   }
 
   @override
@@ -481,35 +529,41 @@ class _$OpenPrivacyPolicyImpl implements _OpenPrivacyPolicy {
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function() appStarted,
-    required TResult Function() contactSupport,
-    required TResult Function() openTermsOfService,
-    required TResult Function() openPrivacyPolicy,
+    required TResult Function() freeLesson,
+    required TResult Function() openLinkedIn,
+    required TResult Function() openInstagram,
+    required TResult Function() openTelegram,
+    required TResult Function() sendEmail,
   }) {
-    return openPrivacyPolicy();
+    return openInstagram();
   }
 
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function()? appStarted,
-    TResult? Function()? contactSupport,
-    TResult? Function()? openTermsOfService,
-    TResult? Function()? openPrivacyPolicy,
+    TResult? Function()? freeLesson,
+    TResult? Function()? openLinkedIn,
+    TResult? Function()? openInstagram,
+    TResult? Function()? openTelegram,
+    TResult? Function()? sendEmail,
   }) {
-    return openPrivacyPolicy?.call();
+    return openInstagram?.call();
   }
 
   @override
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? appStarted,
-    TResult Function()? contactSupport,
-    TResult Function()? openTermsOfService,
-    TResult Function()? openPrivacyPolicy,
+    TResult Function()? freeLesson,
+    TResult Function()? openLinkedIn,
+    TResult Function()? openInstagram,
+    TResult Function()? openTelegram,
+    TResult Function()? sendEmail,
     required TResult orElse(),
   }) {
-    if (openPrivacyPolicy != null) {
-      return openPrivacyPolicy();
+    if (openInstagram != null) {
+      return openInstagram();
     }
     return orElse();
   }
@@ -518,42 +572,306 @@ class _$OpenPrivacyPolicyImpl implements _OpenPrivacyPolicy {
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
     required TResult Function(_AppStarted value) appStarted,
-    required TResult Function(_ContactSupport value) contactSupport,
-    required TResult Function(_OpenTermsOfService value) openTermsOfService,
-    required TResult Function(_OpenPrivacyPolicy value) openPrivacyPolicy,
+    required TResult Function(_FreeLesson value) freeLesson,
+    required TResult Function(_OpenLinkedIn value) openLinkedIn,
+    required TResult Function(_OpenInstagram value) openInstagram,
+    required TResult Function(_OpenTelegram value) openTelegram,
+    required TResult Function(_SendEmail value) sendEmail,
   }) {
-    return openPrivacyPolicy(this);
+    return openInstagram(this);
   }
 
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
     TResult? Function(_AppStarted value)? appStarted,
-    TResult? Function(_ContactSupport value)? contactSupport,
-    TResult? Function(_OpenTermsOfService value)? openTermsOfService,
-    TResult? Function(_OpenPrivacyPolicy value)? openPrivacyPolicy,
+    TResult? Function(_FreeLesson value)? freeLesson,
+    TResult? Function(_OpenLinkedIn value)? openLinkedIn,
+    TResult? Function(_OpenInstagram value)? openInstagram,
+    TResult? Function(_OpenTelegram value)? openTelegram,
+    TResult? Function(_SendEmail value)? sendEmail,
   }) {
-    return openPrivacyPolicy?.call(this);
+    return openInstagram?.call(this);
   }
 
   @override
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(_AppStarted value)? appStarted,
-    TResult Function(_ContactSupport value)? contactSupport,
-    TResult Function(_OpenTermsOfService value)? openTermsOfService,
-    TResult Function(_OpenPrivacyPolicy value)? openPrivacyPolicy,
+    TResult Function(_FreeLesson value)? freeLesson,
+    TResult Function(_OpenLinkedIn value)? openLinkedIn,
+    TResult Function(_OpenInstagram value)? openInstagram,
+    TResult Function(_OpenTelegram value)? openTelegram,
+    TResult Function(_SendEmail value)? sendEmail,
     required TResult orElse(),
   }) {
-    if (openPrivacyPolicy != null) {
-      return openPrivacyPolicy(this);
+    if (openInstagram != null) {
+      return openInstagram(this);
     }
     return orElse();
   }
 }
 
-abstract class _OpenPrivacyPolicy implements AppEvent {
-  const factory _OpenPrivacyPolicy() = _$OpenPrivacyPolicyImpl;
+abstract class _OpenInstagram implements AppEvent {
+  const factory _OpenInstagram() = _$OpenInstagramImpl;
+}
+
+/// @nodoc
+abstract class _$$OpenTelegramImplCopyWith<$Res> {
+  factory _$$OpenTelegramImplCopyWith(
+          _$OpenTelegramImpl value, $Res Function(_$OpenTelegramImpl) then) =
+      __$$OpenTelegramImplCopyWithImpl<$Res>;
+}
+
+/// @nodoc
+class __$$OpenTelegramImplCopyWithImpl<$Res>
+    extends _$AppEventCopyWithImpl<$Res, _$OpenTelegramImpl>
+    implements _$$OpenTelegramImplCopyWith<$Res> {
+  __$$OpenTelegramImplCopyWithImpl(
+      _$OpenTelegramImpl _value, $Res Function(_$OpenTelegramImpl) _then)
+      : super(_value, _then);
+
+  /// Create a copy of AppEvent
+  /// with the given fields replaced by the non-null parameter values.
+}
+
+/// @nodoc
+
+class _$OpenTelegramImpl implements _OpenTelegram {
+  const _$OpenTelegramImpl();
+
+  @override
+  String toString() {
+    return 'AppEvent.openTelegram()';
+  }
+
+  @override
+  bool operator ==(Object other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType && other is _$OpenTelegramImpl);
+  }
+
+  @override
+  int get hashCode => runtimeType.hashCode;
+
+  @override
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>({
+    required TResult Function() appStarted,
+    required TResult Function() freeLesson,
+    required TResult Function() openLinkedIn,
+    required TResult Function() openInstagram,
+    required TResult Function() openTelegram,
+    required TResult Function() sendEmail,
+  }) {
+    return openTelegram();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? appStarted,
+    TResult? Function()? freeLesson,
+    TResult? Function()? openLinkedIn,
+    TResult? Function()? openInstagram,
+    TResult? Function()? openTelegram,
+    TResult? Function()? sendEmail,
+  }) {
+    return openTelegram?.call();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function()? appStarted,
+    TResult Function()? freeLesson,
+    TResult Function()? openLinkedIn,
+    TResult Function()? openInstagram,
+    TResult Function()? openTelegram,
+    TResult Function()? sendEmail,
+    required TResult orElse(),
+  }) {
+    if (openTelegram != null) {
+      return openTelegram();
+    }
+    return orElse();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>({
+    required TResult Function(_AppStarted value) appStarted,
+    required TResult Function(_FreeLesson value) freeLesson,
+    required TResult Function(_OpenLinkedIn value) openLinkedIn,
+    required TResult Function(_OpenInstagram value) openInstagram,
+    required TResult Function(_OpenTelegram value) openTelegram,
+    required TResult Function(_SendEmail value) sendEmail,
+  }) {
+    return openTelegram(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(_AppStarted value)? appStarted,
+    TResult? Function(_FreeLesson value)? freeLesson,
+    TResult? Function(_OpenLinkedIn value)? openLinkedIn,
+    TResult? Function(_OpenInstagram value)? openInstagram,
+    TResult? Function(_OpenTelegram value)? openTelegram,
+    TResult? Function(_SendEmail value)? sendEmail,
+  }) {
+    return openTelegram?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(_AppStarted value)? appStarted,
+    TResult Function(_FreeLesson value)? freeLesson,
+    TResult Function(_OpenLinkedIn value)? openLinkedIn,
+    TResult Function(_OpenInstagram value)? openInstagram,
+    TResult Function(_OpenTelegram value)? openTelegram,
+    TResult Function(_SendEmail value)? sendEmail,
+    required TResult orElse(),
+  }) {
+    if (openTelegram != null) {
+      return openTelegram(this);
+    }
+    return orElse();
+  }
+}
+
+abstract class _OpenTelegram implements AppEvent {
+  const factory _OpenTelegram() = _$OpenTelegramImpl;
+}
+
+/// @nodoc
+abstract class _$$SendEmailImplCopyWith<$Res> {
+  factory _$$SendEmailImplCopyWith(
+          _$SendEmailImpl value, $Res Function(_$SendEmailImpl) then) =
+      __$$SendEmailImplCopyWithImpl<$Res>;
+}
+
+/// @nodoc
+class __$$SendEmailImplCopyWithImpl<$Res>
+    extends _$AppEventCopyWithImpl<$Res, _$SendEmailImpl>
+    implements _$$SendEmailImplCopyWith<$Res> {
+  __$$SendEmailImplCopyWithImpl(
+      _$SendEmailImpl _value, $Res Function(_$SendEmailImpl) _then)
+      : super(_value, _then);
+
+  /// Create a copy of AppEvent
+  /// with the given fields replaced by the non-null parameter values.
+}
+
+/// @nodoc
+
+class _$SendEmailImpl implements _SendEmail {
+  const _$SendEmailImpl();
+
+  @override
+  String toString() {
+    return 'AppEvent.sendEmail()';
+  }
+
+  @override
+  bool operator ==(Object other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType && other is _$SendEmailImpl);
+  }
+
+  @override
+  int get hashCode => runtimeType.hashCode;
+
+  @override
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>({
+    required TResult Function() appStarted,
+    required TResult Function() freeLesson,
+    required TResult Function() openLinkedIn,
+    required TResult Function() openInstagram,
+    required TResult Function() openTelegram,
+    required TResult Function() sendEmail,
+  }) {
+    return sendEmail();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? appStarted,
+    TResult? Function()? freeLesson,
+    TResult? Function()? openLinkedIn,
+    TResult? Function()? openInstagram,
+    TResult? Function()? openTelegram,
+    TResult? Function()? sendEmail,
+  }) {
+    return sendEmail?.call();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function()? appStarted,
+    TResult Function()? freeLesson,
+    TResult Function()? openLinkedIn,
+    TResult Function()? openInstagram,
+    TResult Function()? openTelegram,
+    TResult Function()? sendEmail,
+    required TResult orElse(),
+  }) {
+    if (sendEmail != null) {
+      return sendEmail();
+    }
+    return orElse();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>({
+    required TResult Function(_AppStarted value) appStarted,
+    required TResult Function(_FreeLesson value) freeLesson,
+    required TResult Function(_OpenLinkedIn value) openLinkedIn,
+    required TResult Function(_OpenInstagram value) openInstagram,
+    required TResult Function(_OpenTelegram value) openTelegram,
+    required TResult Function(_SendEmail value) sendEmail,
+  }) {
+    return sendEmail(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(_AppStarted value)? appStarted,
+    TResult? Function(_FreeLesson value)? freeLesson,
+    TResult? Function(_OpenLinkedIn value)? openLinkedIn,
+    TResult? Function(_OpenInstagram value)? openInstagram,
+    TResult? Function(_OpenTelegram value)? openTelegram,
+    TResult? Function(_SendEmail value)? sendEmail,
+  }) {
+    return sendEmail?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(_AppStarted value)? appStarted,
+    TResult Function(_FreeLesson value)? freeLesson,
+    TResult Function(_OpenLinkedIn value)? openLinkedIn,
+    TResult Function(_OpenInstagram value)? openInstagram,
+    TResult Function(_OpenTelegram value)? openTelegram,
+    TResult Function(_SendEmail value)? sendEmail,
+    required TResult orElse(),
+  }) {
+    if (sendEmail != null) {
+      return sendEmail(this);
+    }
+    return orElse();
+  }
+}
+
+abstract class _SendEmail implements AppEvent {
+  const factory _SendEmail() = _$SendEmailImpl;
 }
 
 /// @nodoc

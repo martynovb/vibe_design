@@ -77,9 +77,8 @@ class MenuDesktopWidget extends StatelessWidget {
             ),
             AppSpacing.h_48,
             _socialNetworkIcon(
-              callback: () => launchUrl(
-                Uri.parse(AppConstants.instagramProfile),
-              ),
+              callback: () =>
+                  context.read<AppBloc>().add(AppEvent.openInstagram()),
               iconPath: Assets.images.instagram.path,
               hoveredIconPath: Assets.images.instagramHovered.path,
               size: 32,

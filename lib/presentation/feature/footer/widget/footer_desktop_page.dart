@@ -139,25 +139,29 @@ class FooterDesktopPage extends StatelessWidget {
                     _socialNetworkIcon(
                       iconPath: Assets.images.telegram.path,
                       hoveredIconPath: Assets.images.telegramHovered.path,
-                      callback: () {},
+                      callback: () =>
+                          context.read<AppBloc>().add(AppEvent.openTelegram()),
                     ),
                     AppSpacing.h_48,
                     _socialNetworkIcon(
                       iconPath: Assets.images.google.path,
                       hoveredIconPath: Assets.images.googleHovered.path,
-                      callback: () {},
+                      callback: () =>
+                          context.read<AppBloc>().add(AppEvent.sendEmail()),
                     ),
                     AppSpacing.h_48,
                     _socialNetworkIcon(
                       iconPath: Assets.images.instagram.path,
                       hoveredIconPath: Assets.images.instagramHovered.path,
-                      callback: () {},
+                      callback: () =>
+                          context.read<AppBloc>().add(AppEvent.openInstagram()),
                     ),
                     AppSpacing.h_48,
                     _socialNetworkIcon(
                       iconPath: Assets.images.linkedin.path,
                       hoveredIconPath: Assets.images.linkedinHovered.path,
-                      callback: () {},
+                      callback: () =>
+                          context.read<AppBloc>().add(AppEvent.openLinkedIn()),
                     ),
                     AppSpacing.h_48,
                   ],
