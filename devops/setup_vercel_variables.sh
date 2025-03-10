@@ -25,6 +25,8 @@ touch ".env/${FLAVOR}.env"
 
 # Add content to the Env file
 echo "sentryDsn=$sentryDsn" >> .env/${FLAVOR}.env
+echo "supabaseAnonKey=$supabaseAnonKey" >> .env/${FLAVOR}.env
+echo "supabaseUrl=$supabaseUrl" >> .env/${FLAVOR}.env
 
 echo "${FLAVOR}.env file created with all the keys..............."
 
