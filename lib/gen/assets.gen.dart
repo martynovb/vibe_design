@@ -88,6 +88,10 @@ class $AssetsImagesGen {
   /// File path: assets/images/logo.svg
   SvgGenImage get logo => const SvgGenImage('assets/images/logo.svg');
 
+  /// File path: assets/images/long_arrow.svg
+  SvgGenImage get longArrow =>
+      const SvgGenImage('assets/images/long_arrow.svg');
+
   /// File path: assets/images/lovely_face.png
   AssetGenImage get lovelyFace =>
       const AssetGenImage('assets/images/lovely_face.png');
@@ -223,6 +227,7 @@ class $AssetsImagesGen {
         linkedin,
         linkedinHovered,
         logo,
+        longArrow,
         lovelyFace,
         moneyBrick,
         myPhoto,

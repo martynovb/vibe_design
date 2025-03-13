@@ -179,7 +179,7 @@ class FooterDesktopPage extends StatelessWidget {
     return Container(
       width: double.infinity,
       decoration: BoxDecoration(
-        color: Colors.white,
+        color: ColorName.title,
         borderRadius: BorderRadius.circular(4),
       ),
       child: IntrinsicHeight(

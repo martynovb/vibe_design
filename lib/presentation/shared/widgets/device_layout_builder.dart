@@ -15,7 +15,7 @@ class DeviceLayoutBuilder extends StatelessWidget {
   Widget build(BuildContext context) {
     return LayoutBuilder(
       builder: (context, constraints) => layoutBuilder(
-        constraints.maxWidth <= AppDimensions.maxMobileWidth ||
+        constraints.maxWidth < AppDimensions.maxMobileWidth ||
             AppUtils.isMobile,
       ),
     );

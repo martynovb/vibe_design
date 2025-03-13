@@ -1,3 +1,5 @@
+// ignore_for_file: use_build_context_synchronously
+
 part of '../choose_your_path_level.dart';
 
 class ChooseYourPathDesktopPage extends StatefulWidget {
@@ -118,8 +120,9 @@ class ChooseYourPathDesktopState extends State<ChooseYourPathDesktopPage> {
                         },
                       ).path,
                     );
-                    if (result != null && result is MenuOption) {
-                      HomeMenuProvider.of(context)?.onMenuOptionSelected(result);
+                    if (result != null && result is MenuOption && mounted) {
+                      HomeMenuProvider.of(context)
+                          ?.onMenuOptionSelected(result);
                     }
                   },
                 );

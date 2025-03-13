@@ -58,3 +58,16 @@ GoRouter router({
         ),
       ],
     );
+
+extension GoRouterExt on GoRouter {
+  String get _currentRoute =>
+      routerDelegate.currentConfiguration.matches.last.matchedLocation;
+
+  void popUntil<T>(String path, [T? result]) {
+    var currentRoute = _currentRoute;
+    while (currentRoute != path && canPop()) {
+      pop(result);
+      currentRoute = _currentRoute;
+    }
+  }
+}

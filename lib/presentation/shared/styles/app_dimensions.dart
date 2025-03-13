@@ -42,6 +42,8 @@ class AppSpacing {
 
   static SizedBox get v_8 => vertical(Spacing.xs);
 
+  static SizedBox get v_12 => vertical(Spacing.sm);
+
   static SizedBox get v_16 => vertical(Spacing.md);
 
   static SizedBox get v_24 => vertical(Spacing.lg);
@@ -55,6 +57,8 @@ class AppSpacing {
   static SizedBox get v_56 => vertical(Spacing.s56);
 
   static SizedBox get v_64 => vertical(64);
+
+  static SizedBox get v_72 => vertical(72);
 
   static SizedBox get v_90 => vertical(90);
 

@@ -6,9 +6,8 @@ class CourseDetailsModel {
   final String title1;
   final String title2;
   final String subTitle;
-  final String card1Text;
-  final String card2Text;
-  final String card3Text;
+  final List<String> cardsTitles;
+  final String pricePrefix;
   final String price;
   final String pricePostfix;
   final String startDate;
@@ -24,11 +23,10 @@ class CourseDetailsModel {
     required this.title1,
     required this.title2,
     required this.subTitle,
-    required this.card1Text,
-    required this.card2Text,
-    required this.card3Text,
+    required this.cardsTitles,
     required this.price,
     required this.pricePostfix,
+    required this.pricePrefix,
     required this.startDate,
     required this.courseFormat,
     required this.duration,
