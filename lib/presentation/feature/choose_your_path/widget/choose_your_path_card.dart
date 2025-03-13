@@ -4,32 +4,15 @@ import 'package:flutter/material.dart';
 import '../../../../gen/colors.gen.dart';
 import '../../../shared/localization/locale_keys.g.dart';
 import '../../../shared/styles/app_dimensions.dart';
+import '../model/choose_your_path_model.dart';
 
 class ChooseYourPathCard extends StatelessWidget {
-  final String cardName;
-  final String price;
-  final String tag1;
-  final String tag2;
-  final String tag3;
-  final String description1;
-  final String description2;
-  final String description3;
-  final String description4;
-  final String description5;
+  final ChooseYourPathModel chooseYourPathModel;
   final VoidCallback onDetailsPressed;
 
   const ChooseYourPathCard({
     super.key,
-    required this.cardName,
-    required this.price,
-    required this.tag1,
-    required this.tag2,
-    required this.tag3,
-    required this.description1,
-    required this.description2,
-    required this.description3,
-    required this.description4,
-    required this.description5,
+    required this.chooseYourPathModel,
     required this.onDetailsPressed,
   });
 
@@ -59,7 +42,7 @@ class ChooseYourPathCard extends StatelessWidget {
                     child: RotatedBox(
                       quarterTurns: -1,
                       child: Text(
-                        cardName,
+                        chooseYourPathModel.cardName,
                         style: TextTheme.of(context).headlineMedium?.copyWith(
                               color: ColorName.title,
                               fontWeight: FontWeight.bold,
@@ -89,7 +72,7 @@ class ChooseYourPathCard extends StatelessWidget {
                   children: [
                     Center(
                       child: Text(
-                        price,
+                        chooseYourPathModel.price,
                         style: TextTheme.of(context).headlineLarge?.copyWith(
                               color: ColorName.title,
                               fontWeight: FontWeight.bold,
@@ -100,18 +83,18 @@ class ChooseYourPathCard extends StatelessWidget {
                     Row(
                       children: [
                         Expanded(
-                          child: _tag(context, tag1),
+                          child: _tag(context, chooseYourPathModel.tag1),
                         ),
                         AppSpacing.h_16,
                         Expanded(
-                          child: _tag(context, tag2),
+                          child: _tag(context, chooseYourPathModel.tag2),
                         ),
                       ],
                     ),
                     AppSpacing.v_16,
                     SizedBox(
                       width: double.infinity,
-                      child: _tag(context, tag3),
+                      child: _tag(context, chooseYourPathModel.tag3),
                     ),
                     AppSpacing.v_40,
                     Container(
@@ -121,22 +104,22 @@ class ChooseYourPathCard extends StatelessWidget {
                           _bulletPointText(
                             context: context,
                             index: 1,
-                            text: description1,
+                            text: chooseYourPathModel.description1,
                           ),
                           _bulletPointText(
                             context: context,
                             index: 2,
-                            text: description2,
+                            text: chooseYourPathModel.description2,
                           ),
                           _bulletPointText(
                             context: context,
                             index: 3,
-                            text: description3,
+                            text: chooseYourPathModel.description3,
                           ),
                           _bulletPointText(
                             context: context,
                             index: 4,
-                            text: description4,
+                            text: chooseYourPathModel.description4,
                           ),
                         ],
                       ),

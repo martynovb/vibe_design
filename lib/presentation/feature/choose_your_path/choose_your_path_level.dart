@@ -1,8 +1,13 @@
 import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
 import 'package:vibe_design/gen/assets.gen.dart';
 import 'package:vibe_design/presentation/feature/choose_your_path/widget/choose_your_path_card.dart';
+import 'package:vibe_design/presentation/feature/home/home.dart';
+import 'package:vibe_design/presentation/feature/level_details/model/course_type.dart';
+import 'package:vibe_design/presentation/feature/menu/menu_option.dart';
+import 'package:vibe_design/presentation/shared/navigation/route_constants.dart';
 import '../../../gen/colors.gen.dart';
 import '../../shared/localization/locale_keys.g.dart';
 import '../../shared/styles/app_dimensions.dart';

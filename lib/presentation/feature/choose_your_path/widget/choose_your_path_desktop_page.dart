@@ -13,66 +13,6 @@ class ChooseYourPathDesktopState extends State<ChooseYourPathDesktopPage> {
   final _scrollController = ScrollController();
   final _indicatorController = PageController();
 
-  final List<Widget> _pages = [
-    ChooseYourPathCard(
-      cardName: LocaleKeys.chooseYourPathSection_Card1Name,
-      price: LocaleKeys.chooseYourPathSection_Card1Price,
-      tag1: LocaleKeys.chooseYourPathSection_Card1Tag1,
-      tag2: LocaleKeys.chooseYourPathSection_Card1Tag2,
-      tag3: LocaleKeys.chooseYourPathSection_Card1Tag3,
-      description1: LocaleKeys.chooseYourPathSection_Card1Description1,
-      description2: LocaleKeys.chooseYourPathSection_Card1Description2,
-      description3: LocaleKeys.chooseYourPathSection_Card1Description3,
-      description4: LocaleKeys.chooseYourPathSection_Card1Description4,
-      description5: LocaleKeys.chooseYourPathSection_Card1Description5,
-      onDetailsPressed: () {},
-    ),
-    ChooseYourPathCard(
-      cardName: LocaleKeys.chooseYourPathSection_Card2Name,
-      price: LocaleKeys.chooseYourPathSection_Card2Price,
-      tag1: LocaleKeys.chooseYourPathSection_Card2Tag1,
-      tag2: LocaleKeys.chooseYourPathSection_Card2Tag2,
-      tag3: LocaleKeys.chooseYourPathSection_Card2Tag3,
-      description1: LocaleKeys.chooseYourPathSection_Card2Description1,
-      description2: LocaleKeys.chooseYourPathSection_Card2Description2,
-      description3: LocaleKeys.chooseYourPathSection_Card2Description3,
-      description4: LocaleKeys.chooseYourPathSection_Card2Description4,
-      description5: LocaleKeys.chooseYourPathSection_Card2Description5,
-      onDetailsPressed: () {},
-    ),
-    ChooseYourPathCard(
-      cardName: LocaleKeys.chooseYourPathSection_Card3Name,
-      price: LocaleKeys.chooseYourPathSection_Card3Price,
-      tag1: LocaleKeys.chooseYourPathSection_Card3Tag1,
-      tag2: LocaleKeys.chooseYourPathSection_Card3Tag2,
-      tag3: LocaleKeys.chooseYourPathSection_Card3Tag3,
-      description1: LocaleKeys.chooseYourPathSection_Card3Description1,
-      description2: LocaleKeys.chooseYourPathSection_Card3Description2,
-      description3: LocaleKeys.chooseYourPathSection_Card3Description3,
-      description4: LocaleKeys.chooseYourPathSection_Card3Description4,
-      description5: LocaleKeys.chooseYourPathSection_Card3Description5,
-      onDetailsPressed: () {},
-    ),
-    ChooseYourPathCard(
-      cardName: LocaleKeys.chooseYourPathSection_Card4Name,
-      price: LocaleKeys.chooseYourPathSection_Card4Price,
-      tag1: LocaleKeys.chooseYourPathSection_Card4Tag1,
-      tag2: LocaleKeys.chooseYourPathSection_Card4Tag2,
-      tag3: LocaleKeys.chooseYourPathSection_Card4Tag3,
-      description1: LocaleKeys.chooseYourPathSection_Card4Description1,
-      description2: LocaleKeys.chooseYourPathSection_Card4Description2,
-      description3: LocaleKeys.chooseYourPathSection_Card4Description3,
-      description4: LocaleKeys.chooseYourPathSection_Card4Description4,
-      description5: LocaleKeys.chooseYourPathSection_Card4Description5,
-      onDetailsPressed: () {},
-    ),
-  ];
-
-  @override
-  void didChangeDependencies() {
-    super.didChangeDependencies();
-  }
-
   @override
   Widget build(BuildContext context) {
     return Center(
@@ -164,10 +104,25 @@ class ChooseYourPathDesktopState extends State<ChooseYourPathDesktopPage> {
               cacheExtent: 2000,
               controller: _scrollController,
               scrollDirection: Axis.horizontal,
-              itemCount: _pages.length,
+              itemCount: CourseType.values.length,
               separatorBuilder: (context, index) => AppSpacing.h_32,
               itemBuilder: (context, index) {
-                return _pages[index];
+                return ChooseYourPathCard(
+                  chooseYourPathModel:
+                      CourseType.values[index].getChooseYourPathModel(),
+                  onDetailsPressed: () async {
+                    final result = await context.push(
+                      RouteConstants.details(
+                        params: {
+                          'courseType': CourseType.values[index].name,
+                        },
+                      ).path,
+                    );
+                    if (result != null && result is MenuOption) {
+                      HomeMenuProvider.of(context)?.onMenuOptionSelected(result);
+                    }
+                  },
+                );
               },
             ),
           ),
@@ -238,7 +193,7 @@ class ChooseYourPathDesktopState extends State<ChooseYourPathDesktopPage> {
   void _scrollToPosition(int index) {
     final contentSize = _scrollController.position.viewportDimension +
         _scrollController.position.maxScrollExtent;
-    final target = contentSize * index / _pages.length;
+    final target = contentSize * index / CourseType.values.length;
     _scrollController.position.animateTo(
       target,
       duration: const Duration(milliseconds: 500),

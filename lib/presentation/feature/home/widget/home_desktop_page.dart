@@ -1,7 +1,12 @@
 part of '../home.dart';
 
 class HomeDesktopPage extends StatefulWidget {
-  const HomeDesktopPage({super.key});
+  const HomeDesktopPage({
+    super.key,
+    this.scrollTo,
+  });
+
+  final MenuOption? scrollTo;
 
   @override
   State<StatefulWidget> createState() => HomeDesktopState();
@@ -88,6 +93,9 @@ class HomeDesktopState extends State<HomeDesktopPage> {
 
     WidgetsBinding.instance.addPostFrameCallback((_) {
       _calculateSectionOffsets();
+      if (widget.scrollTo != null) {
+        onMenuOptionSelected(widget.scrollTo!);
+      }
     });
 
     _scrollController.addListener(_onScrollListener);
@@ -162,36 +170,40 @@ class HomeDesktopState extends State<HomeDesktopPage> {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      body: Column(
-        children: [
-          Container(
-            color: ColorName.card.withValues(alpha: 0.4),
-            child: MenuWidget(
-              selectedMenuOption: _selectedMenuOption,
-              onMenuOptionSelected: onMenuOptionSelected,
+    return HomeMenuProvider(
+      onMenuOptionSelected: onMenuOptionSelected,
+      child: Scaffold(
+        body: Column(
+          children: [
+            Container(
+              color: ColorName.card.withValues(alpha: 0.4),
+              child: MenuWidget(
+                selectedMenuOption: _selectedMenuOption,
+                onMenuOptionSelected: onMenuOptionSelected,
+              ),
             ),
-          ),
-          Expanded(
-            child: SingleChildScrollView(
-              controller: _scrollController,
-              child: Column(
-                key: _columnKey,
-                children: List.generate(
-                  _sections.length,
-                  (index) {
-                    return Column(
-                      children: [
-                        _sections[index].section,
-                        if (index < _sections.length - 1) SizedBox(height: 200),
-                      ],
-                    );
-                  },
+            Expanded(
+              child: SingleChildScrollView(
+                controller: _scrollController,
+                child: Column(
+                  key: _columnKey,
+                  children: List.generate(
+                    _sections.length,
+                    (index) {
+                      return Column(
+                        children: [
+                          _sections[index].section,
+                          if (index < _sections.length - 1)
+                            SizedBox(height: 200),
+                        ],
+                      );
+                    },
+                  ),
                 ),
               ),
             ),
-          ),
-        ],
+          ],
+        ),
       ),
     );
   }
@@ -220,4 +232,21 @@ class HomeDesktopState extends State<HomeDesktopPage> {
     _scrollController.addListener(_onScrollListener);
     _isScrolling = false;
   }
+}
+
+// New InheritedWidget that provides onMenuOptionSelected
+class HomeMenuProvider extends InheritedWidget {
+  final Future<void> Function(MenuOption) onMenuOptionSelected;
+  const HomeMenuProvider({
+    super.key,
+    required this.onMenuOptionSelected,
+    required super.child,
+  });
+
+  static HomeMenuProvider? of(BuildContext context) =>
+      context.dependOnInheritedWidgetOfExactType<HomeMenuProvider>();
+
+  @override
+  bool updateShouldNotify(covariant HomeMenuProvider oldWidget) =>
+      onMenuOptionSelected != oldWidget.onMenuOptionSelected;
 }

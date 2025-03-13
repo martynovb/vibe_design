@@ -15,6 +15,10 @@ import 'package:vector_graphics/vector_graphics.dart' as _vg;
 class $AssetsImagesGen {
   const $AssetsImagesGen();
 
+  /// File path: assets/images/Design School - Vibe Design.zip
+  String get designSchoolVibeDesign =>
+      'assets/images/Design School - Vibe Design.zip';
+
   /// File path: assets/images/arrow-right.svg
   SvgGenImage get arrowRight =>
       const SvgGenImage('assets/images/arrow-right.svg');
@@ -33,6 +37,9 @@ class $AssetsImagesGen {
   /// File path: assets/images/cup.png
   AssetGenImage get cup => const AssetGenImage('assets/images/cup.png');
 
+  /// File path: assets/images/dollar.png
+  AssetGenImage get dollar => const AssetGenImage('assets/images/dollar.png');
+
   /// File path: assets/images/dollar_bill.png
   AssetGenImage get dollarBill =>
       const AssetGenImage('assets/images/dollar_bill.png');
@@ -49,6 +56,10 @@ class $AssetsImagesGen {
 
   /// File path: assets/images/hashtag.png
   AssetGenImage get hashtag => const AssetGenImage('assets/images/hashtag.png');
+
+  /// File path: assets/images/headphones.png
+  AssetGenImage get headphones =>
+      const AssetGenImage('assets/images/headphones.png');
 
   /// File path: assets/images/heart.png
   AssetGenImage get heart => const AssetGenImage('assets/images/heart.png');
@@ -127,6 +138,13 @@ class $AssetsImagesGen {
   /// File path: assets/images/rocket.png
   AssetGenImage get rocket => const AssetGenImage('assets/images/rocket.png');
 
+  /// File path: assets/images/rocket_header.png
+  AssetGenImage get rocketHeader =>
+      const AssetGenImage('assets/images/rocket_header.png');
+
+  /// File path: assets/images/sobaka.png
+  AssetGenImage get sobaka => const AssetGenImage('assets/images/sobaka.png');
+
   /// File path: assets/images/speech_bubble_heart.png
   AssetGenImage get speechBubbleHeart =>
       const AssetGenImage('assets/images/speech_bubble_heart.png');
@@ -184,16 +202,19 @@ class $AssetsImagesGen {
 
   /// List of all assets
   List<dynamic> get values => [
+        designSchoolVibeDesign,
         arrowRight,
         arrowInputEmail,
         billsAndCoins,
         coin,
         cup,
+        dollar,
         dollarBill,
         fire,
         google,
         googleHovered,
         hashtag,
+        headphones,
         heart,
         instagram,
         instagramHovered,
@@ -216,6 +237,8 @@ class $AssetsImagesGen {
         review2,
         review3,
         rocket,
+        rocketHeader,
+        sobaka,
         speechBubbleHeart,
         stickyNotes,
         studentWork1,

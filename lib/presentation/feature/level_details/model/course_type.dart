@@ -1,19 +1,79 @@
+import '../../../../gen/assets.gen.dart';
+import '../../choose_your_path/model/choose_your_path_model.dart';
 import 'about_course_details_model.dart';
-import 'level_details_model.dart';
+import 'course_details_model.dart';
 import 'package:vibe_design/presentation/shared/localization/locale_keys.g.dart';
 
-enum LevelType {
-  level1,
-  level2,
-  level3,
-  level4,
+enum CourseType {
+  beginer,
+  high,
+  professional,
+  individual,
 }
 
-extension LevelTypeExtension on LevelType {
-  LevelDetailsModel getLevelDetailsByType() {
+extension CourseTypeExtension on CourseType {
+  ChooseYourPathModel getChooseYourPathModel() {
     switch (this) {
-      case LevelType.level1:
-        return LevelDetailsModel(
+      case CourseType.beginer:
+        return ChooseYourPathModel(
+          cardName: LocaleKeys.chooseYourPathSection_Card1Name,
+          price: LocaleKeys.chooseYourPathSection_Card1Price,
+          tag1: LocaleKeys.chooseYourPathSection_Card1Tag1,
+          tag2: LocaleKeys.chooseYourPathSection_Card1Tag2,
+          tag3: LocaleKeys.chooseYourPathSection_Card1Tag3,
+          description1: LocaleKeys.chooseYourPathSection_Card1Description1,
+          description2: LocaleKeys.chooseYourPathSection_Card1Description2,
+          description3: LocaleKeys.chooseYourPathSection_Card1Description3,
+          description4: LocaleKeys.chooseYourPathSection_Card1Description4,
+          description5: LocaleKeys.chooseYourPathSection_Card1Description5,
+        );
+      case CourseType.high:
+        return ChooseYourPathModel(
+          cardName: LocaleKeys.chooseYourPathSection_Card2Name,
+          price: LocaleKeys.chooseYourPathSection_Card2Price,
+          tag1: LocaleKeys.chooseYourPathSection_Card2Tag1,
+          tag2: LocaleKeys.chooseYourPathSection_Card2Tag2,
+          tag3: LocaleKeys.chooseYourPathSection_Card2Tag3,
+          description1: LocaleKeys.chooseYourPathSection_Card2Description1,
+          description2: LocaleKeys.chooseYourPathSection_Card2Description2,
+          description3: LocaleKeys.chooseYourPathSection_Card2Description3,
+          description4: LocaleKeys.chooseYourPathSection_Card2Description4,
+          description5: LocaleKeys.chooseYourPathSection_Card2Description5,
+        );
+      case CourseType.professional:
+        return ChooseYourPathModel(
+          cardName: LocaleKeys.chooseYourPathSection_Card3Name,
+          price: LocaleKeys.chooseYourPathSection_Card3Price,
+          tag1: LocaleKeys.chooseYourPathSection_Card3Tag1,
+          tag2: LocaleKeys.chooseYourPathSection_Card3Tag2,
+          tag3: LocaleKeys.chooseYourPathSection_Card3Tag3,
+          description1: LocaleKeys.chooseYourPathSection_Card3Description1,
+          description2: LocaleKeys.chooseYourPathSection_Card3Description2,
+          description3: LocaleKeys.chooseYourPathSection_Card3Description3,
+          description4: LocaleKeys.chooseYourPathSection_Card3Description4,
+          description5: LocaleKeys.chooseYourPathSection_Card3Description5,
+        );
+      case CourseType.individual:
+        return ChooseYourPathModel(
+          cardName: LocaleKeys.chooseYourPathSection_Card4Name,
+          price: LocaleKeys.chooseYourPathSection_Card4Price,
+          tag1: LocaleKeys.chooseYourPathSection_Card4Tag1,
+          tag2: LocaleKeys.chooseYourPathSection_Card4Tag2,
+          tag3: LocaleKeys.chooseYourPathSection_Card4Tag3,
+          description1: LocaleKeys.chooseYourPathSection_Card4Description1,
+          description2: LocaleKeys.chooseYourPathSection_Card4Description2,
+          description3: LocaleKeys.chooseYourPathSection_Card4Description3,
+          description4: LocaleKeys.chooseYourPathSection_Card4Description4,
+          description5: LocaleKeys.chooseYourPathSection_Card4Description5,
+        );
+    }
+  }
+
+  CourseDetailsModel getCourseDetailsByType() {
+    switch (this) {
+      case CourseType.beginer:
+        return CourseDetailsModel(
+          headerImagePath: Assets.images.sobaka.path,
           fullTitle: LocaleKeys.course_details_level1_fullTitle,
           title1: LocaleKeys.course_details_level1_title1,
           title2: LocaleKeys.course_details_level1_title2,
@@ -115,8 +175,9 @@ extension LevelTypeExtension on LevelType {
             ),
           ],
         );
-      case LevelType.level2:
-        return LevelDetailsModel(
+      case CourseType.high:
+        return CourseDetailsModel(
+          headerImagePath: Assets.images.dollar.path,
           fullTitle: LocaleKeys.course_details_level2_fullTitle,
           title1: LocaleKeys.course_details_level2_title1,
           title2: LocaleKeys.course_details_level2_title2,
@@ -236,8 +297,9 @@ extension LevelTypeExtension on LevelType {
             ),
           ],
         );
-      case LevelType.level3:
-        return LevelDetailsModel(
+      case CourseType.professional:
+        return CourseDetailsModel(
+          headerImagePath: Assets.images.headphones.path,
           fullTitle: LocaleKeys.course_details_level3_fullTitle,
           title1: LocaleKeys.course_details_level3_title1,
           title2: LocaleKeys.course_details_level3_title2,
@@ -345,8 +407,9 @@ extension LevelTypeExtension on LevelType {
             ),
           ],
         );
-      case LevelType.level4:
-        return LevelDetailsModel(
+      case CourseType.individual:
+        return CourseDetailsModel(
+          headerImagePath: Assets.images.rocketHeader.path,
           fullTitle: LocaleKeys.course_details_level4_fullTitle,
           title1: LocaleKeys.course_details_level4_title1,
           title2: LocaleKeys.course_details_level4_title2,

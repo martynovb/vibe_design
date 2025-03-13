@@ -1,6 +1,7 @@
 import 'package:vibe_design/presentation/feature/level_details/model/about_course_details_model.dart';
 
-class LevelDetailsModel {
+class CourseDetailsModel {
+  final String headerImagePath;
   final String fullTitle;
   final String title1;
   final String title2;
@@ -17,7 +18,8 @@ class LevelDetailsModel {
   final List<AboutCourseDetailsModel> modulesList;
   final List<AboutCourseDetailsModel> benefitsList;
 
-  LevelDetailsModel({
+  CourseDetailsModel({
+    required this.headerImagePath,
     required this.fullTitle,
     required this.title1,
     required this.title2,
