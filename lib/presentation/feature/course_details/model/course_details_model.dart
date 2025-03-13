@@ -1,4 +1,4 @@
-import 'package:vibe_design/presentation/feature/level_details/model/about_course_details_model.dart';
+import 'package:vibe_design/presentation/feature/course_details/model/about_course_details_model.dart';
 
 class CourseDetailsModel {
   final String headerImagePath;

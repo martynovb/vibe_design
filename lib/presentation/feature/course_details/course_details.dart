@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
-import 'package:vibe_design/presentation/feature/level_details/model/course_details_model.dart';
-import 'package:vibe_design/presentation/feature/level_details/model/course_type.dart';
+import 'package:vibe_design/presentation/feature/course_details/model/course_details_model.dart';
+import 'package:vibe_design/presentation/feature/course_details/model/course_type.dart';
 import 'package:vibe_design/presentation/shared/widgets/header_image.dart';
 
 import '../../../gen/colors.gen.dart';
