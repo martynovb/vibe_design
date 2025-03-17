@@ -4,10 +4,12 @@ class HeaderCardInfoWidget extends StatelessWidget {
   const HeaderCardInfoWidget({
     super.key,
     required this.title,
+    this.titleStyle,
     required this.subtitle,
   });
 
   final String title;
+  final TextStyle? titleStyle;
   final Widget subtitle;
 
   @override
@@ -26,7 +28,7 @@ class HeaderCardInfoWidget extends StatelessWidget {
             children: [
               Text(
                 title,
-                style: TextTheme.of(context).headlineMedium,
+                style: titleStyle ?? TextTheme.of(context).headlineMedium,
               ),
               AppSpacing.v_16,
               subtitle,

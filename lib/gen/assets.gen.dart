@@ -96,6 +96,14 @@ class $AssetsImagesGen {
   AssetGenImage get lovelyFace =>
       const AssetGenImage('assets/images/lovely_face.png');
 
+  /// File path: assets/images/mobile_menu.svg
+  SvgGenImage get mobileMenu =>
+      const SvgGenImage('assets/images/mobile_menu.svg');
+
+  /// File path: assets/images/mobile_menu_closed.svg
+  SvgGenImage get mobileMenuClosed =>
+      const SvgGenImage('assets/images/mobile_menu_closed.svg');
+
   /// File path: assets/images/money_brick.png
   AssetGenImage get moneyBrick =>
       const AssetGenImage('assets/images/money_brick.png');
@@ -229,6 +237,8 @@ class $AssetsImagesGen {
         logo,
         longArrow,
         lovelyFace,
+        mobileMenu,
+        mobileMenuClosed,
         moneyBrick,
         myPhoto,
         number1,
