@@ -72,14 +72,14 @@ class HomePageState extends State<HomePage> {
         ),
       ),
       SectionViewModel(section: LearningDetailsPage()),
-      /*SectionViewModel(
+      SectionViewModel(
         key: pricingKey,
         menuOption: MenuOption.pricing,
         section: ChooseYourPathPage(
           key: pricingKey,
         ),
       ),
-      SectionViewModel(section: ApplyForCoursePage()),
+      /*SectionViewModel(section: ApplyForCoursePage()),
       SectionViewModel(
         key: contactKey,
         menuOption: MenuOption.contact,

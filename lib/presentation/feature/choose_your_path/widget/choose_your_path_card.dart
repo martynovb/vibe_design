@@ -9,130 +9,142 @@ import '../model/choose_your_path_model.dart';
 class ChooseYourPathCard extends StatelessWidget {
   final ChooseYourPathModel chooseYourPathModel;
   final VoidCallback onDetailsPressed;
+  final double maxWidth;
+  final double sideTitleTextSize;
+  final double titleTextSize;
+  final double tagTextSize;
+  final double descriptionTextSize;
+  final bool isMobile;
 
   const ChooseYourPathCard({
     super.key,
     required this.chooseYourPathModel,
     required this.onDetailsPressed,
+    this.maxWidth = 508,
+    this.sideTitleTextSize = 32,
+    this.titleTextSize = 40,
+    this.tagTextSize = 24,
+    this.descriptionTextSize = 20,
+    this.isMobile = false,
   });
 
   @override
   Widget build(BuildContext context) {
-    return IntrinsicHeight(
-      child: Row(
-        children: [
-          Center(
-            child: Padding(
-              padding: const EdgeInsets.only(top: 72, bottom: 72),
-              child: Container(
-                height: double.infinity,
-                decoration: const BoxDecoration(
-                  borderRadius: BorderRadius.only(
-                    topLeft: Radius.circular(30),
-                    bottomLeft: Radius.circular(30),
-                  ),
-                  color: ColorName.card,
+    return Row(
+      children: [
+        Center(
+          child: Padding(
+            padding: const EdgeInsets.only(top: 72, bottom: 72),
+            child: Container(
+              height: double.infinity,
+              decoration: const BoxDecoration(
+                borderRadius: BorderRadius.only(
+                  topLeft: Radius.circular(30),
+                  bottomLeft: Radius.circular(30),
                 ),
-                child: Padding(
-                  padding: EdgeInsets.symmetric(
-                    vertical: Spacing.xl,
-                    horizontal: Spacing.lg,
-                  ),
-                  child: Center(
-                    child: RotatedBox(
-                      quarterTurns: -1,
-                      child: Text(
-                        chooseYourPathModel.cardName,
-                        style: TextTheme.of(context).headlineMedium?.copyWith(
-                              color: ColorName.title,
-                              fontWeight: FontWeight.bold,
-                            ),
-                      ).tr(),
-                    ),
+                color: ColorName.card,
+              ),
+              child: Padding(
+                padding: EdgeInsets.symmetric(
+                  vertical: isMobile ? Spacing.md : Spacing.xl,
+                  horizontal: isMobile ? Spacing.sm : Spacing.lg,
+                ),
+                child: Center(
+                  child: RotatedBox(
+                    quarterTurns: -1,
+                    child: Text(
+                      chooseYourPathModel.cardName,
+                      style: TextTheme.of(context).headlineMedium?.copyWith(
+                            color: ColorName.title,
+                            fontWeight: FontWeight.bold,
+                            fontSize: sideTitleTextSize,
+                          ),
+                    ).tr(),
                   ),
                 ),
               ),
             ),
           ),
-          IntrinsicWidth(
-            child: Container(
-              constraints: BoxConstraints(maxWidth: 508),
-              decoration: BoxDecoration(
-                borderRadius: const BorderRadius.all(Radius.circular(30)),
-                color: ColorName.card,
-                border: Border.all(
-                  color: ColorName.background,
-                  width: 1,
-                ),
+        ),
+        IntrinsicWidth(
+          child: Container(
+            constraints: BoxConstraints(maxWidth: maxWidth),
+            decoration: BoxDecoration(
+              borderRadius: const BorderRadius.all(Radius.circular(30)),
+              color: ColorName.card,
+              border: Border.all(
+                color: ColorName.background,
+                width: 1,
               ),
-              child: Padding(
-                padding: const EdgeInsets.all(Spacing.lg),
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    Center(
-                      child: Text(
-                        chooseYourPathModel.price,
-                        style: TextTheme.of(context).headlineLarge?.copyWith(
-                              color: ColorName.title,
-                              fontWeight: FontWeight.bold,
-                            ),
-                      ).tr(),
-                    ),
-                    AppSpacing.v_16,
-                    Row(
+            ),
+            child: Padding(
+              padding: const EdgeInsets.all(Spacing.lg),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Center(
+                    child: Text(
+                      chooseYourPathModel.price,
+                      style: TextTheme.of(context).headlineLarge?.copyWith(
+                            color: ColorName.title,
+                            fontWeight: FontWeight.bold,
+                            fontSize: titleTextSize,
+                          ),
+                    ).tr(),
+                  ),
+                  AppSpacing.v_16,
+                  Row(
+                    children: [
+                      Expanded(
+                        child: _tag(context, chooseYourPathModel.tag1),
+                      ),
+                      AppSpacing.h_16,
+                      Expanded(
+                        child: _tag(context, chooseYourPathModel.tag2),
+                      ),
+                    ],
+                  ),
+                  AppSpacing.v_16,
+                  SizedBox(
+                    width: double.infinity,
+                    child: _tag(context, chooseYourPathModel.tag3),
+                  ),
+                  AppSpacing.v_40,
+                  Container(
+                    constraints: BoxConstraints(maxWidth: 470),
+                    child: Column(
                       children: [
-                        Expanded(
-                          child: _tag(context, chooseYourPathModel.tag1),
+                        _bulletPointText(
+                          context: context,
+                          index: 1,
+                          text: chooseYourPathModel.description1,
                         ),
-                        AppSpacing.h_16,
-                        Expanded(
-                          child: _tag(context, chooseYourPathModel.tag2),
+                        _bulletPointText(
+                          context: context,
+                          index: 2,
+                          text: chooseYourPathModel.description2,
+                        ),
+                        _bulletPointText(
+                          context: context,
+                          index: 3,
+                          text: chooseYourPathModel.description3,
+                        ),
+                        _bulletPointText(
+                          context: context,
+                          index: 4,
+                          text: chooseYourPathModel.description4,
                         ),
                       ],
                     ),
-                    AppSpacing.v_16,
-                    SizedBox(
-                      width: double.infinity,
-                      child: _tag(context, chooseYourPathModel.tag3),
-                    ),
-                    AppSpacing.v_40,
-                    Container(
-                      constraints: BoxConstraints(maxWidth: 470),
-                      child: Column(
-                        children: [
-                          _bulletPointText(
-                            context: context,
-                            index: 1,
-                            text: chooseYourPathModel.description1,
-                          ),
-                          _bulletPointText(
-                            context: context,
-                            index: 2,
-                            text: chooseYourPathModel.description2,
-                          ),
-                          _bulletPointText(
-                            context: context,
-                            index: 3,
-                            text: chooseYourPathModel.description3,
-                          ),
-                          _bulletPointText(
-                            context: context,
-                            index: 4,
-                            text: chooseYourPathModel.description4,
-                          ),
-                        ],
-                      ),
-                    ),
-                    Spacer(),
-                    _moreButton(context),
-                  ],
-                ),
+                  ),
+                  Spacer(),
+                  _moreButton(context),
+                ],
               ),
             ),
-          )
-        ],
-      ),
+          ),
+        )
+      ],
     );
   }
 
@@ -151,8 +163,10 @@ class ChooseYourPathCard extends StatelessWidget {
       child: Center(
         child: Text(
           text,
+          textAlign: TextAlign.center,
           style: TextTheme.of(context).bodyMedium?.copyWith(
                 color: ColorName.title,
+                fontSize: tagTextSize,
               ),
         ).tr(),
       ),
@@ -179,6 +193,7 @@ class ChooseYourPathCard extends StatelessWidget {
               style: TextTheme.of(context).bodyMedium?.copyWith(
                     color: ColorName.descriptionText,
                     fontWeight: FontWeight.normal,
+                    fontSize: descriptionTextSize,
                   ),
             ),
             AppSpacing.h_8,
@@ -189,6 +204,7 @@ class ChooseYourPathCard extends StatelessWidget {
                 style: TextTheme.of(context).bodyMedium?.copyWith(
                       color: ColorName.descriptionText,
                       fontWeight: FontWeight.normal,
+                      fontSize: descriptionTextSize,
                     ),
               ).tr(),
             ),
@@ -221,6 +237,7 @@ class ChooseYourPathCard extends StatelessWidget {
                 style: TextTheme.of(context).bodyMedium?.copyWith(
                       color: ColorName.card,
                       fontWeight: FontWeight.bold,
+                      fontSize: descriptionTextSize,
                     ),
               ).tr(),
             ),
