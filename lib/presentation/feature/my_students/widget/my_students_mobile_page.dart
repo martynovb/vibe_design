@@ -49,7 +49,7 @@ class MyStudentsMobilePage extends StatelessWidget {
           return Padding(
             padding: EdgeInsets.only(
               left: index == 0 ? Spacing.md : 0,
-              right: Spacing.xs,
+              right: Spacing.md,
             ),
             child: _cardItem(context, MyStudentsPage.students[index]),
           );
@@ -70,32 +70,29 @@ class MyStudentsMobilePage extends StatelessWidget {
           child: Stack(
             children: [
               Image.asset(student.thumbPath),
-              Align(
-                alignment: Alignment.bottomLeft,
-                child: Padding(
-                  padding:
-                      EdgeInsets.only(bottom: Spacing.xl, left: Spacing.xs),
-                  child: InkWell(
-                    onTap: () => launchUrl(Uri.parse(student.behanceUrl)),
-                    child: Container(
-                      decoration: BoxDecoration(
-                        color: ColorName.background,
-                        borderRadius: BorderRadius.circular(30),
+              Positioned(
+                left: 8,
+                bottom: 8,
+                child: InkWell(
+                  onTap: () => launchUrl(Uri.parse(student.behanceUrl)),
+                  child: Container(
+                    decoration: BoxDecoration(
+                      color: ColorName.background,
+                      borderRadius: BorderRadius.circular(30),
+                    ),
+                    child: Padding(
+                      padding: EdgeInsets.symmetric(
+                        vertical: Spacing.md,
+                        horizontal: Spacing.xs,
                       ),
-                      child: Padding(
-                        padding: EdgeInsets.symmetric(
-                          vertical: Spacing.sm,
-                          horizontal: Spacing.md,
-                        ),
-                        child: Text(
-                          student.name,
-                          style: TextTheme.of(context).bodySmall?.copyWith(
-                                color: ColorName.title,
-                                fontWeight: FontWeight.w600,
-                                fontSize: 16,
-                                decoration: TextDecoration.underline,
-                              ),
-                        ),
+                      child: Text(
+                        student.name,
+                        style: TextTheme.of(context).bodySmall?.copyWith(
+                              color: ColorName.title,
+                              fontWeight: FontWeight.w600,
+                              fontSize: 16,
+                              decoration: TextDecoration.underline,
+                            ),
                       ),
                     ),
                   ),

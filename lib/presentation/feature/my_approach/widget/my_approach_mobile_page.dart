@@ -28,6 +28,7 @@ class MyApproachMobilePage extends StatelessWidget {
                 style: TextTheme.of(context).bodyMedium?.copyWith(
                       color: ColorName.descriptionText,
                       fontWeight: FontWeight.normal,
+                      fontSize: AppTextSizes.mobileSubTitleSize,
                     ),
                 children: [
                   TextSpan(
@@ -35,6 +36,7 @@ class MyApproachMobilePage extends StatelessWidget {
                     style: TextTheme.of(context).bodyMedium?.copyWith(
                           color: ColorName.accent,
                           fontWeight: FontWeight.bold,
+                          fontSize: AppTextSizes.mobileSubTitleSize,
                         ),
                   ),
                   TextSpan(
@@ -42,6 +44,7 @@ class MyApproachMobilePage extends StatelessWidget {
                     style: TextTheme.of(context).bodyMedium?.copyWith(
                           color: ColorName.descriptionText,
                           fontWeight: FontWeight.normal,
+                          fontSize: AppTextSizes.mobileSubTitleSize,
                         ),
                   ),
                   TextSpan(
@@ -49,6 +52,7 @@ class MyApproachMobilePage extends StatelessWidget {
                     style: TextTheme.of(context).bodyMedium?.copyWith(
                           color: ColorName.accent,
                           fontWeight: FontWeight.bold,
+                          fontSize: AppTextSizes.mobileSubTitleSize,
                         ),
                   ),
                   TextSpan(
@@ -56,6 +60,7 @@ class MyApproachMobilePage extends StatelessWidget {
                     style: TextTheme.of(context).bodyMedium?.copyWith(
                           color: ColorName.descriptionText,
                           fontWeight: FontWeight.normal,
+                          fontSize: AppTextSizes.mobileSubTitleSize,
                         ),
                   ),
                 ],
@@ -76,6 +81,7 @@ class MyApproachMobilePage extends StatelessWidget {
                 style: TextTheme.of(context).bodyMedium?.copyWith(
                       color: ColorName.descriptionText,
                       fontWeight: FontWeight.normal,
+                      fontSize: AppTextSizes.mobileSubTitleSize,
                     ),
                 children: [
                   TextSpan(
@@ -83,6 +89,7 @@ class MyApproachMobilePage extends StatelessWidget {
                     style: TextTheme.of(context).bodyMedium?.copyWith(
                           color: ColorName.accent,
                           fontWeight: FontWeight.bold,
+                          fontSize: AppTextSizes.mobileSubTitleSize,
                         ),
                   ),
                   TextSpan(
@@ -90,6 +97,7 @@ class MyApproachMobilePage extends StatelessWidget {
                     style: TextTheme.of(context).bodyMedium?.copyWith(
                           color: ColorName.descriptionText,
                           fontWeight: FontWeight.normal,
+                          fontSize: AppTextSizes.mobileSubTitleSize,
                         ),
                   ),
                   TextSpan(
@@ -97,6 +105,7 @@ class MyApproachMobilePage extends StatelessWidget {
                     style: TextTheme.of(context).bodyMedium?.copyWith(
                           color: ColorName.accent,
                           fontWeight: FontWeight.bold,
+                          fontSize: AppTextSizes.mobileSubTitleSize,
                         ),
                   ),
                   TextSpan(
@@ -104,6 +113,7 @@ class MyApproachMobilePage extends StatelessWidget {
                     style: TextTheme.of(context).bodyMedium?.copyWith(
                           color: ColorName.descriptionText,
                           fontWeight: FontWeight.normal,
+                          fontSize: AppTextSizes.mobileSubTitleSize,
                         ),
                   ),
                 ],
@@ -124,6 +134,7 @@ class MyApproachMobilePage extends StatelessWidget {
                 style: TextTheme.of(context).bodyMedium?.copyWith(
                       color: ColorName.descriptionText,
                       fontWeight: FontWeight.normal,
+                      fontSize: AppTextSizes.mobileSubTitleSize,
                     ),
                 children: [
                   TextSpan(
@@ -131,6 +142,7 @@ class MyApproachMobilePage extends StatelessWidget {
                     style: TextTheme.of(context).bodyMedium?.copyWith(
                           color: ColorName.accent,
                           fontWeight: FontWeight.bold,
+                          fontSize: AppTextSizes.mobileSubTitleSize,
                         ),
                   ),
                   TextSpan(
@@ -138,6 +150,7 @@ class MyApproachMobilePage extends StatelessWidget {
                     style: TextTheme.of(context).bodyMedium?.copyWith(
                           color: ColorName.descriptionText,
                           fontWeight: FontWeight.normal,
+                          fontSize: AppTextSizes.mobileSubTitleSize,
                         ),
                   ),
                   TextSpan(
@@ -145,6 +158,7 @@ class MyApproachMobilePage extends StatelessWidget {
                     style: TextTheme.of(context).bodyMedium?.copyWith(
                           color: ColorName.accent,
                           fontWeight: FontWeight.bold,
+                          fontSize: AppTextSizes.mobileSubTitleSize,
                         ),
                   ),
                   TextSpan(
@@ -152,6 +166,7 @@ class MyApproachMobilePage extends StatelessWidget {
                     style: TextTheme.of(context).bodyMedium?.copyWith(
                           color: ColorName.descriptionText,
                           fontWeight: FontWeight.normal,
+                          fontSize: AppTextSizes.mobileSubTitleSize,
                         ),
                   ),
                 ],
@@ -172,6 +187,7 @@ class MyApproachMobilePage extends StatelessWidget {
                 style: TextTheme.of(context).bodyMedium?.copyWith(
                       color: ColorName.descriptionText,
                       fontWeight: FontWeight.normal,
+                      fontSize: AppTextSizes.mobileSubTitleSize,
                     ),
                 children: [
                   TextSpan(
@@ -179,6 +195,7 @@ class MyApproachMobilePage extends StatelessWidget {
                     style: TextTheme.of(context).bodyMedium?.copyWith(
                           color: ColorName.accent,
                           fontWeight: FontWeight.bold,
+                          fontSize: AppTextSizes.mobileSubTitleSize,
                         ),
                   ),
                   TextSpan(
@@ -186,6 +203,7 @@ class MyApproachMobilePage extends StatelessWidget {
                     style: TextTheme.of(context).bodyMedium?.copyWith(
                           color: ColorName.descriptionText,
                           fontWeight: FontWeight.normal,
+                          fontSize: AppTextSizes.mobileSubTitleSize,
                         ),
                   ),
                   TextSpan(
@@ -193,6 +211,7 @@ class MyApproachMobilePage extends StatelessWidget {
                     style: TextTheme.of(context).bodyMedium?.copyWith(
                           color: ColorName.accent,
                           fontWeight: FontWeight.bold,
+                          fontSize: AppTextSizes.mobileSubTitleSize,
                         ),
                   ),
                   TextSpan(
@@ -200,6 +219,7 @@ class MyApproachMobilePage extends StatelessWidget {
                     style: TextTheme.of(context).bodyMedium?.copyWith(
                           color: ColorName.descriptionText,
                           fontWeight: FontWeight.normal,
+                          fontSize: AppTextSizes.mobileSubTitleSize,
                         ),
                   ),
                 ],
@@ -213,6 +233,7 @@ class MyApproachMobilePage extends StatelessWidget {
               style: TextTheme.of(context).bodyMedium?.copyWith(
                     color: ColorName.title,
                     fontWeight: FontWeight.normal,
+                    fontSize: AppTextSizes.mobileSubTitleSize,
                   ),
               children: [
                 TextSpan(
@@ -220,6 +241,7 @@ class MyApproachMobilePage extends StatelessWidget {
                   style: TextTheme.of(context).bodyMedium?.copyWith(
                         color: ColorName.accent,
                         fontWeight: FontWeight.w600,
+                        fontSize: AppTextSizes.mobileSubTitleSize,
                       ),
                 ),
                 TextSpan(
@@ -227,6 +249,7 @@ class MyApproachMobilePage extends StatelessWidget {
                   style: TextTheme.of(context).bodyMedium?.copyWith(
                         color: ColorName.title,
                         fontWeight: FontWeight.normal,
+                        fontSize: AppTextSizes.mobileSubTitleSize,
                       ),
                 ),
                 TextSpan(
@@ -234,6 +257,7 @@ class MyApproachMobilePage extends StatelessWidget {
                   style: TextTheme.of(context).bodyMedium?.copyWith(
                         color: ColorName.title,
                         fontWeight: FontWeight.normal,
+                        fontSize: AppTextSizes.mobileSubTitleSize,
                       ),
                 )
               ],
@@ -252,6 +276,7 @@ class MyApproachMobilePage extends StatelessWidget {
                   style: TextTheme.of(context).bodyMedium?.copyWith(
                         color: ColorName.accent,
                         fontWeight: FontWeight.w600,
+                        fontSize: AppTextSizes.mobileSubTitleSize,
                       ),
                 ),
                 TextSpan(
@@ -259,6 +284,7 @@ class MyApproachMobilePage extends StatelessWidget {
                   style: TextTheme.of(context).bodyMedium?.copyWith(
                         color: ColorName.title,
                         fontWeight: FontWeight.normal,
+                        fontSize: AppTextSizes.mobileSubTitleSize,
                       ),
                 ),
                 TextSpan(
@@ -266,6 +292,7 @@ class MyApproachMobilePage extends StatelessWidget {
                   style: TextTheme.of(context).bodyMedium?.copyWith(
                         color: ColorName.title,
                         fontWeight: FontWeight.normal,
+                        fontSize: AppTextSizes.mobileSubTitleSize,
                       ),
                 )
               ],
@@ -304,6 +331,7 @@ class MyApproachMobilePage extends StatelessWidget {
         style: TextTheme.of(context).bodyMedium?.copyWith(
               color: ColorName.title,
               fontWeight: FontWeight.normal,
+              fontSize: AppTextSizes.mobileSubTitleSize,
             ),
         children: [
           TextSpan(
@@ -311,6 +339,7 @@ class MyApproachMobilePage extends StatelessWidget {
             style: TextTheme.of(context).bodyMedium?.copyWith(
                   color: ColorName.accent,
                   fontWeight: FontWeight.w600,
+                  fontSize: AppTextSizes.mobileSubTitleSize,
                 ),
           ),
           TextSpan(
@@ -318,6 +347,7 @@ class MyApproachMobilePage extends StatelessWidget {
             style: TextTheme.of(context).bodyMedium?.copyWith(
                   color: ColorName.title,
                   fontWeight: FontWeight.normal,
+                  fontSize: AppTextSizes.mobileSubTitleSize,
                 ),
           ),
           TextSpan(
@@ -325,6 +355,7 @@ class MyApproachMobilePage extends StatelessWidget {
             style: TextTheme.of(context).bodyMedium?.copyWith(
                   color: ColorName.accent,
                   fontWeight: FontWeight.w600,
+                  fontSize: AppTextSizes.mobileSubTitleSize,
                 ),
           ),
           TextSpan(

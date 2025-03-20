@@ -38,16 +38,15 @@ class HomePageState extends State<HomePage> {
           key: homeKey,
         ),
       ),
-       SectionViewModel(section: GoalPage()),
-       SectionViewModel(
+      SectionViewModel(section: GoalPage()),
+      SectionViewModel(
         key: aboutKey,
         menuOption: MenuOption.about,
         section: AboutMePage(
           key: aboutKey,
         ),
       ),
-      
-       SectionViewModel(section: MyApproachPage()),
+      SectionViewModel(section: MyApproachPage()),
       SectionViewModel(
         key: coursesKey,
         menuOption: MenuOption.courses,
@@ -62,7 +61,7 @@ class HomePageState extends State<HomePage> {
           key: prosKey,
         ),
       ),
-       SectionViewModel(section: MyStudentsPage()),
+      SectionViewModel(section: MyStudentsPage()),
       SectionViewModel(section: ReviewsPage()),
       SectionViewModel(
         key: learnKey,
@@ -79,7 +78,7 @@ class HomePageState extends State<HomePage> {
           key: pricingKey,
         ),
       ),
-      /*SectionViewModel(section: ApplyForCoursePage()),
+      SectionViewModel(section: ApplyForCoursePage()),
       SectionViewModel(
         key: contactKey,
         menuOption: MenuOption.contact,
@@ -87,7 +86,7 @@ class HomePageState extends State<HomePage> {
           key: contactKey,
           onMenuOptionPressed: onMenuOptionSelected,
         ),
-      ), */
+      ),
     ];
 
     _onScrollListener = _onScroll;
@@ -174,43 +173,41 @@ class HomePageState extends State<HomePage> {
     return HomeMenuProvider(
       onMenuOptionSelected: onMenuOptionSelected,
       child: Scaffold(
-        body: DeviceLayoutBuilder(
-          layoutBuilder: (isMobile) {
-            return Column(
-              children: [
-                Container(
-                  color: ColorName.card.withValues(alpha: 0.4),
-                  child: MenuWidget(
-                    selectedMenuOption: _selectedMenuOption,
-                    onMenuOptionSelected: onMenuOptionSelected,
-                  ),
+        body: DeviceLayoutBuilder(layoutBuilder: (isMobile) {
+          return Column(
+            children: [
+              Container(
+                color: ColorName.card.withValues(alpha: 0.4),
+                child: MenuWidget(
+                  selectedMenuOption: _selectedMenuOption,
+                  onMenuOptionSelected: onMenuOptionSelected,
                 ),
-                Expanded(
-                  child: SingleChildScrollView(
-                    controller: _scrollController,
-                    child: Column(
-                      key: _columnKey,
-                      children: List.generate(
-                        _sections.length,
-                        (index) {
-                          return index < (_sections.length - 1)
-                              ? Column(
-                                  children: [
-                                    _sections[index].section,
-                                    if (index < _sections.length - 1)
-                                      SizedBox(height: isMobile ? 120 : 200),
-                                  ],
-                                )
-                              : _sections[index].section;
-                        },
-                      ),
+              ),
+              Expanded(
+                child: SingleChildScrollView(
+                  controller: _scrollController,
+                  child: Column(
+                    key: _columnKey,
+                    children: List.generate(
+                      _sections.length,
+                      (index) {
+                        return index < (_sections.length - 1)
+                            ? Column(
+                                children: [
+                                  _sections[index].section,
+                                  if (index < _sections.length - 1)
+                                    SizedBox(height: isMobile ? 120 : 200),
+                                ],
+                              )
+                            : _sections[index].section;
+                      },
                     ),
                   ),
                 ),
-              ],
-            );
-          }
-        ),
+              ),
+            ],
+          );
+        }),
       ),
     );
   }

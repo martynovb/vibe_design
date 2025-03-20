@@ -55,21 +55,21 @@ class LearningProcessMobilePage extends StatelessWidget {
         text: LocaleKeys.learningProcessSubTitle1.tr(),
         style: TextTheme.of(context).bodyMedium?.copyWith(
               color: ColorName.title,
-              fontWeight: FontWeight.normal,
+              fontWeight: FontWeight.normal,fontSize: AppTextSizes.mobileSubTitleSize,
             ),
         children: [
           TextSpan(
             text: LocaleKeys.learningProcessSubTitle2.tr(),
             style: TextTheme.of(context).bodyMedium?.copyWith(
                   color: ColorName.accent,
-                  fontWeight: FontWeight.w600,
+                  fontWeight: FontWeight.w600,fontSize: AppTextSizes.mobileSubTitleSize,
                 ),
           ),
           TextSpan(
             text: LocaleKeys.learningProcessSubTitle3.tr(),
             style: TextTheme.of(context).bodyMedium?.copyWith(
                   color: ColorName.title,
-                  fontWeight: FontWeight.normal,
+                  fontWeight: FontWeight.normal,fontSize: AppTextSizes.mobileSubTitleSize,
                 ),
           ),
         ],
@@ -146,61 +146,55 @@ class LearningProcessMobilePage extends StatelessWidget {
   }) {
     return Stack(
       children: [
-        Column(
-          children: [
-            AppSpacing.v_8,
-            Card(
-              color: ColorName.card,
-              shape: RoundedRectangleBorder(
-                borderRadius: BorderRadius.circular(30),
-              ),
-              child: Padding(
-                padding: const EdgeInsets.all(Spacing.xl),
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  mainAxisSize: MainAxisSize.min,
-                  children: [
-                    Center(child: mainImage),
-                    AppSpacing.v_16,
-                    if (topTitle) ...[
-                      Text(
-                        title,
-                        style: TextTheme.of(context).headlineMedium?.copyWith(
-                              color: ColorName.title,
-                              fontWeight: FontWeight.bold,
-                            ),
-                      ),
-                      AppSpacing.v_24,
-                      Text(
-                        subtitle,
-                        style: TextTheme.of(context).bodyMedium?.copyWith(
-                              color: ColorName.descriptionText,
-                              fontWeight: FontWeight.normal,
-                            ),
-                      ),
-                    ] else ...[
-                      Text(
-                        subtitle,
-                        style: TextTheme.of(context).bodyMedium?.copyWith(
-                              color: ColorName.descriptionText,
-                              fontWeight: FontWeight.normal,
-                            ),
-                      ),
-                      AppSpacing.v_24,
-                      Text(
-                        title,
-                        style: TextTheme.of(context).headlineMedium?.copyWith(
-                              color: ColorName.title,
-                              fontWeight: FontWeight.bold,
-                            ),
-                      ),
-                    ],
-                  ],
-                ),
-              ),
+        Card(
+          color: ColorName.card,
+          shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(30),
+          ),
+          child: Padding(
+            padding: const EdgeInsets.all(Spacing.xl),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              mainAxisSize: MainAxisSize.min,
+              children: [
+                Center(child: mainImage),
+                AppSpacing.v_16,
+                if (topTitle) ...[
+                  Text(
+                    title,
+                    style: TextTheme.of(context).headlineMedium?.copyWith(
+                          color: ColorName.title,
+                          fontWeight: FontWeight.bold,
+                        ),
+                  ),
+                  AppSpacing.v_24,
+                  Text(
+                    subtitle,
+                    style: TextTheme.of(context).bodyMedium?.copyWith(
+                          color: ColorName.descriptionText,
+                          fontWeight: FontWeight.normal,fontSize: AppTextSizes.mobileSubTitleSize,
+                        ),
+                  ),
+                ] else ...[
+                  Text(
+                    subtitle,
+                    style: TextTheme.of(context).bodyMedium?.copyWith(
+                          color: ColorName.descriptionText,
+                          fontWeight: FontWeight.normal,fontSize: AppTextSizes.mobileSubTitleSize,
+                        ),
+                  ),
+                  AppSpacing.v_24,
+                  Text(
+                    title,
+                    style: TextTheme.of(context).headlineMedium?.copyWith(
+                          color: ColorName.title,
+                          fontWeight: FontWeight.bold,
+                        ),
+                  ),
+                ],
+              ],
             ),
-            AppSpacing.v_16,
-          ],
+          ),
         ),
         if (isRightImage) ...[
           Positioned(

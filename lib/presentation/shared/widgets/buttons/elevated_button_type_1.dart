@@ -33,7 +33,8 @@ class ElevatedButtonType1 extends StatelessWidget {
           textAlign: TextAlign.center,
           style: TextTheme.of(context).bodyMedium?.copyWith(
                 color: ColorName.background,
-                fontWeight: FontWeight.w600, //semibold
+                fontWeight: FontWeight.w600, 
+                fontSize: fontSize
               ),
         ),
       ),

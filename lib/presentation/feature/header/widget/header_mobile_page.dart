@@ -91,6 +91,7 @@ class HeaderMobilePage extends StatelessWidget {
   Widget _headerSubTitle(BuildContext context) {
     final style = TextTheme.of(context).bodyMedium?.copyWith(
           color: ColorName.descriptionText,
+          fontSize: AppTextSizes.mobileSubTitleSize,
         );
     return Padding(
       padding: const EdgeInsets.only(
@@ -104,9 +105,9 @@ class HeaderMobilePage extends StatelessWidget {
             TextSpan(
               text: LocaleKeys.headerSubTitle2.tr(),
               style: style?.copyWith(
-                    color: ColorName.accent,
-                    fontWeight: FontWeight.w600,
-                  ),
+                color: ColorName.accent,
+                fontWeight: FontWeight.w600,
+              ),
             ),
             TextSpan(
               text: LocaleKeys.headerSubTitle3.tr(),
@@ -115,9 +116,9 @@ class HeaderMobilePage extends StatelessWidget {
             TextSpan(
               text: LocaleKeys.headerSubTitle4.tr(),
               style: style?.copyWith(
-                    color: ColorName.accent,
-                    fontWeight: FontWeight.w600,
-                  ),
+                color: ColorName.accent,
+                fontWeight: FontWeight.w600,
+              ),
             ),
             TextSpan(
               text: LocaleKeys.headerSubTitle5.tr(),
@@ -126,9 +127,9 @@ class HeaderMobilePage extends StatelessWidget {
             TextSpan(
               text: LocaleKeys.headerSubTitle6.tr(),
               style: style?.copyWith(
-                    color: ColorName.accent,
-                    fontWeight: FontWeight.w600,
-                  ),
+                color: ColorName.accent,
+                fontWeight: FontWeight.w600,
+              ),
             ),
             TextSpan(
               text: LocaleKeys.headerSubTitle7.tr(),
@@ -137,9 +138,9 @@ class HeaderMobilePage extends StatelessWidget {
             TextSpan(
               text: LocaleKeys.headerSubTitle8.tr(),
               style: style?.copyWith(
-                    color: ColorName.accent,
-                    fontWeight: FontWeight.w600,
-                  ),
+                color: ColorName.accent,
+                fontWeight: FontWeight.w600,
+              ),
             ),
             TextSpan(
               text: LocaleKeys.headerSubTitle9.tr(),
@@ -148,9 +149,9 @@ class HeaderMobilePage extends StatelessWidget {
             TextSpan(
               text: LocaleKeys.headerSubTitle10.tr(),
               style: style?.copyWith(
-                    color: ColorName.accent,
-                    fontWeight: FontWeight.w600,
-                  ),
+                color: ColorName.accent,
+                fontWeight: FontWeight.w600,
+              ),
             ),
             TextSpan(
               text: LocaleKeys.headerSubTitle11.tr(),
@@ -185,6 +186,7 @@ class HeaderMobilePage extends StatelessWidget {
                       style: TextTheme.of(context).bodyMedium?.copyWith(
                             color: ColorName.accent,
                             fontWeight: FontWeight.w600,
+                            fontSize: AppTextSizes.mobileSubTitleSize,
                           ),
                       children: [
                         TextSpan(
@@ -192,6 +194,7 @@ class HeaderMobilePage extends StatelessWidget {
                           style: TextTheme.of(context).bodyMedium?.copyWith(
                                 color: ColorName.descriptionText,
                                 fontWeight: FontWeight.normal,
+                                fontSize: AppTextSizes.mobileSubTitleSize,
                               ),
                         ),
                       ],
@@ -211,6 +214,7 @@ class HeaderMobilePage extends StatelessWidget {
                       style: TextTheme.of(context).bodyMedium?.copyWith(
                             color: ColorName.accent,
                             fontWeight: FontWeight.w600,
+                            fontSize: AppTextSizes.mobileSubTitleSize,
                           ),
                       children: [
                         TextSpan(
@@ -218,6 +222,7 @@ class HeaderMobilePage extends StatelessWidget {
                           style: TextTheme.of(context).bodyMedium?.copyWith(
                                 color: ColorName.descriptionText,
                                 fontWeight: FontWeight.normal,
+                                fontSize: AppTextSizes.mobileSubTitleSize,
                               ),
                         ),
                       ],
@@ -237,6 +242,7 @@ class HeaderMobilePage extends StatelessWidget {
                       style: TextTheme.of(context).bodyMedium?.copyWith(
                             color: ColorName.descriptionText,
                             fontWeight: FontWeight.normal,
+                            fontSize: AppTextSizes.mobileSubTitleSize,
                           ),
                       children: [
                         TextSpan(
@@ -244,6 +250,7 @@ class HeaderMobilePage extends StatelessWidget {
                           style: TextTheme.of(context).bodyMedium?.copyWith(
                                 color: ColorName.accent,
                                 fontWeight: FontWeight.w600,
+                                fontSize: AppTextSizes.mobileSubTitleSize,
                               ),
                         ),
                         TextSpan(
@@ -251,6 +258,7 @@ class HeaderMobilePage extends StatelessWidget {
                           style: TextTheme.of(context).bodyMedium?.copyWith(
                                 color: ColorName.descriptionText,
                                 fontWeight: FontWeight.normal,
+                                fontSize: AppTextSizes.mobileSubTitleSize,
                               ),
                         ),
                       ],
@@ -270,6 +278,7 @@ class HeaderMobilePage extends StatelessWidget {
                       style: TextTheme.of(context).bodyMedium?.copyWith(
                             color: ColorName.accent,
                             fontWeight: FontWeight.w600,
+                            fontSize: AppTextSizes.mobileSubTitleSize,
                           ),
                       children: [
                         TextSpan(
@@ -277,6 +286,7 @@ class HeaderMobilePage extends StatelessWidget {
                           style: TextTheme.of(context).bodyMedium?.copyWith(
                                 color: ColorName.descriptionText,
                                 fontWeight: FontWeight.normal,
+                                fontSize: AppTextSizes.mobileSubTitleSize,
                               ),
                         ),
                       ],

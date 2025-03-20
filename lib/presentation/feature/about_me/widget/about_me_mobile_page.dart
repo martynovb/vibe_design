@@ -50,21 +50,21 @@ class AboutMeMobilePage extends StatelessWidget {
         text: LocaleKeys.aboutMeDescription1.tr(),
         style: TextTheme.of(context).headlineSmall?.copyWith(
               color: ColorName.title,
-              fontWeight: FontWeight.normal,
+              fontWeight: FontWeight.normal,fontSize: AppTextSizes.mobileSubTitleSize,
             ),
         children: [
           TextSpan(
             text: LocaleKeys.aboutMeDescription2.tr(),
             style: TextTheme.of(context).headlineSmall?.copyWith(
                   color: ColorName.accent,
-                  fontWeight: FontWeight.w600,
+                  fontWeight: FontWeight.w600,fontSize: AppTextSizes.mobileSubTitleSize,
                 ),
           ),
           TextSpan(
             text: LocaleKeys.aboutMeDescription3.tr(),
             style: TextTheme.of(context).headlineSmall?.copyWith(
                   color: ColorName.title,
-                  fontWeight: FontWeight.normal,
+                  fontWeight: FontWeight.normal,fontSize: AppTextSizes.mobileSubTitleSize,
                 ),
           ),
         ],
@@ -120,7 +120,7 @@ class AboutMeMobilePage extends StatelessWidget {
                       text: LocaleKeys.myPhotoSubTitle.tr(),
                       style: TextTheme.of(context).bodyMedium?.copyWith(
                             color: ColorName.title,
-                            fontWeight: FontWeight.normal,
+                            fontWeight: FontWeight.normal,fontSize: AppTextSizes.mobileSubTitleSize,
                           ),
                     ),
                   ),
@@ -128,7 +128,7 @@ class AboutMeMobilePage extends StatelessWidget {
                   Text(
                     '"${LocaleKeys.myPhotoDescription.tr()}"',
                     style: TextTheme.of(context).bodyLarge?.copyWith(
-                          color: ColorName.title,
+                          color: ColorName.title,fontSize: AppTextSizes.mobileSubTitleSize,
                         ),
                   ),
                 ],
@@ -220,28 +220,28 @@ class AboutMeMobilePage extends StatelessWidget {
           text: LocaleKeys.buletPoint.tr(),
           style: TextTheme.of(context).headlineSmall?.copyWith(
                 color: ColorName.accent,
-                fontWeight: FontWeight.w600,
+                fontWeight: FontWeight.w600,fontSize: AppTextSizes.mobileSubTitleSize,
               ),
           children: [
             TextSpan(
               text: ' ',
               style: TextTheme.of(context).headlineSmall?.copyWith(
                     color: ColorName.accent,
-                    fontWeight: FontWeight.w600,
+                    fontWeight: FontWeight.w600,fontSize: AppTextSizes.mobileSubTitleSize,
                   ),
             ),
             TextSpan(
                 text: title.tr(),
                 style: TextTheme.of(context).headlineSmall?.copyWith(
                       color: ColorName.accent,
-                      fontWeight: FontWeight.w600,
+                      fontWeight: FontWeight.w600,fontSize: AppTextSizes.mobileSubTitleSize,
                     ),
                 children: [
                   TextSpan(
                     text: description.tr(),
                     style: TextTheme.of(context).headlineSmall?.copyWith(
                           color: ColorName.descriptionText,
-                          fontWeight: FontWeight.normal,
+                          fontWeight: FontWeight.normal,fontSize: AppTextSizes.mobileSubTitleSize,
                         ),
                   ),
                 ])

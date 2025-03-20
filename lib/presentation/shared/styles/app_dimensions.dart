@@ -103,3 +103,7 @@ class AppBarSizes {
   final double mobile = 68;
   final double desktop = 80;
 }
+
+class AppTextSizes {
+  static const mobileSubTitleSize = 16.0;
+}

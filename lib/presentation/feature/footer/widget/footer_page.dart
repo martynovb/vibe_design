@@ -13,10 +13,8 @@ class FooterPage extends StatelessWidget {
     return DeviceLayoutBuilder(
       layoutBuilder: (isMobile) {
         return isMobile
-            ? const FooterMobilePage()
-            : FooterDesktopPage(
-                onMenuOptionPressed: onMenuOptionPressed,
-              );
+            ? FooterMobilePage(onMenuOptionPressed: onMenuOptionPressed)
+            : FooterDesktopPage(onMenuOptionPressed: onMenuOptionPressed);
       },
     );
   }

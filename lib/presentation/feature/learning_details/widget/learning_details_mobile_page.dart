@@ -68,35 +68,35 @@ class LearningDetailsMobilePage extends StatelessWidget {
         text: LocaleKeys.learningDetailsSubTitle1.tr(),
         style: TextTheme.of(context).bodyMedium?.copyWith(
               color: ColorName.title,
-              fontWeight: FontWeight.normal,
+              fontWeight: FontWeight.normal,fontSize: AppTextSizes.mobileSubTitleSize,
             ),
         children: [
           TextSpan(
             text: LocaleKeys.learningDetailsSubTitle2.tr(),
             style: TextTheme.of(context).bodyMedium?.copyWith(
                   color: ColorName.accent,
-                  fontWeight: FontWeight.w600,
+                  fontWeight: FontWeight.w600,fontSize: AppTextSizes.mobileSubTitleSize,
                 ),
           ),
           TextSpan(
             text: LocaleKeys.learningDetailsSubTitle3.tr(),
             style: TextTheme.of(context).bodyMedium?.copyWith(
                   color: ColorName.title,
-                  fontWeight: FontWeight.normal,
+                  fontWeight: FontWeight.normal,fontSize: AppTextSizes.mobileSubTitleSize,
                 ),
           ),
           TextSpan(
             text: LocaleKeys.learningDetailsSubTitle4.tr(),
             style: TextTheme.of(context).bodyMedium?.copyWith(
                   color: ColorName.accent,
-                  fontWeight: FontWeight.w600,
+                  fontWeight: FontWeight.w600,fontSize: AppTextSizes.mobileSubTitleSize,
                 ),
           ),
           TextSpan(
             text: LocaleKeys.learningDetailsSubTitle5.tr(),
             style: TextTheme.of(context).bodyMedium?.copyWith(
                   color: ColorName.title,
-                  fontWeight: FontWeight.normal,
+                  fontWeight: FontWeight.normal,fontSize: AppTextSizes.mobileSubTitleSize,
                 ),
           ),
         ],
@@ -110,35 +110,35 @@ class LearningDetailsMobilePage extends StatelessWidget {
         text: LocaleKeys.learningDetailsBottomDescription1.tr(),
         style: TextTheme.of(context).bodyMedium?.copyWith(
               color: ColorName.title,
-              fontWeight: FontWeight.normal,
+              fontWeight: FontWeight.normal,fontSize: AppTextSizes.mobileSubTitleSize,
             ),
         children: [
           TextSpan(
             text: LocaleKeys.learningDetailsBottomDescription2.tr(),
             style: TextTheme.of(context).bodyMedium?.copyWith(
                   color: ColorName.accent,
-                  fontWeight: FontWeight.w600,
+                  fontWeight: FontWeight.w600,fontSize: AppTextSizes.mobileSubTitleSize,
                 ),
           ),
           TextSpan(
             text: LocaleKeys.learningDetailsBottomDescription3.tr(),
             style: TextTheme.of(context).bodyMedium?.copyWith(
                   color: ColorName.title,
-                  fontWeight: FontWeight.normal,
+                  fontWeight: FontWeight.normal,fontSize: AppTextSizes.mobileSubTitleSize,
                 ),
           ),
           TextSpan(
             text: LocaleKeys.learningDetailsBottomDescription4.tr(),
             style: TextTheme.of(context).bodyMedium?.copyWith(
                   color: ColorName.accent,
-                  fontWeight: FontWeight.w600,
+                  fontWeight: FontWeight.w600,fontSize: AppTextSizes.mobileSubTitleSize,
                 ),
           ),
           TextSpan(
             text: LocaleKeys.learningDetailsBottomDescription5.tr(),
             style: TextTheme.of(context).bodyMedium?.copyWith(
                   color: ColorName.title,
-                  fontWeight: FontWeight.normal,
+                  fontWeight: FontWeight.normal,fontSize: AppTextSizes.mobileSubTitleSize,
                 ),
           ),
         ],
@@ -225,7 +225,7 @@ class LearningDetailsMobilePage extends StatelessWidget {
                         description.tr(),
                         style: TextTheme.of(context).bodyMedium?.copyWith(
                               color: ColorName.descriptionText,
-                              fontWeight: FontWeight.normal,
+                              fontWeight: FontWeight.normal,fontSize: AppTextSizes.mobileSubTitleSize,
                             ),
                       ),
                     ),

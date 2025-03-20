@@ -49,6 +49,7 @@ class SelectLevelMobilePage extends StatelessWidget {
               text: '"',
               style: TextTheme.of(context).bodyMedium?.copyWith(
                     color: ColorName.title,
+                    fontSize: AppTextSizes.mobileSubTitleSize,
                   ),
               children: [
                 TextSpan(
@@ -56,6 +57,7 @@ class SelectLevelMobilePage extends StatelessWidget {
                   style: TextTheme.of(context).bodyMedium?.copyWith(
                         color: ColorName.accent,
                         fontWeight: FontWeight.w600,
+                        fontSize: AppTextSizes.mobileSubTitleSize,
                       ),
                 ),
                 TextSpan(
@@ -63,12 +65,14 @@ class SelectLevelMobilePage extends StatelessWidget {
                   style: TextTheme.of(context).bodyMedium?.copyWith(
                         color: ColorName.title,
                         fontWeight: FontWeight.normal,
+                        fontSize: AppTextSizes.mobileSubTitleSize,
                       ),
                 ),
                 TextSpan(
                   text: '"',
                   style: TextTheme.of(context).bodyMedium?.copyWith(
                         color: ColorName.title,
+                        fontSize: AppTextSizes.mobileSubTitleSize,
                       ),
                 ),
               ],
@@ -97,6 +101,7 @@ class SelectLevelMobilePage extends StatelessWidget {
             style: TextTheme.of(context).bodyMedium?.copyWith(
                   color: ColorName.descriptionText,
                   fontWeight: FontWeight.normal,
+                  fontSize: AppTextSizes.mobileSubTitleSize,
                 ),
             children: [
               TextSpan(
@@ -104,6 +109,7 @@ class SelectLevelMobilePage extends StatelessWidget {
                 style: TextTheme.of(context).bodyMedium?.copyWith(
                       color: ColorName.accent,
                       fontWeight: FontWeight.bold,
+                      fontSize: AppTextSizes.mobileSubTitleSize,
                     ),
               ),
               TextSpan(
@@ -111,6 +117,7 @@ class SelectLevelMobilePage extends StatelessWidget {
                 style: TextTheme.of(context).bodyMedium?.copyWith(
                       color: ColorName.descriptionText,
                       fontWeight: FontWeight.normal,
+                      fontSize: AppTextSizes.mobileSubTitleSize,
                     ),
               ),
             ],
@@ -134,6 +141,7 @@ class SelectLevelMobilePage extends StatelessWidget {
             style: TextTheme.of(context).bodyMedium?.copyWith(
                   color: ColorName.descriptionText,
                   fontWeight: FontWeight.normal,
+                  fontSize: AppTextSizes.mobileSubTitleSize,
                 ),
             children: [
               TextSpan(
@@ -141,6 +149,7 @@ class SelectLevelMobilePage extends StatelessWidget {
                 style: TextTheme.of(context).bodyMedium?.copyWith(
                       color: ColorName.accent,
                       fontWeight: FontWeight.bold,
+                      fontSize: AppTextSizes.mobileSubTitleSize,
                     ),
               ),
               TextSpan(
@@ -148,6 +157,7 @@ class SelectLevelMobilePage extends StatelessWidget {
                 style: TextTheme.of(context).bodyMedium?.copyWith(
                       color: ColorName.descriptionText,
                       fontWeight: FontWeight.normal,
+                      fontSize: AppTextSizes.mobileSubTitleSize,
                     ),
               ),
             ],
@@ -171,6 +181,7 @@ class SelectLevelMobilePage extends StatelessWidget {
             style: TextTheme.of(context).bodyMedium?.copyWith(
                   color: ColorName.descriptionText,
                   fontWeight: FontWeight.normal,
+                  fontSize: AppTextSizes.mobileSubTitleSize,
                 ),
             children: [
               TextSpan(
@@ -178,6 +189,7 @@ class SelectLevelMobilePage extends StatelessWidget {
                 style: TextTheme.of(context).bodyMedium?.copyWith(
                       color: ColorName.accent,
                       fontWeight: FontWeight.bold,
+                      fontSize: AppTextSizes.mobileSubTitleSize,
                     ),
               ),
               TextSpan(
@@ -185,6 +197,7 @@ class SelectLevelMobilePage extends StatelessWidget {
                 style: TextTheme.of(context).bodyMedium?.copyWith(
                       color: ColorName.descriptionText,
                       fontWeight: FontWeight.normal,
+                      fontSize: AppTextSizes.mobileSubTitleSize,
                     ),
               ),
             ],
@@ -208,6 +221,7 @@ class SelectLevelMobilePage extends StatelessWidget {
             style: TextTheme.of(context).bodyMedium?.copyWith(
                   color: ColorName.descriptionText,
                   fontWeight: FontWeight.normal,
+                  fontSize: AppTextSizes.mobileSubTitleSize,
                 ),
             children: [
               TextSpan(
@@ -215,6 +229,7 @@ class SelectLevelMobilePage extends StatelessWidget {
                 style: TextTheme.of(context).bodyMedium?.copyWith(
                       color: ColorName.accent,
                       fontWeight: FontWeight.bold,
+                      fontSize: AppTextSizes.mobileSubTitleSize,
                     ),
               ),
               TextSpan(
@@ -222,6 +237,7 @@ class SelectLevelMobilePage extends StatelessWidget {
                 style: TextTheme.of(context).bodyMedium?.copyWith(
                       color: ColorName.descriptionText,
                       fontWeight: FontWeight.normal,
+                      fontSize: AppTextSizes.mobileSubTitleSize,
                     ),
               ),
             ],
@@ -321,13 +337,13 @@ class SelectLevelMobilePage extends StatelessWidget {
           horizontal: Spacing.xs,
         ),
         child: Center(
-          child: FittedBox(
-            child: Text(
-              text,
-              style: TextTheme.of(context).bodyMedium?.copyWith(
-                    color: ColorName.title,
-                  ),
-            ),
+          child: Text(
+            text,
+            textAlign: TextAlign.center,
+            style: TextTheme.of(context).bodyMedium?.copyWith(
+                  color: ColorName.title,
+                  fontSize: AppTextSizes.mobileSubTitleSize,
+                ),
           ),
         ),
       ),

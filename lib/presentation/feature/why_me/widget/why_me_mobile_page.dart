@@ -21,6 +21,7 @@ class WhyMeMobilePage extends StatelessWidget {
               style: TextTheme.of(context).bodyMedium?.copyWith(
                     color: ColorName.accent,
                     fontWeight: FontWeight.bold,
+                    fontSize: AppTextSizes.mobileSubTitleSize,
                   ),
               children: [
                 TextSpan(
@@ -28,6 +29,7 @@ class WhyMeMobilePage extends StatelessWidget {
                   style: TextTheme.of(context).bodyMedium?.copyWith(
                         color: ColorName.title,
                         fontWeight: FontWeight.normal,
+                        fontSize: AppTextSizes.mobileSubTitleSize,
                       ),
                 ),
               ],
@@ -93,6 +95,7 @@ class WhyMeMobilePage extends StatelessWidget {
                     style: TextTheme.of(context).bodyMedium?.copyWith(
                           color: ColorName.descriptionText,
                           fontWeight: FontWeight.normal,
+                          fontSize: AppTextSizes.mobileSubTitleSize,
                         ),
                   ),
                 ],
@@ -109,6 +112,7 @@ class WhyMeMobilePage extends StatelessWidget {
           ),
         ],
       ),
+      AppSpacing.v_16,
       Card(
         color: ColorName.card,
         shape: RoundedRectangleBorder(
@@ -124,6 +128,7 @@ class WhyMeMobilePage extends StatelessWidget {
                 style: TextTheme.of(context).bodyMedium?.copyWith(
                       color: ColorName.descriptionText,
                       fontWeight: FontWeight.normal,
+                      fontSize: AppTextSizes.mobileSubTitleSize,
                     ),
               ),
               AppSpacing.v_24,
@@ -138,6 +143,7 @@ class WhyMeMobilePage extends StatelessWidget {
           ),
         ),
       ),
+      AppSpacing.v_16,
       Stack(
         children: [
           Card(
@@ -163,6 +169,7 @@ class WhyMeMobilePage extends StatelessWidget {
                     style: TextTheme.of(context).bodyMedium?.copyWith(
                           color: ColorName.descriptionText,
                           fontWeight: FontWeight.normal,
+                          fontSize: AppTextSizes.mobileSubTitleSize,
                         ),
                   ),
                 ],
@@ -179,6 +186,7 @@ class WhyMeMobilePage extends StatelessWidget {
           ),
         ],
       ),
+      AppSpacing.v_16,
       Card(
         color: ColorName.card,
         shape: RoundedRectangleBorder(
@@ -194,6 +202,7 @@ class WhyMeMobilePage extends StatelessWidget {
                 style: TextTheme.of(context).bodyMedium?.copyWith(
                       color: ColorName.descriptionText,
                       fontWeight: FontWeight.normal,
+                      fontSize: AppTextSizes.mobileSubTitleSize,
                     ),
               ),
               AppSpacing.v_24,
@@ -208,6 +217,7 @@ class WhyMeMobilePage extends StatelessWidget {
           ),
         ),
       ),
+      AppSpacing.v_16,
       Stack(
         children: [
           Card(
@@ -225,6 +235,7 @@ class WhyMeMobilePage extends StatelessWidget {
                     style: TextTheme.of(context).bodyMedium?.copyWith(
                           color: ColorName.descriptionText,
                           fontWeight: FontWeight.normal,
+                          fontSize: AppTextSizes.mobileSubTitleSize,
                         ),
                   ),
                   AppSpacing.v_24,

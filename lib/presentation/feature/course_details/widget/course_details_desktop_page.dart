@@ -379,23 +379,29 @@ class CourseDetailsDesktopPage extends StatelessWidget {
         children: [
           Align(
             alignment: Alignment.topLeft,
-            child: Text.rich(
-              TextSpan(
-                text: '${LocaleKeys.main.tr()} / ',
-                style: TextTheme.of(context).headlineSmall?.copyWith(
-                      color: ColorName.title,
-                      fontWeight: FontWeight.w600,
-                    ),
-                children: [
-                  TextSpan(
-                    text: _courseDetailsModel.fullTitle.tr(),
+            child: Row(
+              children: [
+                InkWell(
+                  hoverColor: Colors.transparent,
+                  splashColor: Colors.transparent,
+                  highlightColor: Colors.transparent,
+                  onTap: () => handlePop(context, MenuOption.home),
+                  child: Text(
+                    '${LocaleKeys.main.tr()} / ',
                     style: TextTheme.of(context).headlineSmall?.copyWith(
-                          color: ColorName.descriptionText,
+                          color: ColorName.title,
                           fontWeight: FontWeight.w600,
                         ),
                   ),
-                ],
-              ),
+                ),
+                Text(
+                  _courseDetailsModel.fullTitle.tr(),
+                  style: TextTheme.of(context).headlineSmall?.copyWith(
+                        color: ColorName.stroke,
+                        fontWeight: FontWeight.w600,
+                      ),
+                ),
+              ],
             ),
           ),
           Padding(

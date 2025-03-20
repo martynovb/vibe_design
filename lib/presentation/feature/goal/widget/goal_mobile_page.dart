@@ -64,6 +64,7 @@ class GoalMobilePage extends StatelessWidget {
                 text: '"',
                 style: TextTheme.of(context).headlineSmall?.copyWith(
                       color: ColorName.title,
+                      fontSize: AppTextSizes.mobileSubTitleSize,
                     ),
                 children: [
                   TextSpan(
@@ -71,6 +72,7 @@ class GoalMobilePage extends StatelessWidget {
                     style: TextTheme.of(context).headlineSmall?.copyWith(
                           color: ColorName.accent,
                           fontWeight: FontWeight.w600,
+                          fontSize: AppTextSizes.mobileSubTitleSize,
                         ),
                   ),
                   TextSpan(
@@ -78,18 +80,20 @@ class GoalMobilePage extends StatelessWidget {
                     style: TextTheme.of(context).headlineSmall?.copyWith(
                           color: ColorName.title,
                           fontWeight: FontWeight.normal,
+                          fontSize: AppTextSizes.mobileSubTitleSize,
                         ),
                   ),
                   TextSpan(
                     text: '"',
                     style: TextTheme.of(context).headlineSmall?.copyWith(
                           color: ColorName.title,
+                          fontSize: AppTextSizes.mobileSubTitleSize,
                         ),
                   ),
                 ],
               ),
             ),
-            AppSpacing.v_64,
+            AppSpacing.v_24,
             _cards(context),
           ],
         ),
@@ -141,7 +145,7 @@ class GoalMobilePage extends StatelessWidget {
                 Text(
                   LocaleKeys.goalCard1Description.tr(),
                   style: TextTheme.of(context).bodyMedium?.copyWith(
-                        color: ColorName.descriptionText,
+                        color: ColorName.descriptionText,fontSize: AppTextSizes.mobileSubTitleSize,
                       ),
                 ),
               ],
@@ -224,7 +228,7 @@ class GoalMobilePage extends StatelessWidget {
                 Text(
                   LocaleKeys.goalCard3Description.tr(),
                   style: TextTheme.of(context).bodyMedium?.copyWith(
-                        color: ColorName.descriptionText,
+                        color: ColorName.descriptionText,fontSize: AppTextSizes.mobileSubTitleSize,
                       ),
                 ),
               ],

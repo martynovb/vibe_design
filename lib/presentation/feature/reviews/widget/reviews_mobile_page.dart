@@ -23,7 +23,7 @@ class ReviewsMobilePage extends StatelessWidget {
           child: _header(context),
         ),
         Padding(
-          padding: const EdgeInsets.symmetric(horizontal: Spacing.md),
+          padding: const EdgeInsets.symmetric(horizontal: Spacing.sm),
           child: _cards(context),
         ),
         _viewPager(context),
@@ -86,7 +86,7 @@ class ReviewsMobilePage extends StatelessWidget {
                       ),
                     ),
                   ),
-                  AppSpacing.h_16,
+                  AppSpacing.h_8,
                   Expanded(
                     child: _card(
                       context: context,
@@ -97,7 +97,7 @@ class ReviewsMobilePage extends StatelessWidget {
                   ),
                 ],
               ),
-              AppSpacing.v_16,
+              AppSpacing.v_8,
               _card(
                 context: context,
                 title: LocaleKeys.reviewCardTitle2.tr(),
@@ -129,7 +129,7 @@ class ReviewsMobilePage extends StatelessWidget {
         borderRadius: BorderRadius.circular(30),
       ),
       child: Padding(
-        padding: const EdgeInsets.all(Spacing.lg),
+        padding: const EdgeInsets.all(Spacing.md),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
@@ -146,7 +146,7 @@ class ReviewsMobilePage extends StatelessWidget {
                 description,
                 style: TextTheme.of(context).bodyMedium?.copyWith(
                       color: ColorName.descriptionText,
-                      fontWeight: FontWeight.normal,
+                      fontWeight: FontWeight.normal,fontSize: AppTextSizes.mobileSubTitleSize,
                     ),
               ),
             ] else ...[
@@ -154,7 +154,7 @@ class ReviewsMobilePage extends StatelessWidget {
                 description,
                 style: TextTheme.of(context).bodyMedium?.copyWith(
                       color: ColorName.descriptionText,
-                      fontWeight: FontWeight.normal,
+                      fontWeight: FontWeight.normal,fontSize: AppTextSizes.mobileSubTitleSize,
                     ),
               ),
               AppSpacing.v_24,
