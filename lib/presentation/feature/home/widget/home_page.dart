@@ -47,7 +47,7 @@ class HomePageState extends State<HomePage> {
         ),
       ),
       
-      /* SectionViewModel(section: MyApproachPage()),
+       SectionViewModel(section: MyApproachPage()),
       SectionViewModel(
         key: coursesKey,
         menuOption: MenuOption.courses,
@@ -62,7 +62,7 @@ class HomePageState extends State<HomePage> {
           key: prosKey,
         ),
       ),
-      SectionViewModel(section: MyStudentsPage()),
+       SectionViewModel(section: MyStudentsPage()),
       SectionViewModel(section: ReviewsPage()),
       SectionViewModel(
         key: learnKey,
@@ -72,7 +72,7 @@ class HomePageState extends State<HomePage> {
         ),
       ),
       SectionViewModel(section: LearningDetailsPage()),
-      SectionViewModel(
+      /*SectionViewModel(
         key: pricingKey,
         menuOption: MenuOption.pricing,
         section: ChooseYourPathPage(
