@@ -14,6 +14,7 @@ import '../../../gen/assets.gen.dart';
 import '../../../gen/colors.gen.dart';
 import '../../shared/localization/locale_keys.g.dart';
 import '../../shared/styles/app_dimensions.dart';
+import '../../shared/widgets/buttons/elevated_button_type_1.dart';
 import '../../shared/widgets/device_layout_builder.dart';
 import '../apply_for_course/apply_for_course.dart';
 import '../choose_your_path/choose_your_path_level.dart';

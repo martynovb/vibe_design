@@ -8,16 +8,18 @@ class HeaderImage extends StatelessWidget {
     super.key,
     required this.headerImagePath,
     required this.width,
+    this.height,
   });
 
   final String headerImagePath;
   final double width;
+  final double? height;
 
   @override
   Widget build(BuildContext context) {
     return DeviceLayoutBuilder(layoutBuilder: (isMobile) {
       return Container(
-        height: isMobile ? 450 : 555,
+        height: height ?? (isMobile ? 450 : 555),
         foregroundDecoration: BoxDecoration(
           color: Colors.black.withValues(
             alpha: 0.6,

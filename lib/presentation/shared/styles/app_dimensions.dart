@@ -81,7 +81,7 @@ class Spacing {
   static const double xxl = 40;
   static const double xxxl = 48;
 
-  static const double s56 = 48;
+  static const double s56 = 56;
 }
 
 class Insets {

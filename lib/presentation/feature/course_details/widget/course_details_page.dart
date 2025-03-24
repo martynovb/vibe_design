@@ -10,7 +10,9 @@ class CourseDetailsPage extends StatelessWidget {
     return DeviceLayoutBuilder(
       layoutBuilder: (isMobile) {
         return isMobile
-            ? const CourseDetailsMobilePage()
+            ? CourseDetailsMobilePage(
+                courseType: courseType,
+              )
             : CourseDetailsDesktopPage(
                 courseType: courseType,
               );
