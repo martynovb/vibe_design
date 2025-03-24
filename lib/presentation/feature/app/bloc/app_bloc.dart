@@ -29,6 +29,7 @@ class AppBloc extends Bloc<AppEvent, AppState> {
     on<_OpenLinkedIn>(_onOpenLinkedIn);
     on<_OpenInstagram>(_onInstagram);
     on<_OpenTelegram>(_onTelegram);
+    on<_OpenBehance>(_onBehance);
     on<_SendEmail>(_onSendEmail);
   }
 
@@ -43,6 +44,10 @@ class AppBloc extends Bloc<AppEvent, AppState> {
 
   Future<void> _onTelegram(event, emit) async {
     launchUrl(Uri.parse(AppConstants.telegramAccount));
+  }  
+  
+  Future<void> _onBehance(event, emit) async {
+    launchUrl(Uri.parse(AppConstants.behanceAccount));
   }
 
   Future<void> _onSendEmail(event, emit) async {

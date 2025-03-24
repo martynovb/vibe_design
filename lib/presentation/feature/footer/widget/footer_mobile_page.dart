@@ -52,6 +52,13 @@ class FooterMobilePage extends StatelessWidget {
                     callback: () =>
                         context.read<AppBloc>().add(AppEvent.openLinkedIn()),
                   ),
+                  AppSpacing.h_48,
+                  _socialNetworkIcon(
+                    iconPath: Assets.images.behance.path,
+                    hoveredIconPath: Assets.images.behanceHovered.path,
+                    callback: () =>
+                        context.read<AppBloc>().add(AppEvent.openBehance()),
+                  ),
                   Spacer(),
                 ],
               ),

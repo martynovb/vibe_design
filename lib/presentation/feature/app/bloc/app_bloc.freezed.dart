@@ -23,6 +23,7 @@ mixin _$AppEvent {
     required TResult Function() openLinkedIn,
     required TResult Function() openInstagram,
     required TResult Function() openTelegram,
+    required TResult Function() openBehance,
     required TResult Function() sendEmail,
   }) =>
       throw _privateConstructorUsedError;
@@ -33,6 +34,7 @@ mixin _$AppEvent {
     TResult? Function()? openLinkedIn,
     TResult? Function()? openInstagram,
     TResult? Function()? openTelegram,
+    TResult? Function()? openBehance,
     TResult? Function()? sendEmail,
   }) =>
       throw _privateConstructorUsedError;
@@ -43,6 +45,7 @@ mixin _$AppEvent {
     TResult Function()? openLinkedIn,
     TResult Function()? openInstagram,
     TResult Function()? openTelegram,
+    TResult Function()? openBehance,
     TResult Function()? sendEmail,
     required TResult orElse(),
   }) =>
@@ -54,6 +57,7 @@ mixin _$AppEvent {
     required TResult Function(_OpenLinkedIn value) openLinkedIn,
     required TResult Function(_OpenInstagram value) openInstagram,
     required TResult Function(_OpenTelegram value) openTelegram,
+    required TResult Function(_OpenBehance value) openBehance,
     required TResult Function(_SendEmail value) sendEmail,
   }) =>
       throw _privateConstructorUsedError;
@@ -64,6 +68,7 @@ mixin _$AppEvent {
     TResult? Function(_OpenLinkedIn value)? openLinkedIn,
     TResult? Function(_OpenInstagram value)? openInstagram,
     TResult? Function(_OpenTelegram value)? openTelegram,
+    TResult? Function(_OpenBehance value)? openBehance,
     TResult? Function(_SendEmail value)? sendEmail,
   }) =>
       throw _privateConstructorUsedError;
@@ -74,6 +79,7 @@ mixin _$AppEvent {
     TResult Function(_OpenLinkedIn value)? openLinkedIn,
     TResult Function(_OpenInstagram value)? openInstagram,
     TResult Function(_OpenTelegram value)? openTelegram,
+    TResult Function(_OpenBehance value)? openBehance,
     TResult Function(_SendEmail value)? sendEmail,
     required TResult orElse(),
   }) =>
@@ -146,6 +152,7 @@ class _$AppStartedImpl implements _AppStarted {
     required TResult Function() openLinkedIn,
     required TResult Function() openInstagram,
     required TResult Function() openTelegram,
+    required TResult Function() openBehance,
     required TResult Function() sendEmail,
   }) {
     return appStarted();
@@ -159,6 +166,7 @@ class _$AppStartedImpl implements _AppStarted {
     TResult? Function()? openLinkedIn,
     TResult? Function()? openInstagram,
     TResult? Function()? openTelegram,
+    TResult? Function()? openBehance,
     TResult? Function()? sendEmail,
   }) {
     return appStarted?.call();
@@ -172,6 +180,7 @@ class _$AppStartedImpl implements _AppStarted {
     TResult Function()? openLinkedIn,
     TResult Function()? openInstagram,
     TResult Function()? openTelegram,
+    TResult Function()? openBehance,
     TResult Function()? sendEmail,
     required TResult orElse(),
   }) {
@@ -189,6 +198,7 @@ class _$AppStartedImpl implements _AppStarted {
     required TResult Function(_OpenLinkedIn value) openLinkedIn,
     required TResult Function(_OpenInstagram value) openInstagram,
     required TResult Function(_OpenTelegram value) openTelegram,
+    required TResult Function(_OpenBehance value) openBehance,
     required TResult Function(_SendEmail value) sendEmail,
   }) {
     return appStarted(this);
@@ -202,6 +212,7 @@ class _$AppStartedImpl implements _AppStarted {
     TResult? Function(_OpenLinkedIn value)? openLinkedIn,
     TResult? Function(_OpenInstagram value)? openInstagram,
     TResult? Function(_OpenTelegram value)? openTelegram,
+    TResult? Function(_OpenBehance value)? openBehance,
     TResult? Function(_SendEmail value)? sendEmail,
   }) {
     return appStarted?.call(this);
@@ -215,6 +226,7 @@ class _$AppStartedImpl implements _AppStarted {
     TResult Function(_OpenLinkedIn value)? openLinkedIn,
     TResult Function(_OpenInstagram value)? openInstagram,
     TResult Function(_OpenTelegram value)? openTelegram,
+    TResult Function(_OpenBehance value)? openBehance,
     TResult Function(_SendEmail value)? sendEmail,
     required TResult orElse(),
   }) {
@@ -275,6 +287,7 @@ class _$FreeLessonImpl implements _FreeLesson {
     required TResult Function() openLinkedIn,
     required TResult Function() openInstagram,
     required TResult Function() openTelegram,
+    required TResult Function() openBehance,
     required TResult Function() sendEmail,
   }) {
     return freeLesson();
@@ -288,6 +301,7 @@ class _$FreeLessonImpl implements _FreeLesson {
     TResult? Function()? openLinkedIn,
     TResult? Function()? openInstagram,
     TResult? Function()? openTelegram,
+    TResult? Function()? openBehance,
     TResult? Function()? sendEmail,
   }) {
     return freeLesson?.call();
@@ -301,6 +315,7 @@ class _$FreeLessonImpl implements _FreeLesson {
     TResult Function()? openLinkedIn,
     TResult Function()? openInstagram,
     TResult Function()? openTelegram,
+    TResult Function()? openBehance,
     TResult Function()? sendEmail,
     required TResult orElse(),
   }) {
@@ -318,6 +333,7 @@ class _$FreeLessonImpl implements _FreeLesson {
     required TResult Function(_OpenLinkedIn value) openLinkedIn,
     required TResult Function(_OpenInstagram value) openInstagram,
     required TResult Function(_OpenTelegram value) openTelegram,
+    required TResult Function(_OpenBehance value) openBehance,
     required TResult Function(_SendEmail value) sendEmail,
   }) {
     return freeLesson(this);
@@ -331,6 +347,7 @@ class _$FreeLessonImpl implements _FreeLesson {
     TResult? Function(_OpenLinkedIn value)? openLinkedIn,
     TResult? Function(_OpenInstagram value)? openInstagram,
     TResult? Function(_OpenTelegram value)? openTelegram,
+    TResult? Function(_OpenBehance value)? openBehance,
     TResult? Function(_SendEmail value)? sendEmail,
   }) {
     return freeLesson?.call(this);
@@ -344,6 +361,7 @@ class _$FreeLessonImpl implements _FreeLesson {
     TResult Function(_OpenLinkedIn value)? openLinkedIn,
     TResult Function(_OpenInstagram value)? openInstagram,
     TResult Function(_OpenTelegram value)? openTelegram,
+    TResult Function(_OpenBehance value)? openBehance,
     TResult Function(_SendEmail value)? sendEmail,
     required TResult orElse(),
   }) {
@@ -404,6 +422,7 @@ class _$OpenLinkedInImpl implements _OpenLinkedIn {
     required TResult Function() openLinkedIn,
     required TResult Function() openInstagram,
     required TResult Function() openTelegram,
+    required TResult Function() openBehance,
     required TResult Function() sendEmail,
   }) {
     return openLinkedIn();
@@ -417,6 +436,7 @@ class _$OpenLinkedInImpl implements _OpenLinkedIn {
     TResult? Function()? openLinkedIn,
     TResult? Function()? openInstagram,
     TResult? Function()? openTelegram,
+    TResult? Function()? openBehance,
     TResult? Function()? sendEmail,
   }) {
     return openLinkedIn?.call();
@@ -430,6 +450,7 @@ class _$OpenLinkedInImpl implements _OpenLinkedIn {
     TResult Function()? openLinkedIn,
     TResult Function()? openInstagram,
     TResult Function()? openTelegram,
+    TResult Function()? openBehance,
     TResult Function()? sendEmail,
     required TResult orElse(),
   }) {
@@ -447,6 +468,7 @@ class _$OpenLinkedInImpl implements _OpenLinkedIn {
     required TResult Function(_OpenLinkedIn value) openLinkedIn,
     required TResult Function(_OpenInstagram value) openInstagram,
     required TResult Function(_OpenTelegram value) openTelegram,
+    required TResult Function(_OpenBehance value) openBehance,
     required TResult Function(_SendEmail value) sendEmail,
   }) {
     return openLinkedIn(this);
@@ -460,6 +482,7 @@ class _$OpenLinkedInImpl implements _OpenLinkedIn {
     TResult? Function(_OpenLinkedIn value)? openLinkedIn,
     TResult? Function(_OpenInstagram value)? openInstagram,
     TResult? Function(_OpenTelegram value)? openTelegram,
+    TResult? Function(_OpenBehance value)? openBehance,
     TResult? Function(_SendEmail value)? sendEmail,
   }) {
     return openLinkedIn?.call(this);
@@ -473,6 +496,7 @@ class _$OpenLinkedInImpl implements _OpenLinkedIn {
     TResult Function(_OpenLinkedIn value)? openLinkedIn,
     TResult Function(_OpenInstagram value)? openInstagram,
     TResult Function(_OpenTelegram value)? openTelegram,
+    TResult Function(_OpenBehance value)? openBehance,
     TResult Function(_SendEmail value)? sendEmail,
     required TResult orElse(),
   }) {
@@ -533,6 +557,7 @@ class _$OpenInstagramImpl implements _OpenInstagram {
     required TResult Function() openLinkedIn,
     required TResult Function() openInstagram,
     required TResult Function() openTelegram,
+    required TResult Function() openBehance,
     required TResult Function() sendEmail,
   }) {
     return openInstagram();
@@ -546,6 +571,7 @@ class _$OpenInstagramImpl implements _OpenInstagram {
     TResult? Function()? openLinkedIn,
     TResult? Function()? openInstagram,
     TResult? Function()? openTelegram,
+    TResult? Function()? openBehance,
     TResult? Function()? sendEmail,
   }) {
     return openInstagram?.call();
@@ -559,6 +585,7 @@ class _$OpenInstagramImpl implements _OpenInstagram {
     TResult Function()? openLinkedIn,
     TResult Function()? openInstagram,
     TResult Function()? openTelegram,
+    TResult Function()? openBehance,
     TResult Function()? sendEmail,
     required TResult orElse(),
   }) {
@@ -576,6 +603,7 @@ class _$OpenInstagramImpl implements _OpenInstagram {
     required TResult Function(_OpenLinkedIn value) openLinkedIn,
     required TResult Function(_OpenInstagram value) openInstagram,
     required TResult Function(_OpenTelegram value) openTelegram,
+    required TResult Function(_OpenBehance value) openBehance,
     required TResult Function(_SendEmail value) sendEmail,
   }) {
     return openInstagram(this);
@@ -589,6 +617,7 @@ class _$OpenInstagramImpl implements _OpenInstagram {
     TResult? Function(_OpenLinkedIn value)? openLinkedIn,
     TResult? Function(_OpenInstagram value)? openInstagram,
     TResult? Function(_OpenTelegram value)? openTelegram,
+    TResult? Function(_OpenBehance value)? openBehance,
     TResult? Function(_SendEmail value)? sendEmail,
   }) {
     return openInstagram?.call(this);
@@ -602,6 +631,7 @@ class _$OpenInstagramImpl implements _OpenInstagram {
     TResult Function(_OpenLinkedIn value)? openLinkedIn,
     TResult Function(_OpenInstagram value)? openInstagram,
     TResult Function(_OpenTelegram value)? openTelegram,
+    TResult Function(_OpenBehance value)? openBehance,
     TResult Function(_SendEmail value)? sendEmail,
     required TResult orElse(),
   }) {
@@ -662,6 +692,7 @@ class _$OpenTelegramImpl implements _OpenTelegram {
     required TResult Function() openLinkedIn,
     required TResult Function() openInstagram,
     required TResult Function() openTelegram,
+    required TResult Function() openBehance,
     required TResult Function() sendEmail,
   }) {
     return openTelegram();
@@ -675,6 +706,7 @@ class _$OpenTelegramImpl implements _OpenTelegram {
     TResult? Function()? openLinkedIn,
     TResult? Function()? openInstagram,
     TResult? Function()? openTelegram,
+    TResult? Function()? openBehance,
     TResult? Function()? sendEmail,
   }) {
     return openTelegram?.call();
@@ -688,6 +720,7 @@ class _$OpenTelegramImpl implements _OpenTelegram {
     TResult Function()? openLinkedIn,
     TResult Function()? openInstagram,
     TResult Function()? openTelegram,
+    TResult Function()? openBehance,
     TResult Function()? sendEmail,
     required TResult orElse(),
   }) {
@@ -705,6 +738,7 @@ class _$OpenTelegramImpl implements _OpenTelegram {
     required TResult Function(_OpenLinkedIn value) openLinkedIn,
     required TResult Function(_OpenInstagram value) openInstagram,
     required TResult Function(_OpenTelegram value) openTelegram,
+    required TResult Function(_OpenBehance value) openBehance,
     required TResult Function(_SendEmail value) sendEmail,
   }) {
     return openTelegram(this);
@@ -718,6 +752,7 @@ class _$OpenTelegramImpl implements _OpenTelegram {
     TResult? Function(_OpenLinkedIn value)? openLinkedIn,
     TResult? Function(_OpenInstagram value)? openInstagram,
     TResult? Function(_OpenTelegram value)? openTelegram,
+    TResult? Function(_OpenBehance value)? openBehance,
     TResult? Function(_SendEmail value)? sendEmail,
   }) {
     return openTelegram?.call(this);
@@ -731,6 +766,7 @@ class _$OpenTelegramImpl implements _OpenTelegram {
     TResult Function(_OpenLinkedIn value)? openLinkedIn,
     TResult Function(_OpenInstagram value)? openInstagram,
     TResult Function(_OpenTelegram value)? openTelegram,
+    TResult Function(_OpenBehance value)? openBehance,
     TResult Function(_SendEmail value)? sendEmail,
     required TResult orElse(),
   }) {
@@ -743,6 +779,141 @@ class _$OpenTelegramImpl implements _OpenTelegram {
 
 abstract class _OpenTelegram implements AppEvent {
   const factory _OpenTelegram() = _$OpenTelegramImpl;
+}
+
+/// @nodoc
+abstract class _$$OpenBehanceImplCopyWith<$Res> {
+  factory _$$OpenBehanceImplCopyWith(
+          _$OpenBehanceImpl value, $Res Function(_$OpenBehanceImpl) then) =
+      __$$OpenBehanceImplCopyWithImpl<$Res>;
+}
+
+/// @nodoc
+class __$$OpenBehanceImplCopyWithImpl<$Res>
+    extends _$AppEventCopyWithImpl<$Res, _$OpenBehanceImpl>
+    implements _$$OpenBehanceImplCopyWith<$Res> {
+  __$$OpenBehanceImplCopyWithImpl(
+      _$OpenBehanceImpl _value, $Res Function(_$OpenBehanceImpl) _then)
+      : super(_value, _then);
+
+  /// Create a copy of AppEvent
+  /// with the given fields replaced by the non-null parameter values.
+}
+
+/// @nodoc
+
+class _$OpenBehanceImpl implements _OpenBehance {
+  const _$OpenBehanceImpl();
+
+  @override
+  String toString() {
+    return 'AppEvent.openBehance()';
+  }
+
+  @override
+  bool operator ==(Object other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType && other is _$OpenBehanceImpl);
+  }
+
+  @override
+  int get hashCode => runtimeType.hashCode;
+
+  @override
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>({
+    required TResult Function() appStarted,
+    required TResult Function() freeLesson,
+    required TResult Function() openLinkedIn,
+    required TResult Function() openInstagram,
+    required TResult Function() openTelegram,
+    required TResult Function() openBehance,
+    required TResult Function() sendEmail,
+  }) {
+    return openBehance();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? appStarted,
+    TResult? Function()? freeLesson,
+    TResult? Function()? openLinkedIn,
+    TResult? Function()? openInstagram,
+    TResult? Function()? openTelegram,
+    TResult? Function()? openBehance,
+    TResult? Function()? sendEmail,
+  }) {
+    return openBehance?.call();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function()? appStarted,
+    TResult Function()? freeLesson,
+    TResult Function()? openLinkedIn,
+    TResult Function()? openInstagram,
+    TResult Function()? openTelegram,
+    TResult Function()? openBehance,
+    TResult Function()? sendEmail,
+    required TResult orElse(),
+  }) {
+    if (openBehance != null) {
+      return openBehance();
+    }
+    return orElse();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>({
+    required TResult Function(_AppStarted value) appStarted,
+    required TResult Function(_FreeLesson value) freeLesson,
+    required TResult Function(_OpenLinkedIn value) openLinkedIn,
+    required TResult Function(_OpenInstagram value) openInstagram,
+    required TResult Function(_OpenTelegram value) openTelegram,
+    required TResult Function(_OpenBehance value) openBehance,
+    required TResult Function(_SendEmail value) sendEmail,
+  }) {
+    return openBehance(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(_AppStarted value)? appStarted,
+    TResult? Function(_FreeLesson value)? freeLesson,
+    TResult? Function(_OpenLinkedIn value)? openLinkedIn,
+    TResult? Function(_OpenInstagram value)? openInstagram,
+    TResult? Function(_OpenTelegram value)? openTelegram,
+    TResult? Function(_OpenBehance value)? openBehance,
+    TResult? Function(_SendEmail value)? sendEmail,
+  }) {
+    return openBehance?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(_AppStarted value)? appStarted,
+    TResult Function(_FreeLesson value)? freeLesson,
+    TResult Function(_OpenLinkedIn value)? openLinkedIn,
+    TResult Function(_OpenInstagram value)? openInstagram,
+    TResult Function(_OpenTelegram value)? openTelegram,
+    TResult Function(_OpenBehance value)? openBehance,
+    TResult Function(_SendEmail value)? sendEmail,
+    required TResult orElse(),
+  }) {
+    if (openBehance != null) {
+      return openBehance(this);
+    }
+    return orElse();
+  }
+}
+
+abstract class _OpenBehance implements AppEvent {
+  const factory _OpenBehance() = _$OpenBehanceImpl;
 }
 
 /// @nodoc
@@ -791,6 +962,7 @@ class _$SendEmailImpl implements _SendEmail {
     required TResult Function() openLinkedIn,
     required TResult Function() openInstagram,
     required TResult Function() openTelegram,
+    required TResult Function() openBehance,
     required TResult Function() sendEmail,
   }) {
     return sendEmail();
@@ -804,6 +976,7 @@ class _$SendEmailImpl implements _SendEmail {
     TResult? Function()? openLinkedIn,
     TResult? Function()? openInstagram,
     TResult? Function()? openTelegram,
+    TResult? Function()? openBehance,
     TResult? Function()? sendEmail,
   }) {
     return sendEmail?.call();
@@ -817,6 +990,7 @@ class _$SendEmailImpl implements _SendEmail {
     TResult Function()? openLinkedIn,
     TResult Function()? openInstagram,
     TResult Function()? openTelegram,
+    TResult Function()? openBehance,
     TResult Function()? sendEmail,
     required TResult orElse(),
   }) {
@@ -834,6 +1008,7 @@ class _$SendEmailImpl implements _SendEmail {
     required TResult Function(_OpenLinkedIn value) openLinkedIn,
     required TResult Function(_OpenInstagram value) openInstagram,
     required TResult Function(_OpenTelegram value) openTelegram,
+    required TResult Function(_OpenBehance value) openBehance,
     required TResult Function(_SendEmail value) sendEmail,
   }) {
     return sendEmail(this);
@@ -847,6 +1022,7 @@ class _$SendEmailImpl implements _SendEmail {
     TResult? Function(_OpenLinkedIn value)? openLinkedIn,
     TResult? Function(_OpenInstagram value)? openInstagram,
     TResult? Function(_OpenTelegram value)? openTelegram,
+    TResult? Function(_OpenBehance value)? openBehance,
     TResult? Function(_SendEmail value)? sendEmail,
   }) {
     return sendEmail?.call(this);
@@ -860,6 +1036,7 @@ class _$SendEmailImpl implements _SendEmail {
     TResult Function(_OpenLinkedIn value)? openLinkedIn,
     TResult Function(_OpenInstagram value)? openInstagram,
     TResult Function(_OpenTelegram value)? openTelegram,
+    TResult Function(_OpenBehance value)? openBehance,
     TResult Function(_SendEmail value)? sendEmail,
     required TResult orElse(),
   }) {

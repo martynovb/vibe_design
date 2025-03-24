@@ -45,7 +45,7 @@ class MyStudentsPage extends StatelessWidget {
     StudentModel(
       name: 'Dasha Vedmid',
       behanceUrl:
-          'https://www.behance.net/gallery/216090451/Travel-program-Roamio',
+          'https://www.behance.net/gallery/214108445/Soundsy',
       thumbPath: Assets.images.studentWork8.path,
     ),
     StudentModel(

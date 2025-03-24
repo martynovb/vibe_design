@@ -15,10 +15,6 @@ import 'package:vector_graphics/vector_graphics.dart' as _vg;
 class $AssetsImagesGen {
   const $AssetsImagesGen();
 
-  /// File path: assets/images/Design School - Vibe Design.zip
-  String get designSchoolVibeDesign =>
-      'assets/images/Design School - Vibe Design.zip';
-
   /// File path: assets/images/arrow-right.svg
   SvgGenImage get arrowRight =>
       const SvgGenImage('assets/images/arrow-right.svg');
@@ -26,6 +22,13 @@ class $AssetsImagesGen {
   /// File path: assets/images/arrow_input_email.svg
   SvgGenImage get arrowInputEmail =>
       const SvgGenImage('assets/images/arrow_input_email.svg');
+
+  /// File path: assets/images/behance.svg
+  SvgGenImage get behance => const SvgGenImage('assets/images/behance.svg');
+
+  /// File path: assets/images/behance_hovered.svg
+  SvgGenImage get behanceHovered =>
+      const SvgGenImage('assets/images/behance_hovered.svg');
 
   /// File path: assets/images/bills_and_coins.png
   AssetGenImage get billsAndCoins =>
@@ -214,9 +217,10 @@ class $AssetsImagesGen {
 
   /// List of all assets
   List<dynamic> get values => [
-        designSchoolVibeDesign,
         arrowRight,
         arrowInputEmail,
+        behance,
+        behanceHovered,
         billsAndCoins,
         coin,
         cup,

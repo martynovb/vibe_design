@@ -7,5 +7,6 @@ class AppEvent with _$AppEvent {
   const factory AppEvent.openLinkedIn() = _OpenLinkedIn;
   const factory AppEvent.openInstagram() = _OpenInstagram;
   const factory AppEvent.openTelegram() = _OpenTelegram;
+  const factory AppEvent.openBehance() = _OpenBehance;
   const factory AppEvent.sendEmail() = _SendEmail;
 }
