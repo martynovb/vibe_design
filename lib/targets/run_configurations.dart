@@ -3,11 +3,11 @@ class RunConfigurations {
     'sentryDsn',
   );
 
-    // Supabase
-  static String supabaseAnonKey = const String.fromEnvironment(
-    'supabaseAnonKey',
+  static String jsonbinAccessKey = const String.fromEnvironment(
+    'jsonbinAccessKey',
   );
-  static String supabaseUrl = const String.fromEnvironment(
-    'supabaseUrl',
+
+  static String jsonbinMasterKey = const String.fromEnvironment(
+    'jsonbinMasterKey',
   );
 }
