@@ -1,12 +1,11 @@
 part of '../footer.dart';
 
 class FooterMobilePage extends StatelessWidget {
-  FooterMobilePage({
+  const FooterMobilePage({
     super.key,
     required this.onMenuOptionPressed,
   });
 
-  final TextEditingController _emailController = TextEditingController();
   final Function(MenuOption option) onMenuOptionPressed;
 
   @override
@@ -85,70 +84,6 @@ class FooterMobilePage extends StatelessWidget {
     );
   }
 
-  Widget _emailInput(BuildContext context) {
-    return Container(
-      width: double.infinity,
-      decoration: BoxDecoration(
-        color: ColorName.title,
-        borderRadius: BorderRadius.circular(4),
-      ),
-      child: IntrinsicHeight(
-        child: Row(
-          children: [
-            Expanded(
-              child: TextField(
-                controller: _emailController,
-                decoration: InputDecoration(
-                  border: InputBorder.none,
-                  hintText: LocaleKeys.footerSection_email_hint.tr(),
-                  hintStyle: TextTheme.of(context).bodySmall?.copyWith(
-                        fontWeight: FontWeight.w600,
-                        color: ColorName.descriptionText,
-                      ),
-                  contentPadding: EdgeInsets.symmetric(
-                      vertical: Spacing.sm, horizontal: Spacing.lg),
-                ),
-                style: TextTheme.of(context).bodySmall?.copyWith(
-                      fontWeight: FontWeight.w600,
-                      color: ColorName.background,
-                    ),
-              ),
-            ),
-            Padding(
-              padding: const EdgeInsets.all(1),
-              child: InkWell(
-                onTap: () {
-                  context.read<FooterBloc>().add(
-                        FooterEvent.applyForCourse(_emailController.text),
-                      );
-                  _emailController.text = '';
-                },
-                hoverColor: Colors.transparent,
-                splashColor: Colors.transparent,
-                highlightColor: Colors.transparent,
-                child: Container(
-                  height: 54,
-                  width: 54,
-                  decoration: BoxDecoration(
-                    color: ColorName.accent,
-                    borderRadius: BorderRadius.only(
-                      topRight: Radius.circular(4),
-                      bottomRight: Radius.circular(4),
-                    ),
-                  ),
-                  child: Padding(
-                    padding: EdgeInsets.all(Spacing.xs),
-                    child: Assets.images.arrowInputEmail.svg(),
-                  ),
-                ),
-              ),
-            ),
-          ],
-        ),
-      ),
-    );
-  }
-
   Widget _socialNetworkIcon({
     required String iconPath,
     required String hoveredIconPath,
@@ -180,25 +115,6 @@ class FooterMobilePage extends StatelessWidget {
                 ),
         );
       },
-    );
-  }
-
-  Widget _footerMenuItem({
-    required BuildContext context,
-    required String title,
-    required MenuOption menuOption,
-  }) {
-    return InkWell(
-      onTap: () {
-        onMenuOptionPressed(menuOption);
-      },
-      child: Text(
-        title,
-        style: TextTheme.of(context).bodySmall?.copyWith(
-              fontWeight: FontWeight.w600,
-              color: ColorName.descriptionText,
-            ),
-      ).tr(),
     );
   }
 }

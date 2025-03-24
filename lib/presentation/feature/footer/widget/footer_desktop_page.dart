@@ -1,12 +1,11 @@
 part of '../footer.dart';
 
 class FooterDesktopPage extends StatelessWidget {
-  FooterDesktopPage({
+  const FooterDesktopPage({
     super.key,
     required this.onMenuOptionPressed,
   });
 
-  final TextEditingController _emailController = TextEditingController();
   final Function(MenuOption option) onMenuOptionPressed;
 
   @override
