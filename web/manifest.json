@@ -1,11 +1,11 @@
 {
-    "name": "vibe_design",
-    "short_name": "vibe_design",
+    "name": "Vibe Design",
+    "short_name": "Vibe Design",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",
     "theme_color": "#0175C2",
-    "description": "A new Flutter project.",
+    "description": "Твій шлях у design починається тут",
     "orientation": "portrait-primary",
     "prefer_related_applications": false,
     "icons": [

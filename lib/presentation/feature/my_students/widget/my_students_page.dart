@@ -51,7 +51,7 @@ class MyStudentsPage extends StatelessWidget {
     StudentModel(
       name: 'Zlata Pukhovych',
       behanceUrl:
-          'https://www.behance.net/gallery/212187509/Soft-skills-courses',
+          'https://www.behance.net/gallery/221046249/Creative-Boost-Daily-Design-Challenge-App',
       thumbPath: Assets.images.studentWork9.path,
     ),
   ];

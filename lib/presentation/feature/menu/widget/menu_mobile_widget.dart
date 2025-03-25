@@ -36,8 +36,7 @@ class MenuMobileState extends State<MenuMobileWidget> {
                 highlightColor: Colors.transparent,
                 onTap: () => widget.onMenuOptionSelected(MenuOption.home),
                 child: Assets.images.logo.svg(
-                  width: 88,
-                  height: 48,
+                  height: 24,
                 ),
               ),
               Spacer(),
