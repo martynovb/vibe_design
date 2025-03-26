@@ -105,7 +105,8 @@ class WhyMeMobilePage extends StatelessWidget {
           Positioned(
             right: -8,
             top: 0,
-            child: Assets.images.lovelyFace.image(
+            child: Image.network(
+              AppImagesUrls.lovelyFace,
               width: 100,
               height: 100,
             ),
@@ -179,7 +180,8 @@ class WhyMeMobilePage extends StatelessWidget {
           Positioned(
             right: -8,
             top: 0,
-            child: Assets.images.koza.image(
+            child: Image.network(
+              AppImagesUrls.koza,
               width: 100,
               height: 100,
             ),
@@ -253,7 +255,8 @@ class WhyMeMobilePage extends StatelessWidget {
           Positioned(
             right: -0,
             bottom: 16,
-            child: Assets.images.fire.image(
+            child: Image.network(
+              AppImagesUrls.fire,
               width: 100,
               height: 100,
             ),

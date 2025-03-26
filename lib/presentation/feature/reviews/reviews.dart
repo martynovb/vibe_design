@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
 import '../../../gen/assets.gen.dart';
 import '../../../gen/colors.gen.dart';
+import '../../shared/app_constants.dart';
 import '../../shared/localization/locale_keys.g.dart';
 import '../../shared/styles/app_dimensions.dart';
 import '../../shared/widgets/device_layout_builder.dart';

@@ -10,7 +10,7 @@ class HeaderMobilePage extends StatelessWidget {
       children: [
         HeaderImage(
           width: width,
-          headerImagePath: Assets.images.hashtag.path,
+          headerImagePath: AppImagesUrls.hashtag,
         ),
         Column(
           children: [

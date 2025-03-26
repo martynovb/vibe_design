@@ -69,7 +69,7 @@ class MyStudentsMobilePage extends StatelessWidget {
         child: Center(
           child: Stack(
             children: [
-              Image.asset(student.thumbPath),
+              Image.network(student.thumbPath),
               Positioned(
                 left: 8,
                 bottom: 8,

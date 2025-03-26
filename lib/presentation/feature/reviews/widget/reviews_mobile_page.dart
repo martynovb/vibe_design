@@ -9,9 +9,9 @@ class ReviewsMobilePage extends StatelessWidget {
     initialPage: 1,
   );
   final List<Widget> _pages = [
-    Assets.images.review1.image(),
-    Assets.images.review2.image(),
-    Assets.images.review3.image(),
+    Image.network(AppImagesUrls.review1),
+    Image.network(AppImagesUrls.review2),
+    Image.network(AppImagesUrls.review3),
   ];
 
   @override
@@ -146,7 +146,8 @@ class ReviewsMobilePage extends StatelessWidget {
                 description,
                 style: TextTheme.of(context).bodyMedium?.copyWith(
                       color: ColorName.descriptionText,
-                      fontWeight: FontWeight.normal,fontSize: AppTextSizes.mobileSubTitleSize,
+                      fontWeight: FontWeight.normal,
+                      fontSize: AppTextSizes.mobileSubTitleSize,
                     ),
               ),
             ] else ...[
@@ -154,7 +155,8 @@ class ReviewsMobilePage extends StatelessWidget {
                 description,
                 style: TextTheme.of(context).bodyMedium?.copyWith(
                       color: ColorName.descriptionText,
-                      fontWeight: FontWeight.normal,fontSize: AppTextSizes.mobileSubTitleSize,
+                      fontWeight: FontWeight.normal,
+                      fontSize: AppTextSizes.mobileSubTitleSize,
                     ),
               ),
               AppSpacing.v_24,
@@ -182,8 +184,7 @@ class ReviewsMobilePage extends StatelessWidget {
             height: 500,
             child: Transform.scale(
               scale: 1 +
-                  ((680 - maxWidth).clamp(0, 430) / (430 == 0 ? 1 : 430)) *
-                      0.5,
+                  ((680 - maxWidth).clamp(0, 430) / (430 == 0 ? 1 : 430)) * 0.5,
               child: PageView.builder(
                 controller: _controller,
                 itemBuilder: (_, index) {

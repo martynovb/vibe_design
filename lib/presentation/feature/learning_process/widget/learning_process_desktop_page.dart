@@ -100,7 +100,8 @@ class LearningProcessDesktopPage extends StatelessWidget {
                 height: 444,
                 title: LocaleKeys.learningProcessCardTitle1.tr(),
                 subtitle: LocaleKeys.learningProcessCardDescription1.tr(),
-                mainImage: Assets.images.laptopLeft.image(
+                mainImage: Image.network(
+                  AppImagesUrls.laptopLeft,
                   width: 201,
                   height: 213,
                 ),
@@ -114,7 +115,8 @@ class LearningProcessDesktopPage extends StatelessWidget {
                 height: 420,
                 title: LocaleKeys.learningProcessCardTitle3.tr(),
                 subtitle: LocaleKeys.learningProcessCardDescription3.tr(),
-                mainImage: Assets.images.speechBubbleHeart.image(
+                mainImage: Image.network(
+                  AppImagesUrls.speachBubbleHeart,
                   width: 176,
                   height: 213,
                 ),
@@ -136,7 +138,8 @@ class LearningProcessDesktopPage extends StatelessWidget {
                 height: 444,
                 title: LocaleKeys.learningProcessCardTitle2.tr(),
                 subtitle: LocaleKeys.learningProcessCardDescription2.tr(),
-                mainImage: Assets.images.stickyNotes.image(
+                mainImage: Image.network(
+                  AppImagesUrls.stickyNotes,
                   width: 299,
                   height: 190,
                 ),
@@ -150,7 +153,8 @@ class LearningProcessDesktopPage extends StatelessWidget {
                 height: 444,
                 title: LocaleKeys.learningProcessCardTitle4.tr(),
                 subtitle: LocaleKeys.learningProcessCardDescription4.tr(),
-                mainImage: Assets.images.pen.image(
+                mainImage: Image.network(
+                  AppImagesUrls.pen,
                   width: 103,
                   height: 213,
                 ),

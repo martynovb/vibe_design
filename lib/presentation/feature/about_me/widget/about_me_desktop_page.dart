@@ -95,9 +95,8 @@ class AboutMeDesktopPage extends StatelessWidget {
               children: [
                 ClipRRect(
                   borderRadius: BorderRadius.circular(30),
-                  child: Assets.images.myPhoto.image(
-                    width: 680,
-                    height: 844,
+                  child: Image(
+                    image: NetworkImage(AppImagesUrls.myPhoto),
                     fit: BoxFit.cover,
                   ),
                 ),

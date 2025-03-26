@@ -75,7 +75,7 @@ class HeaderImage extends StatelessWidget {
                     padding: EdgeInsets.only(
                       top: isMobile ? 0 : 100,
                     ),
-                    child: Image.asset(
+                    child: Image.network(
                       headerImagePath,
                       width: 743,
                       height: 429,

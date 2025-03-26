@@ -1,4 +1,4 @@
-import '../../../../gen/assets.gen.dart';
+import '../../../shared/app_constants.dart';
 import '../../choose_your_path/model/choose_your_path_model.dart';
 import 'about_course_details_model.dart';
 import 'course_details_model.dart';
@@ -73,7 +73,7 @@ extension CourseTypeExtension on CourseType {
     switch (this) {
       case CourseType.beginer:
         return CourseDetailsModel(
-          headerImagePath: Assets.images.sobaka.path,
+          headerImagePath: AppImagesUrls.sobaka,
           fullTitle: LocaleKeys.course_details_level1_fullTitle,
           title1: LocaleKeys.course_details_level1_title1,
           title2: LocaleKeys.course_details_level1_title2,
@@ -180,7 +180,7 @@ extension CourseTypeExtension on CourseType {
         );
       case CourseType.high:
         return CourseDetailsModel(
-          headerImagePath: Assets.images.dollar.path,
+          headerImagePath: AppImagesUrls.dollar,
           fullTitle: LocaleKeys.course_details_level2_fullTitle,
           title1: LocaleKeys.course_details_level2_title1,
           title2: LocaleKeys.course_details_level2_title2,
@@ -305,7 +305,7 @@ extension CourseTypeExtension on CourseType {
         );
       case CourseType.professional:
         return CourseDetailsModel(
-          headerImagePath: Assets.images.headphones.path,
+          headerImagePath: AppImagesUrls.headphones,
           fullTitle: LocaleKeys.course_details_level3_fullTitle,
           title1: LocaleKeys.course_details_level3_title1,
           title2: LocaleKeys.course_details_level3_title2,
@@ -418,7 +418,7 @@ extension CourseTypeExtension on CourseType {
         );
       case CourseType.individual:
         return CourseDetailsModel(
-          headerImagePath: Assets.images.rocketHeader.path,
+          headerImagePath: AppImagesUrls.rocketHeader,
           fullTitle: LocaleKeys.course_details_level4_fullTitle,
           title1: LocaleKeys.course_details_level4_title1,
           title2: LocaleKeys.course_details_level4_title2,

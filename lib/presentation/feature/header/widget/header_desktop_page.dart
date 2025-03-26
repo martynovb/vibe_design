@@ -10,7 +10,7 @@ class HeaderDesktopPage extends StatelessWidget {
       children: [
         HeaderImage(
           width: width,
-          headerImagePath: Assets.images.hashtag.path,
+          headerImagePath: AppImagesUrls.hashtag,
         ),
         Align(
           alignment: Alignment.center,

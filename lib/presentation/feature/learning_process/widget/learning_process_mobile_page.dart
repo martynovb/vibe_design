@@ -55,21 +55,24 @@ class LearningProcessMobilePage extends StatelessWidget {
         text: LocaleKeys.learningProcessSubTitle1.tr(),
         style: TextTheme.of(context).bodyMedium?.copyWith(
               color: ColorName.title,
-              fontWeight: FontWeight.normal,fontSize: AppTextSizes.mobileSubTitleSize,
+              fontWeight: FontWeight.normal,
+              fontSize: AppTextSizes.mobileSubTitleSize,
             ),
         children: [
           TextSpan(
             text: LocaleKeys.learningProcessSubTitle2.tr(),
             style: TextTheme.of(context).bodyMedium?.copyWith(
                   color: ColorName.accent,
-                  fontWeight: FontWeight.w600,fontSize: AppTextSizes.mobileSubTitleSize,
+                  fontWeight: FontWeight.w600,
+                  fontSize: AppTextSizes.mobileSubTitleSize,
                 ),
           ),
           TextSpan(
             text: LocaleKeys.learningProcessSubTitle3.tr(),
             style: TextTheme.of(context).bodyMedium?.copyWith(
                   color: ColorName.title,
-                  fontWeight: FontWeight.normal,fontSize: AppTextSizes.mobileSubTitleSize,
+                  fontWeight: FontWeight.normal,
+                  fontSize: AppTextSizes.mobileSubTitleSize,
                 ),
           ),
         ],
@@ -84,7 +87,8 @@ class LearningProcessMobilePage extends StatelessWidget {
           context: context,
           title: LocaleKeys.learningProcessCardTitle1.tr(),
           subtitle: LocaleKeys.learningProcessCardDescription1.tr(),
-          mainImage: Assets.images.laptopLeft.image(
+          mainImage: Image.network(
+            AppImagesUrls.laptopLeft,
             width: 201,
             height: 213,
           ),
@@ -97,7 +101,8 @@ class LearningProcessMobilePage extends StatelessWidget {
           context: context,
           title: LocaleKeys.learningProcessCardTitle2.tr(),
           subtitle: LocaleKeys.learningProcessCardDescription2.tr(),
-          mainImage: Assets.images.stickyNotes.image(
+          mainImage: Image.network(
+            AppImagesUrls.stickyNotes,
             width: 299,
             height: 190,
           ),
@@ -110,7 +115,8 @@ class LearningProcessMobilePage extends StatelessWidget {
           context: context,
           title: LocaleKeys.learningProcessCardTitle3.tr(),
           subtitle: LocaleKeys.learningProcessCardDescription3.tr(),
-          mainImage: Assets.images.speechBubbleHeart.image(
+          mainImage: Image.network(
+            AppImagesUrls.speachBubbleHeart,
             width: 176,
             height: 213,
           ),
@@ -123,7 +129,8 @@ class LearningProcessMobilePage extends StatelessWidget {
           context: context,
           title: LocaleKeys.learningProcessCardTitle4.tr(),
           subtitle: LocaleKeys.learningProcessCardDescription4.tr(),
-          mainImage: Assets.images.pen.image(
+          mainImage: Image.network(
+            AppImagesUrls.pen,
             width: 103,
             height: 213,
           ),
@@ -172,7 +179,8 @@ class LearningProcessMobilePage extends StatelessWidget {
                     subtitle,
                     style: TextTheme.of(context).bodyMedium?.copyWith(
                           color: ColorName.descriptionText,
-                          fontWeight: FontWeight.normal,fontSize: AppTextSizes.mobileSubTitleSize,
+                          fontWeight: FontWeight.normal,
+                          fontSize: AppTextSizes.mobileSubTitleSize,
                         ),
                   ),
                 ] else ...[
@@ -180,7 +188,8 @@ class LearningProcessMobilePage extends StatelessWidget {
                     subtitle,
                     style: TextTheme.of(context).bodyMedium?.copyWith(
                           color: ColorName.descriptionText,
-                          fontWeight: FontWeight.normal,fontSize: AppTextSizes.mobileSubTitleSize,
+                          fontWeight: FontWeight.normal,
+                          fontSize: AppTextSizes.mobileSubTitleSize,
                         ),
                   ),
                   AppSpacing.v_24,

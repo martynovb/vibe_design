@@ -105,7 +105,8 @@ class SelectLevelDesktopPage extends StatelessWidget {
       _infoCard(
         height: 627,
         context: context,
-        image: Assets.images.coin.image(
+        image: Image.network(
+          AppImagesUrls.coin,
           width: 232,
           height: 157,
         ),
@@ -142,7 +143,8 @@ class SelectLevelDesktopPage extends StatelessWidget {
       _infoCard(
         height: 564,
         context: context,
-        image: Assets.images.dollarBill.image(
+        image: Image.network(
+          AppImagesUrls.dollarBill,
           width: 232,
           height: 157,
         ),
@@ -179,7 +181,8 @@ class SelectLevelDesktopPage extends StatelessWidget {
       _infoCard(
         height: 564,
         context: context,
-        image: Assets.images.billsAndCoins.image(
+        image: Image.network(
+          AppImagesUrls.billsAndCoins,
           width: 232,
           height: 157,
         ),
@@ -216,7 +219,8 @@ class SelectLevelDesktopPage extends StatelessWidget {
       _infoCard(
         height: 627,
         context: context,
-        image: Assets.images.moneyBrick.image(
+        image: Image.network(
+          AppImagesUrls.moneyBrick,
           width: 232,
           height: 157,
         ),

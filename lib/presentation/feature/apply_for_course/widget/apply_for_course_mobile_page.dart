@@ -102,7 +102,10 @@ class ApplyForCourseMobilePage extends StatelessWidget {
     return IntrinsicHeight(
       child: Column(
         children: [
-          Assets.images.onlineClassLaptop.image(),
+          Image(
+            image: NetworkImage(AppImagesUrls.onlineClassLaptop),
+            fit: BoxFit.cover,
+          ),
           AppSpacing.v_24,
           Padding(
             padding: const EdgeInsets.symmetric(horizontal: Spacing.md),

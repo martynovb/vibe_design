@@ -67,7 +67,7 @@ class MyStudentsDesktopPage extends StatelessWidget {
         ),
         child: Stack(
           children: [
-            Image.asset(student.thumbPath),
+            Image.network(student.thumbPath),
             Align(
               alignment: Alignment.bottomLeft,
               child: Padding(

@@ -106,6 +106,7 @@ class ChooseYourPathDesktopState extends State<ChooseYourPathDesktopPage> {
               cacheExtent: 2000,
               controller: _scrollController,
               scrollDirection: Axis.horizontal,
+              physics: const NeverScrollableScrollPhysics(),
               itemCount: CourseType.values.length,
               separatorBuilder: (context, index) => AppSpacing.h_32,
               itemBuilder: (context, index) {

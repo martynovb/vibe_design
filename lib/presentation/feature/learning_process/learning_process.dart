@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import '../../../gen/assets.gen.dart';
 import '../../../gen/colors.gen.dart';
+import '../../shared/app_constants.dart';
 import '../../shared/localization/locale_keys.g.dart';
 import '../../shared/styles/app_dimensions.dart';
 import '../../shared/widgets/device_layout_builder.dart';

@@ -80,11 +80,10 @@ class AboutMeMobilePage extends StatelessWidget {
         children: [
           ClipRRect(
             borderRadius: BorderRadius.circular(30),
-            child: Assets.images.myPhoto.image(
-              width: 680,
-              height: 844,
-              fit: BoxFit.cover,
-            ),
+            child: Image(
+                    image: NetworkImage(AppImagesUrls.myPhoto),
+                    fit: BoxFit.cover,
+                  ),
           ),
           Positioned.fill(
             child: Container(

@@ -14,15 +14,18 @@ class ReviewsDesktopState extends State<ReviewsDesktopPage> {
     initialPage: 1,
   );
   final List<Widget> _pages = [
-    Assets.images.review1.image(
+    Image.network(
+      AppImagesUrls.review1,
       width: 310,
       height: 640,
     ),
-    Assets.images.review2.image(
+    Image.network(
+      AppImagesUrls.review2,
       width: 310,
       height: 640,
     ),
-    Assets.images.review3.image(
+    Image.network(
+      AppImagesUrls.review3,
       width: 310,
       height: 640,
     ),

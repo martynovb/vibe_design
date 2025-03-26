@@ -17,7 +17,8 @@ class MyApproachMobilePage extends StatelessWidget {
           AppSpacing.v_16,
           _infoCard(
             context: context,
-            image: Assets.images.heart.image(
+            image: Image.network(
+              AppImagesUrls.heart,
               width: 200,
               height: 200,
             ),
@@ -70,7 +71,8 @@ class MyApproachMobilePage extends StatelessWidget {
           AppSpacing.v_16,
           _infoCard(
             context: context,
-            image: Assets.images.targetVertical.image(
+            image: Image.network(
+              AppImagesUrls.targetVertical,
               width: 200,
               height: 200,
             ),
@@ -123,7 +125,8 @@ class MyApproachMobilePage extends StatelessWidget {
           AppSpacing.v_16,
           _infoCard(
             context: context,
-            image: Assets.images.cup.image(
+            image: Image.network(
+              AppImagesUrls.cup,
               width: 200,
               height: 200,
             ),
@@ -176,7 +179,8 @@ class MyApproachMobilePage extends StatelessWidget {
           AppSpacing.v_16,
           _infoCard(
             context: context,
-            image: Assets.images.rocket.image(
+            image: Image.network(
+              AppImagesUrls.rocket,
               width: 200,
               height: 200,
             ),
