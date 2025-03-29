@@ -102,7 +102,7 @@ class ApplyForCourseMobilePage extends StatelessWidget {
     return IntrinsicHeight(
       child: Column(
         children: [
-          Image(
+          const Image(
             image: NetworkImage(AppImagesUrls.onlineClassLaptop),
             fit: BoxFit.cover,
           ),
@@ -127,7 +127,7 @@ class ApplyForCourseMobilePage extends StatelessWidget {
                 fontSize: AppTextSizes.mobileSubTitleSize,
                 text: LocaleKeys.freeTrialLesson.tr(),
                 onPressed: () =>
-                    context.read<AppBloc>().add(AppEvent.freeLesson()),
+                    context.read<AppBloc>().add(const AppEvent.freeLesson()),
               ),
             ),
           ),

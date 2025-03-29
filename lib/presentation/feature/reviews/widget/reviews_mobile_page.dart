@@ -218,7 +218,7 @@ class ReviewsMobilePage extends StatelessWidget {
               InkWell(
                 onTap: () {
                   _controller.previousPage(
-                    duration: Duration(milliseconds: 300),
+                    duration: const Duration(milliseconds: 300),
                     curve: Curves.easeInOut,
                   );
                 },
@@ -250,7 +250,7 @@ class ReviewsMobilePage extends StatelessWidget {
               InkWell(
                 onTap: () {
                   _controller.nextPage(
-                    duration: Duration(milliseconds: 300),
+                    duration: const Duration(milliseconds: 300),
                     curve: Curves.easeInOut,
                   );
                 },

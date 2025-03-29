@@ -81,7 +81,7 @@ class MyStudentsMobilePage extends StatelessWidget {
                       borderRadius: BorderRadius.circular(30),
                     ),
                     child: Padding(
-                      padding: EdgeInsets.symmetric(
+                      padding: const EdgeInsets.symmetric(
                         vertical: Spacing.md,
                         horizontal: Spacing.xs,
                       ),

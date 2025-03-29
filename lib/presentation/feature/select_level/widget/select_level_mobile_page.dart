@@ -322,7 +322,7 @@ class SelectLevelMobilePage extends StatelessWidget {
 
   Widget _tag(BuildContext context, String text) {
     return Container(
-      constraints: BoxConstraints(
+      constraints: const BoxConstraints(
         minHeight: 54,
       ),
       padding: const EdgeInsets.symmetric(

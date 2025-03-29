@@ -39,7 +39,7 @@ class MenuMobileState extends State<MenuMobileWidget> {
                   height: 24,
                 ),
               ),
-              Spacer(),
+              const Spacer(),
               InkWell(
                 key: menuGlobalKey,
                 hoverColor: Colors.transparent,

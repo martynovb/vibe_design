@@ -6,7 +6,7 @@ import 'package:flutter/services.dart';
 import 'package:http/http.dart' as http;
 
 class NetworkAssetLoader implements AssetLoader {
-  static final _networkPath =
+  static const _networkPath =
       'https://psmgcgszaftsviaqdotb.supabase.co/storage/v1/object/public/translations//uk.json';
 
   @override

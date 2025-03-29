@@ -95,7 +95,7 @@ class AboutMeDesktopPage extends StatelessWidget {
               children: [
                 ClipRRect(
                   borderRadius: BorderRadius.circular(30),
-                  child: Image(
+                  child: const Image(
                     image: NetworkImage(AppImagesUrls.myPhoto),
                     fit: BoxFit.cover,
                   ),
@@ -138,7 +138,7 @@ class AboutMeDesktopPage extends StatelessWidget {
                                 ),
                           ),
                         ),
-                        Spacer(),
+                        const Spacer(),
                         Text(
                           '"${LocaleKeys.myPhotoDescription.tr()}"',
                           style: TextTheme.of(context).bodyLarge?.copyWith(

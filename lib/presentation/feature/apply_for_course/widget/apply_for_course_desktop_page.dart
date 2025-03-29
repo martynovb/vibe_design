@@ -81,7 +81,7 @@ class ApplyForCourseDesktopPage extends StatelessWidget {
               ],
             ),
           ),
-          Spacer(),
+          const Spacer(),
           Text(
             LocaleKeys.applyForCourse_title2.tr(),
             style: TextTheme.of(context).displayMedium?.copyWith(
@@ -96,7 +96,7 @@ class ApplyForCourseDesktopPage extends StatelessWidget {
     return IntrinsicHeight(
       child: Row(
         children: [
-          Expanded(
+          const Expanded(
             flex: 3,
             child: Image(
               image: NetworkImage(AppImagesUrls.onlineClassLaptop),
@@ -116,11 +116,11 @@ class ApplyForCourseDesktopPage extends StatelessWidget {
                         fontWeight: FontWeight.normal,
                       ),
                 ),
-                Spacer(),
+                const Spacer(),
                 ElevatedButtonType1(
                   text: LocaleKeys.freeTrialLesson.tr(),
                   onPressed: () =>
-                      context.read<AppBloc>().add(AppEvent.freeLesson()),
+                      context.read<AppBloc>().add(const AppEvent.freeLesson()),
                 ),
                 AppSpacing.v_24,
               ],

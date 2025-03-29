@@ -19,7 +19,7 @@ class HeaderMobilePage extends StatelessWidget {
               child: Align(
                 alignment: Alignment.center,
                 child: Container(
-                  constraints: BoxConstraints(
+                  constraints: const BoxConstraints(
                     maxWidth: AppDimensions.minDesktopWidth,
                   ),
                   child: _header(context),
@@ -80,7 +80,7 @@ class HeaderMobilePage extends StatelessWidget {
               child: ElevatedButtonType1(
                 text: LocaleKeys.freeTrialLesson.tr(),
                 onPressed: () =>
-                    context.read<AppBloc>().add(AppEvent.freeLesson()),
+                    context.read<AppBloc>().add(const AppEvent.freeLesson()),
               ),
             ),
             _headerSubTitle(context),

@@ -196,7 +196,7 @@ class ReviewsDesktopState extends State<ReviewsDesktopPage> {
     return Column(
       children: [
         Container(
-          constraints: BoxConstraints(
+          constraints: const BoxConstraints(
             maxWidth: AppDimensions.minDesktopWidth,
             minWidth: AppDimensions.minDesktopWidth,
           ),
@@ -236,7 +236,7 @@ class ReviewsDesktopState extends State<ReviewsDesktopPage> {
             InkWell(
               onTap: () {
                 _controller.previousPage(
-                  duration: Duration(milliseconds: 300),
+                  duration: const Duration(milliseconds: 300),
                   curve: Curves.easeInOut,
                 );
               },
@@ -268,7 +268,7 @@ class ReviewsDesktopState extends State<ReviewsDesktopPage> {
             InkWell(
               onTap: () {
                 _controller.nextPage(
-                  duration: Duration(milliseconds: 300),
+                  duration: const Duration(milliseconds: 300),
                   curve: Curves.easeInOut,
                 );
               },

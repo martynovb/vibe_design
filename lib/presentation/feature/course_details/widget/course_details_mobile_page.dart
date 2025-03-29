@@ -39,7 +39,7 @@ class CourseDetailsMobilePage extends StatelessWidget {
                           Align(
                             alignment: Alignment.center,
                             child: Container(
-                              constraints: BoxConstraints(
+                              constraints: const BoxConstraints(
                                 maxWidth: AppDimensions.minDesktopWidth,
                               ),
                               child: Padding(
@@ -61,26 +61,26 @@ class CourseDetailsMobilePage extends StatelessWidget {
                   Column(
                     children: [
                       AppSpacing.v_32,
-                      Divider(
+                      const Divider(
                         height: 5,
                         color: ColorName.title,
                       ),
                       AppSpacing.v_24,
                       _infoTable(context),
-                      SizedBox(height: 120),
+                      const SizedBox(height: 120),
                       _aboutCourseSection(context),
-                      SizedBox(height: 120),
+                      const SizedBox(height: 120),
                       _whatIsWaitingForYouSection(context),
-                      SizedBox(height: 120),
+                      const SizedBox(height: 120),
                       _coursePriceSection(context),
-                      SizedBox(height: 120),
-                      ChooseYourPathPage(),
-                      SizedBox(height: 120),
-                      ApplyForCoursePage(),
-                      SizedBox(height: 120),
+                      const SizedBox(height: 120),
+                      const ChooseYourPathPage(),
+                      const SizedBox(height: 120),
+                      const ApplyForCoursePage(),
+                      const SizedBox(height: 120),
                     ],
                   ),
-                  FooterPage(),
+                  const FooterPage(),
                 ],
               ),
             ),
@@ -181,7 +181,7 @@ class CourseDetailsMobilePage extends StatelessWidget {
           AppSpacing.v_16,
           ListView.separated(
             shrinkWrap: true,
-            physics: NeverScrollableScrollPhysics(),
+            physics: const NeverScrollableScrollPhysics(),
             itemCount: _courseDetailsModel.benefitsList.length,
             itemBuilder: (context, index) => Text.rich(
               TextSpan(
@@ -218,7 +218,7 @@ class CourseDetailsMobilePage extends StatelessWidget {
         hoverColor: Colors.transparent,
         splashColor: Colors.transparent,
         highlightColor: Colors.transparent,
-        onTap: () => context.read<AppBloc>().add(AppEvent.openTelegram()),
+        onTap: () => context.read<AppBloc>().add(const AppEvent.openTelegram()),
         child: IntrinsicWidth(
           child: Container(
             padding: const EdgeInsets.symmetric(
@@ -263,7 +263,7 @@ class CourseDetailsMobilePage extends StatelessWidget {
           AppSpacing.v_24,
           ListView.separated(
             shrinkWrap: true,
-            physics: NeverScrollableScrollPhysics(),
+            physics: const NeverScrollableScrollPhysics(),
             itemCount: _courseDetailsModel.modulesList.length,
             itemBuilder: (context, index) => Column(
               crossAxisAlignment: CrossAxisAlignment.start,
@@ -332,7 +332,7 @@ class CourseDetailsMobilePage extends StatelessWidget {
           AppSpacing.v_24,
           ListView.separated(
             shrinkWrap: true,
-            physics: NeverScrollableScrollPhysics(),
+            physics: const NeverScrollableScrollPhysics(),
             itemCount: _courseDetailsModel.aboutCourseList.length,
             itemBuilder: (context, index) => Column(
               crossAxisAlignment: CrossAxisAlignment.start,
@@ -430,7 +430,7 @@ class CourseDetailsMobilePage extends StatelessWidget {
             child: ElevatedButtonType1(
               text: LocaleKeys.freeTrialLesson.tr(),
               onPressed: () =>
-                  context.read<AppBloc>().add(AppEvent.freeLesson()),
+                  context.read<AppBloc>().add(const AppEvent.freeLesson()),
             ),
           ),
         ],
@@ -481,7 +481,7 @@ class CourseDetailsMobilePage extends StatelessWidget {
   Widget _infoTable(
     BuildContext context,
   ) {
-    final textSize = 10.0;
+    const textSize = 10.0;
     return Padding(
       padding: const EdgeInsets.symmetric(
         horizontal: Spacing.md,

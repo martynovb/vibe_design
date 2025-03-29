@@ -37,7 +37,7 @@ class CourseDetailsDesktopPage extends StatelessWidget {
                       Align(
                         alignment: Alignment.center,
                         child: Container(
-                          constraints: BoxConstraints(
+                          constraints: const BoxConstraints(
                             maxWidth: AppDimensions.minDesktopWidth,
                           ),
                           child: _header(context),
@@ -54,27 +54,27 @@ class CourseDetailsDesktopPage extends StatelessWidget {
                           child: _cards(context),
                         ),
                         AppSpacing.v_64,
-                        Divider(
+                        const Divider(
                           height: 5,
                           color: ColorName.title,
                         ),
                         AppSpacing.v_64,
                         _infoTable(context),
-                        SizedBox(height: 200),
+                        const SizedBox(height: 200),
                         _aboutCourseSection(context),
-                        SizedBox(height: 200),
+                        const SizedBox(height: 200),
                         _whatIsWaitingForYouSection(context),
-                        SizedBox(height: 200),
+                        const SizedBox(height: 200),
                         _coursePriceSection(context),
-                        SizedBox(height: 200),
-                        ChooseYourPathPage(),
-                        SizedBox(height: 200),
-                        ApplyForCoursePage(),
-                        SizedBox(height: 200),
+                        const SizedBox(height: 200),
+                        const ChooseYourPathPage(),
+                        const SizedBox(height: 200),
+                        const ApplyForCoursePage(),
+                        const SizedBox(height: 200),
                       ],
                     ),
                   ),
-                  FooterPage(),
+                  const FooterPage(),
                 ],
               ),
             ),
@@ -205,11 +205,11 @@ class CourseDetailsDesktopPage extends StatelessWidget {
             Expanded(
               child: Center(
                 child: Padding(
-                  padding: EdgeInsets.symmetric(
+                  padding: const EdgeInsets.symmetric(
                     horizontal: Spacing.xl,
                   ),
                   child: Assets.images.longArrow.svg(
-                    colorFilter: ColorFilter.mode(
+                    colorFilter: const ColorFilter.mode(
                       ColorName.title,
                       BlendMode.srcIn,
                     ),
@@ -230,7 +230,7 @@ class CourseDetailsDesktopPage extends StatelessWidget {
         hoverColor: Colors.transparent,
         splashColor: Colors.transparent,
         highlightColor: Colors.transparent,
-        onTap: () => context.read<AppBloc>().add(AppEvent.openTelegram()),
+        onTap: () => context.read<AppBloc>().add(const AppEvent.openTelegram()),
         child: IntrinsicWidth(
           child: Container(
             padding: const EdgeInsets.symmetric(

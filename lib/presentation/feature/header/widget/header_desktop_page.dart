@@ -15,7 +15,7 @@ class HeaderDesktopPage extends StatelessWidget {
         Align(
           alignment: Alignment.center,
           child: Container(
-            constraints: BoxConstraints(
+            constraints: const BoxConstraints(
               maxWidth: AppDimensions.minDesktopWidth,
             ),
             child: _header(context),
@@ -143,7 +143,7 @@ class HeaderDesktopPage extends StatelessWidget {
 
   Widget _headerTitle(BuildContext context) => Row(
         children: [
-          Spacer(),
+          const Spacer(),
           Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             mainAxisSize: MainAxisSize.min,
@@ -158,7 +158,7 @@ class HeaderDesktopPage extends StatelessWidget {
                   ElevatedButtonType1(
                     text: LocaleKeys.freeTrialLesson.tr(),
                     onPressed: () =>
-                        context.read<AppBloc>().add(AppEvent.freeLesson()),
+                        context.read<AppBloc>().add(const AppEvent.freeLesson()),
                   ),
                   AppSpacing.h_32,
                   Text.rich(
@@ -185,7 +185,7 @@ class HeaderDesktopPage extends StatelessWidget {
               ),
             ],
           ),
-          Spacer(),
+          const Spacer(),
         ],
       );
 

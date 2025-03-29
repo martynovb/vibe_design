@@ -70,7 +70,7 @@ class SelectLevelDesktopPage extends StatelessWidget {
                       ),
                     ),
                   ),
-                  Spacer(),
+                  const Spacer(),
                   Text.rich(
                     TextSpan(
                       text: LocaleKeys.selectLevelTitle3.tr(),

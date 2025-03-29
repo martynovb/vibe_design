@@ -46,7 +46,7 @@ class MyStudentsDesktopPage extends StatelessWidget {
     return GridView.builder(
       shrinkWrap: true,
       itemCount: MyStudentsPage.students.length,
-      gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+      gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
         crossAxisCount: 3,
         crossAxisSpacing: Spacing.lg,
         mainAxisSpacing: Spacing.lg,
@@ -71,7 +71,7 @@ class MyStudentsDesktopPage extends StatelessWidget {
             Align(
               alignment: Alignment.bottomLeft,
               child: Padding(
-                padding: EdgeInsets.all(Spacing.sm),
+                padding: const EdgeInsets.all(Spacing.sm),
                 child: InkWell(
                   onTap: () => launchUrl(Uri.parse(student.behanceUrl)),
                   child: Container(
@@ -80,7 +80,7 @@ class MyStudentsDesktopPage extends StatelessWidget {
                       borderRadius: BorderRadius.circular(30),
                     ),
                     child: Padding(
-                      padding: EdgeInsets.symmetric(
+                      padding: const EdgeInsets.symmetric(
                         vertical: Spacing.sm,
                         horizontal: Spacing.md,
                       ),

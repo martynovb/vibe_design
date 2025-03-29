@@ -21,48 +21,48 @@ class FooterMobilePage extends StatelessWidget {
             children: [
               Row(
                 children: [
-                  Spacer(),
+                  const Spacer(),
                   _socialNetworkIcon(
                     iconPath: Assets.images.telegram.path,
                     hoveredIconPath: Assets.images.telegramHovered.path,
                     callback: () =>
-                        context.read<AppBloc>().add(AppEvent.openTelegram()),
+                        context.read<AppBloc>().add(const AppEvent.openTelegram()),
                   ),
                   AppSpacing.h_48,
                   _socialNetworkIcon(
                     iconPath: Assets.images.google.path,
                     hoveredIconPath: Assets.images.googleHovered.path,
                     callback: () =>
-                        context.read<AppBloc>().add(AppEvent.sendEmail()),
+                        context.read<AppBloc>().add(const AppEvent.sendEmail()),
                   ),
                   AppSpacing.h_48,
                   _socialNetworkIcon(
                     iconPath: Assets.images.instagram.path,
                     hoveredIconPath: Assets.images.instagramHovered.path,
                     callback: () =>
-                        context.read<AppBloc>().add(AppEvent.openInstagram()),
+                        context.read<AppBloc>().add(const AppEvent.openInstagram()),
                   ),
                   AppSpacing.h_48,
                   _socialNetworkIcon(
                     iconPath: Assets.images.linkedin.path,
                     hoveredIconPath: Assets.images.linkedinHovered.path,
                     callback: () =>
-                        context.read<AppBloc>().add(AppEvent.openLinkedIn()),
+                        context.read<AppBloc>().add(const AppEvent.openLinkedIn()),
                   ),
                   AppSpacing.h_48,
                   _socialNetworkIcon(
                     iconPath: Assets.images.behance.path,
                     hoveredIconPath: Assets.images.behanceHovered.path,
                     callback: () =>
-                        context.read<AppBloc>().add(AppEvent.openBehance()),
+                        context.read<AppBloc>().add(const AppEvent.openBehance()),
                   ),
-                  Spacer(),
+                  const Spacer(),
                 ],
               ),
               AppSpacing.v_32,
               Row(
                 children: [
-                  Spacer(),
+                  const Spacer(),
                   Text(
                     '${DateTime.now().year}',
                     style: TextTheme.of(context).bodySmall?.copyWith(
@@ -70,7 +70,7 @@ class FooterMobilePage extends StatelessWidget {
                           color: ColorName.descriptionText,
                         ),
                   ),
-                  Spacer(),
+                  const Spacer(),
                   Text(
                     LocaleKeys.appName.tr(),
                     style: TextTheme.of(context).bodySmall?.copyWith(
@@ -78,7 +78,7 @@ class FooterMobilePage extends StatelessWidget {
                           color: ColorName.descriptionText,
                         ),
                   ),
-                  Spacer(),
+                  const Spacer(),
                 ],
               ),
             ],

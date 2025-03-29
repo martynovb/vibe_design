@@ -70,7 +70,7 @@ class GoalDesktopPage extends StatelessWidget {
                     ],
                   ),
                 ),
-                Spacer(),
+                const Spacer(),
                 Text.rich(
                   TextSpan(
                     text: LocaleKeys.goalTitle4.tr(),

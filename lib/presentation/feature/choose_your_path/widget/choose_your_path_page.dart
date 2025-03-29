@@ -9,7 +9,7 @@ class ChooseYourPathPage extends StatelessWidget {
       layoutBuilder: (isMobile) {
         return isMobile
             ? const ChooseYourPathMobilePage()
-            : ChooseYourPathDesktopPage();
+            : const ChooseYourPathDesktopPage();
       },
     );
   }

@@ -24,7 +24,7 @@ class ChooseYourPathMobileState extends State<ChooseYourPathMobilePage> {
       }
       _indicatorController.animateToPage(
         _currentCardIndex,
-        duration: Duration(milliseconds: 300),
+        duration: const Duration(milliseconds: 300),
         curve: Curves.easeInOut,
       );
     };
@@ -114,7 +114,7 @@ class ChooseYourPathMobileState extends State<ChooseYourPathMobilePage> {
           height: 1,
           child: PageView.builder(
             controller: _indicatorController,
-            itemBuilder: (context, index) => SizedBox.shrink(),
+            itemBuilder: (context, index) => const SizedBox.shrink(),
           ),
         ),
         SizedBox(

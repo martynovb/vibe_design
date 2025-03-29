@@ -54,7 +54,7 @@ class _HomePageState extends State<HomePage> {
         section: HeaderPage(key: keys[MenuOption.home]),
       ),
       SectionViewModel(
-        section: GoalPage(),
+        section: const GoalPage(),
       ),
       SectionViewModel(
         key: keys[MenuOption.about],
@@ -64,7 +64,7 @@ class _HomePageState extends State<HomePage> {
         ),
       ),
       SectionViewModel(
-        section: MyApproachPage(),
+        section: const MyApproachPage(),
       ),
       SectionViewModel(
         key: keys[MenuOption.courses],
@@ -81,10 +81,10 @@ class _HomePageState extends State<HomePage> {
         ),
       ),
       SectionViewModel(
-        section: MyStudentsPage(),
+        section: const MyStudentsPage(),
       ),
       SectionViewModel(
-        section: ReviewsPage(),
+        section: const ReviewsPage(),
       ),
       SectionViewModel(
         key: keys[MenuOption.learn],
@@ -94,7 +94,7 @@ class _HomePageState extends State<HomePage> {
         ),
       ),
       SectionViewModel(
-        section: LearningDetailsPage(),
+        section: const LearningDetailsPage(),
       ),
       SectionViewModel(
         key: keys[MenuOption.pricing],
@@ -104,7 +104,7 @@ class _HomePageState extends State<HomePage> {
         ),
       ),
       SectionViewModel(
-        section: ApplyForCoursePage(),
+        section: const ApplyForCoursePage(),
       ),
       SectionViewModel(
         key: keys[MenuOption.contact],

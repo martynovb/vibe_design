@@ -111,7 +111,7 @@ class ChooseYourPathCard extends StatelessWidget {
                   ),
                   AppSpacing.v_40,
                   Container(
-                    constraints: BoxConstraints(maxWidth: 470),
+                    constraints: const BoxConstraints(maxWidth: 470),
                     child: Column(
                       children: [
                         _bulletPointText(
@@ -137,7 +137,7 @@ class ChooseYourPathCard extends StatelessWidget {
                       ],
                     ),
                   ),
-                  Spacer(),
+                  const Spacer(),
                   _moreButton(context),
                 ],
               ),
