@@ -22,7 +22,11 @@ void main() {
 
       // Init crashlytics
       await SentryFlutter.init(
-        (options) => options.dsn = RunConfigurations.sentryDsn,
+        (options) {
+          options.dsn = RunConfigurations.sentryDsn;
+          options.sendDefaultPii = true;
+          options.tracesSampleRate = 1.0;
+        },
       );
       if (kIsWeb) {
         usePathUrlStrategy();
