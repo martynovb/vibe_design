@@ -50,21 +50,24 @@ class AboutMeMobilePage extends StatelessWidget {
         text: LocaleKeys.aboutMeDescription1.tr(),
         style: TextTheme.of(context).headlineSmall?.copyWith(
               color: ColorName.title,
-              fontWeight: FontWeight.normal,fontSize: AppTextSizes.mobileSubTitleSize,
+              fontWeight: FontWeight.normal,
+              fontSize: AppTextSizes.mobileSubTitleSize,
             ),
         children: [
           TextSpan(
             text: LocaleKeys.aboutMeDescription2.tr(),
             style: TextTheme.of(context).headlineSmall?.copyWith(
                   color: ColorName.accent,
-                  fontWeight: FontWeight.w600,fontSize: AppTextSizes.mobileSubTitleSize,
+                  fontWeight: FontWeight.w600,
+                  fontSize: AppTextSizes.mobileSubTitleSize,
                 ),
           ),
           TextSpan(
             text: LocaleKeys.aboutMeDescription3.tr(),
             style: TextTheme.of(context).headlineSmall?.copyWith(
                   color: ColorName.title,
-                  fontWeight: FontWeight.normal,fontSize: AppTextSizes.mobileSubTitleSize,
+                  fontWeight: FontWeight.normal,
+                  fontSize: AppTextSizes.mobileSubTitleSize,
                 ),
           ),
         ],
@@ -81,9 +84,9 @@ class AboutMeMobilePage extends StatelessWidget {
           ClipRRect(
             borderRadius: BorderRadius.circular(30),
             child: Image(
-                    image: NetworkImage(AppImagesUrls.myPhoto),
-                    fit: BoxFit.cover,
-                  ),
+              image: NetworkImage(AppImagesUrls.myPhoto),
+              fit: BoxFit.cover,
+            ),
           ),
           Positioned.fill(
             child: Container(
@@ -108,18 +111,19 @@ class AboutMeMobilePage extends StatelessWidget {
                 children: [
                   Text(
                     LocaleKeys.myPhotoTitle.tr(),
-                    style: TextTheme.of(context).headlineMedium?.copyWith(
+                    style: TextTheme.of(context).headlineSmall?.copyWith(
                           color: ColorName.title,
                           fontWeight: FontWeight.bold,
                         ),
                   ),
-                  AppSpacing.v_24,
+                  AppSpacing.v_12,
                   Text.rich(
                     TextSpan(
                       text: LocaleKeys.myPhotoSubTitle.tr(),
                       style: TextTheme.of(context).bodyMedium?.copyWith(
                             color: ColorName.title,
-                            fontWeight: FontWeight.normal,fontSize: AppTextSizes.mobileSubTitleSize,
+                            fontWeight: FontWeight.normal,
+                            fontSize: AppTextSizes.mobileSubTitleSize,
                           ),
                     ),
                   ),
@@ -127,7 +131,8 @@ class AboutMeMobilePage extends StatelessWidget {
                   Text(
                     '"${LocaleKeys.myPhotoDescription.tr()}"',
                     style: TextTheme.of(context).bodyLarge?.copyWith(
-                          color: ColorName.title,fontSize: AppTextSizes.mobileSubTitleSize,
+                          color: ColorName.title,
+                          fontSize: AppTextSizes.mobileSubTitleSize,
                         ),
                   ),
                 ],
@@ -219,28 +224,32 @@ class AboutMeMobilePage extends StatelessWidget {
           text: LocaleKeys.buletPoint.tr(),
           style: TextTheme.of(context).headlineSmall?.copyWith(
                 color: ColorName.accent,
-                fontWeight: FontWeight.w600,fontSize: AppTextSizes.mobileSubTitleSize,
+                fontWeight: FontWeight.w600,
+                fontSize: AppTextSizes.mobileSubTitleSize,
               ),
           children: [
             TextSpan(
               text: ' ',
               style: TextTheme.of(context).headlineSmall?.copyWith(
                     color: ColorName.accent,
-                    fontWeight: FontWeight.w600,fontSize: AppTextSizes.mobileSubTitleSize,
+                    fontWeight: FontWeight.w600,
+                    fontSize: AppTextSizes.mobileSubTitleSize,
                   ),
             ),
             TextSpan(
                 text: title.tr(),
                 style: TextTheme.of(context).headlineSmall?.copyWith(
                       color: ColorName.accent,
-                      fontWeight: FontWeight.w600,fontSize: AppTextSizes.mobileSubTitleSize,
+                      fontWeight: FontWeight.w600,
+                      fontSize: AppTextSizes.mobileSubTitleSize,
                     ),
                 children: [
                   TextSpan(
                     text: description.tr(),
                     style: TextTheme.of(context).headlineSmall?.copyWith(
                           color: ColorName.descriptionText,
-                          fontWeight: FontWeight.normal,fontSize: AppTextSizes.mobileSubTitleSize,
+                          fontWeight: FontWeight.normal,
+                          fontSize: AppTextSizes.mobileSubTitleSize,
                         ),
                   ),
                 ])
