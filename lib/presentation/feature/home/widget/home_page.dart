@@ -1,5 +1,7 @@
 part of '../home.dart';
 
+const _tag = 'HomePage';
+
 class HomePage extends StatefulWidget {
   const HomePage({
     super.key,
@@ -114,7 +116,10 @@ class _HomePageState extends State<HomePage> {
     ];
 
     WidgetsBinding.instance.addPostFrameCallback((_) {
-      print('Home page rendered in ${DateTime.now().difference(startTime)}');
+      AnalyticsLogger.logMessage(
+        _tag,
+        'Home page rendered in ${DateTime.now().difference(startTime)}',
+      );
       _calculateSectionOffsets();
       if (widget.scrollTo != null) {
         _onMenuOptionSelected(widget.scrollTo!);

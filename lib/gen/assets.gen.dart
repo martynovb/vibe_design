@@ -69,17 +69,17 @@ class $AssetsImagesGen {
   SvgGenImage get mobileMenuClosed =>
       const SvgGenImage('assets/images/mobile_menu_closed.svg');
 
-  /// File path: assets/images/number1.svg
-  SvgGenImage get number1 => const SvgGenImage('assets/images/number1.svg');
+  /// File path: assets/images/number1.png
+  AssetGenImage get number1 => const AssetGenImage('assets/images/number1.png');
 
-  /// File path: assets/images/number2.svg
-  SvgGenImage get number2 => const SvgGenImage('assets/images/number2.svg');
+  /// File path: assets/images/number2.png
+  AssetGenImage get number2 => const AssetGenImage('assets/images/number2.png');
 
-  /// File path: assets/images/number3.svg
-  SvgGenImage get number3 => const SvgGenImage('assets/images/number3.svg');
+  /// File path: assets/images/number3.png
+  AssetGenImage get number3 => const AssetGenImage('assets/images/number3.png');
 
-  /// File path: assets/images/number4.svg
-  SvgGenImage get number4 => const SvgGenImage('assets/images/number4.svg');
+  /// File path: assets/images/number4.png
+  AssetGenImage get number4 => const AssetGenImage('assets/images/number4.png');
 
   /// File path: assets/images/quote_symbol.png
   AssetGenImage get quoteSymbol =>

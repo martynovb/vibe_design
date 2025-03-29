@@ -8,6 +8,7 @@ import 'package:flutter_web_plugins/url_strategy.dart';
 import 'package:vibe_design/presentation/feature/app/app_widget.dart';
 import 'package:vibe_design/targets/run_configurations.dart';
 
+import '../../data/network/analytics_logger.dart';
 import '../../presentation/shared/di/di.dart';
 
 void main() {
@@ -20,14 +21,17 @@ void main() {
       configureDependencies(environment: development);
 
       // Init crashlytics
-      SentryFlutter.init(
+      await SentryFlutter.init(
         (options) => options.dsn = RunConfigurations.sentryDsn,
       );
       if (kIsWeb) {
         usePathUrlStrategy();
       }
       runApp(const VibeDesignApp());
-      print('App started in ${DateTime.now().difference(startTime)}');
+      AnalyticsLogger.logMessage(
+        'main',
+        'App started in ${DateTime.now().difference(startTime)}',
+      );
     },
     (error, stackTrace) async {
       await Sentry.captureException(

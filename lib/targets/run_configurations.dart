@@ -3,11 +3,7 @@ class RunConfigurations {
     'sentryDsn',
   );
 
-  static String jsonbinAccessKey = const String.fromEnvironment(
-    'jsonbinAccessKey',
-  );
-
-  static String jsonbinMasterKey = const String.fromEnvironment(
-    'jsonbinMasterKey',
+  static String envName = const String.fromEnvironment(
+    'env',
   );
 }

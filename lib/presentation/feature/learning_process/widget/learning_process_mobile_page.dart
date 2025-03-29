@@ -94,7 +94,7 @@ class LearningProcessMobilePage extends StatelessWidget {
           ),
           topTitle: true,
           isRightImage: false,
-          numberImage: Assets.images.number1.svg(),
+          numberImage: Assets.images.number1.image(),
         ),
         AppSpacing.v_16,
         _cardItem(
@@ -108,7 +108,7 @@ class LearningProcessMobilePage extends StatelessWidget {
           ),
           topTitle: false,
           isRightImage: true,
-          numberImage: Assets.images.number2.svg(),
+          numberImage: Assets.images.number2.image(),
         ),
         AppSpacing.v_16,
         _cardItem(
@@ -122,7 +122,7 @@ class LearningProcessMobilePage extends StatelessWidget {
           ),
           topTitle: false,
           isRightImage: false,
-          numberImage: Assets.images.number3.svg(),
+          numberImage: Assets.images.number3.image(),
         ),
         AppSpacing.v_16,
         _cardItem(
@@ -136,7 +136,7 @@ class LearningProcessMobilePage extends StatelessWidget {
           ),
           topTitle: true,
           isRightImage: true,
-          numberImage: Assets.images.number4.svg(),
+          numberImage: Assets.images.number4.image(),
         ),
       ],
     );
@@ -147,7 +147,7 @@ class LearningProcessMobilePage extends StatelessWidget {
     required String title,
     required String subtitle,
     required Image mainImage,
-    required SvgPicture numberImage,
+    required Image numberImage,
     required bool topTitle,
     required bool isRightImage,
   }) {

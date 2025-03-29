@@ -6,6 +6,7 @@ import 'package:vibe_design/presentation/feature/footer/footer.dart';
 import 'package:vibe_design/presentation/feature/home/bloc/model/section_view_model.dart';
 import 'package:vibe_design/presentation/shared/widgets/device_layout_builder.dart';
 
+import '../../../data/network/analytics_logger.dart';
 import '../about_me/about_me.dart';
 import '../goal/goal.dart';
 import '../header/header.dart';
