@@ -28,7 +28,7 @@ class MenuDesktopWidget extends StatelessWidget {
             ),
             AppSpacing.h_48,
             MenuOptionWidget(
-              text: 'LocaleKeys.main.tr()',
+              text: LocaleKeys.main.tr(),
               isSelected: selectedMenuOption == MenuOption.home,
               menuOption: MenuOption.home,
               onMenuOptionSelected: onMenuOptionSelected,
