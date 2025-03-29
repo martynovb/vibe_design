@@ -13,8 +13,6 @@ import 'package:get_it/get_it.dart' as _i174;
 import 'package:injectable/injectable.dart' as _i526;
 import 'package:vibe_design/presentation/feature/app/bloc/app_bloc.dart'
     as _i651;
-import 'package:vibe_design/presentation/feature/footer/bloc/footer_bloc.dart'
-    as _i143;
 import 'package:vibe_design/presentation/feature/home/bloc/home_bloc.dart'
     as _i64;
 
@@ -31,7 +29,6 @@ extension GetItInjectableX on _i174.GetIt {
     );
     gh.factory<_i64.HomeBloc>(() => _i64.HomeBloc());
     gh.singleton<_i651.AppBloc>(() => _i651.AppBloc());
-    gh.singleton<_i143.FooterBloc>(() => _i143.FooterBloc());
     return this;
   }
 }

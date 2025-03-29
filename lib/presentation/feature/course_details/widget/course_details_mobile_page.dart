@@ -80,11 +80,7 @@ class CourseDetailsMobilePage extends StatelessWidget {
                       SizedBox(height: 120),
                     ],
                   ),
-                  FooterPage(
-                    onMenuOptionPressed: (menuOption) {
-                      handlePop(context, menuOption);
-                    },
-                  ),
+                  FooterPage(),
                 ],
               ),
             ),

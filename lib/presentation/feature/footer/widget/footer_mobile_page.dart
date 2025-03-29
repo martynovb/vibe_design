@@ -3,10 +3,7 @@ part of '../footer.dart';
 class FooterMobilePage extends StatelessWidget {
   const FooterMobilePage({
     super.key,
-    required this.onMenuOptionPressed,
   });
-
-  final Function(MenuOption option) onMenuOptionPressed;
 
   @override
   Widget build(BuildContext context) {

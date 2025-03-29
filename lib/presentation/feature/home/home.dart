@@ -1,4 +1,3 @@
-import 'package:collection/collection.dart';
 import 'package:flutter/material.dart';
 import 'package:vibe_design/gen/colors.gen.dart';
 import 'package:vibe_design/presentation/feature/apply_for_course/apply_for_course.dart';
@@ -21,3 +20,4 @@ import '../select_level/select_level.dart';
 import '../why_me/why_me.dart';
 
 part 'widget/home_page.dart';
+part 'widget/home_menu_provider.dart';

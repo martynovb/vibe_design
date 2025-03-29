@@ -10,8 +10,9 @@ import 'package:vibe_design/targets/run_configurations.dart';
 
 import '../../presentation/shared/di/di.dart';
 
-void main() async {
-  await runZonedGuarded(
+void main() {
+  final startTime = DateTime.now();
+  runZonedGuarded(
     () async {
       WidgetsFlutterBinding.ensureInitialized();
       await EasyLocalization.ensureInitialized();
@@ -19,13 +20,14 @@ void main() async {
       configureDependencies(environment: development);
 
       // Init crashlytics
-      await SentryFlutter.init(
+      SentryFlutter.init(
         (options) => options.dsn = RunConfigurations.sentryDsn,
       );
       if (kIsWeb) {
         usePathUrlStrategy();
       }
       runApp(const VibeDesignApp());
+      print('App started in ${DateTime.now().difference(startTime)}');
     },
     (error, stackTrace) async {
       await Sentry.captureException(

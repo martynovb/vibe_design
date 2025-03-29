@@ -74,11 +74,7 @@ class CourseDetailsDesktopPage extends StatelessWidget {
                       ],
                     ),
                   ),
-                  FooterPage(
-                    onMenuOptionPressed: (menuOption) {
-                      handlePop(context, menuOption);
-                    },
-                  ),
+                  FooterPage(),
                 ],
               ),
             ),
